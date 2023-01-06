@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: bisque;
+  display: flex;
+}
+
+.ExternalLinks {
+  display: flex;
+  list-style: none;
+  /* background-color: blue; */
+}
+
+.hello {
+  background-color: aliceblue;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.Navigation {
+  display: flex;
+  list-style: none;
+}
+
+.NavigationLinks {
+  background-color: aliceblue;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+h1 {
+  padding-left: 50px;
+}
+
+#text {
+  color: rgb(255, 50, 50);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.PictureDiv {
+  position: absolute;
+  bottom: 0;
+  margin-left: 12%;
+  float: left;
+}
+
+.Picture {
+  width: 34%;
+  height: 90%;
+}
+
+#about {
+  background-image: url("BackPic.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.AboutText {
+  position: absolute;
+  margin-top: 17%;
+  margin-left: 43%;
+  width: 50%;
+
+  float: left;
+
+  font-size: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+}
