@@ -10,7 +10,6 @@ header {
 .ExternalLinks {
   display: flex;
   list-style: none;
-  /* background-color: blue; */
 }
 
 .hello {
@@ -31,6 +30,7 @@ header {
   border-radius: 10px;
   padding: 10px;
 }
+
 h1 {
   padding-left: 50px;
 }
@@ -70,9 +70,7 @@ footer {
   margin-top: 17%;
   margin-left: 43%;
   width: 50%;
-
   float: left;
-
   font-size: 30px;
 }
 
