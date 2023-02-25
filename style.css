@@ -86,7 +86,7 @@ li {
   left: 5%;
   margin: 0%;
   padding: 0%;
-  max-width: 30%;
+  max-width: 25%;
 }
 
 .AboutText {
@@ -101,9 +101,18 @@ li {
   font-size: 30px;
 }
 
+@media screen and (max-width: 10000px) {
+  .PictureDiv {
+    max-width: 6in;
+  }
+  li {
+    font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 2560px) {
   .PictureDiv {
-    max-width: 30%;
+    max-width: 25%;
   }
   li {
     font-size: 30px;
@@ -138,8 +147,12 @@ li {
 }
 
 @media screen and (max-width: 700px) {
+  .PictureDiv {
+    max-width: 40%;
+    bottom: 45%;
+  }
   h1 {
-    font-size: 24;
+    font-size: 22;
   }
   li {
     font-size: 15px;
