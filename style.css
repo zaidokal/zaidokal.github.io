@@ -248,3 +248,12 @@ li {
   margin: 2%;
   padding: 2%;
 }
+
+#courses {
+  /* white-space: pre-wrap; */
+  /* background-color: #4d8bc5; */
+  border-radius: 20px;
+  /* width: 45vw; */
+  margin: 2%;
+  /* padding: 1%; */
+}
