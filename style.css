@@ -228,3 +228,23 @@ li {
   height: 50px;
   display: flex;
 }
+
+.experience {
+  /* background-color: #012241; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  margin: 2%;
+}
+
+#title {
+  flex-basis: 100%;
+}
+
+#experience {
+  background-color: #0b2238;
+  border-radius: 20px;
+  width: 20vw;
+  margin: 2%;
+  padding: 2%;
+}
