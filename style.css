@@ -167,6 +167,26 @@ li {
   margin: 5%;
 }
 
+.list {
+  display: flex;
+  /* align-items: center; */
+  width: 100%;
+  overflow: auto;
+}
+
+.skillDiv {
+  position: relative;
+  border-radius: 15%;
+  margin: 1%;
+  max-height: 3in;
+  width: 30vw;
+  padding: 2%;
+  align-items: center;
+
+  background-color: rgb(100, 16, 209);
+  color: #012241;
+}
+
 .icons {
   display: flex;
   margin-left: auto;
