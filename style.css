@@ -51,9 +51,13 @@ footer {
 }
 
 #about {
-  background-image: url("BackPic.jpg");
-  background-repeat: no-repeat;
+  background-image: url("Pictures/BackPic.jpg");
+  background-color: #1a1a1a;
   background-size: cover;
+
+  background-blend-mode: exclusion;
+
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
   color: white;
@@ -64,12 +68,6 @@ footer {
 
   text-align: right;
   padding: 0;
-  background: linear-gradient(
-        45deg,
-        /* rgba(5, 176, 219, 0.2) 0%, */ rgba(11, 11, 11, 0.95) 85%
-      )
-      100% no-repeat,
-    url("BackPic.jpg") 0 0 / cover no-repeat !important;
 }
 
 ul {
@@ -138,6 +136,10 @@ li {
 }
 
 @media screen and (max-width: 900px) {
+  .PictureDiv {
+    max-width: 40%;
+    bottom: 35%;
+  }
   h1 {
     font-size: 27;
   }
