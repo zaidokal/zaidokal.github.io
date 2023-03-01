@@ -3,61 +3,16 @@ html {
 }
 
 body {
-  margin: 0;
   background-color: #212121;
   color: aliceblue;
 }
 
-header {
-  background-color: bisque;
-  display: flex;
-}
-
-.ExternalLinks {
-  display: flex;
-  list-style: none;
-}
-
-.hello {
-  background-color: aliceblue;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-.Navigation {
-  display: flex;
-  list-style: none;
-}
-
-.NavigationLinks {
-  background-color: aliceblue;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px;
-}
-
 h1 {
   padding-left: 50px;
+  font-size: calc(2vh + 2vw); /* font-size: 2vh; */
 }
 
-#text {
-  color: rgb(255, 50, 50);
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  color: aliceblue;
-
-  scroll-snap-align: start;
-}
-
-.Picture {
-  max-width: 100%;
-  max-height: 100%;
-}
-
+/* Main Page */
 #about {
   background-image: url("Pictures/BackPic.jpg");
   background-color: #1a1a1a;
@@ -80,26 +35,16 @@ footer {
   scroll-snap-align: start;
 }
 
-ul {
-  list-style: none;
-}
-
-li {
-  padding: 10px;
-}
-
 .PictureDiv {
   position: absolute;
-  bottom: 0%;
+  bottom: 0vh;
   left: 5%;
-  margin: 0%;
-  padding: 0%;
-  /* max-height: 1vw; */
   max-width: 25vw;
 }
 
-h1 {
-  font-size: calc(2vh + 2vw); /* font-size: 2vh; */
+.Picture {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .AboutText {
@@ -112,6 +57,38 @@ h1 {
   height: 60%;
 
   font-size: calc(1vh + 1vw); /* font-size: 2vh; */
+}
+
+#text {
+  color: rgb(255, 50, 50);
+}
+
+/* Summary Section */
+#summary {
+  background-color: #1a1a1a;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: left;
+
+  scroll-snap-align: start;
+}
+
+#InnerSummary {
+  margin: 5%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 10px;
 }
 
 #Details {
@@ -283,32 +260,6 @@ th {
   }
 }
 
-#summary {
-  /* background-image: url("Pictures/BackPic.jpg"); */
-  background-color: #1a1a1a;
-  /* background-size: cover; */
-
-  /* background-blend-mode: exclusion; */
-
-  /* background-repeat: no-repeat; */
-  height: 100vh;
-  width: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  text-align: left;
-  /* padding: 3vw; */
-
-  scroll-snap-align: start;
-}
-
-#InnerSummary {
-  margin: 5%;
-}
-
 #languages {
   scroll-snap-align: start;
 }
@@ -318,5 +269,13 @@ th {
 }
 
 #skills {
+  scroll-snap-align: start;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  color: aliceblue;
+
   scroll-snap-align: start;
 }
