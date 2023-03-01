@@ -1,55 +1,39 @@
+/* HTML */
+html {
+  scroll-snap-type: y mandatory;
+}
+
+/* Body */
 body {
-  margin: 0;
+  background-color: #212121;
+  color: aliceblue;
+  margin: 0%;
 }
 
-header {
-  background-color: bisque;
-  display: flex;
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+  scroll-behavior: smooth;
 }
 
-.ExternalLinks {
-  display: flex;
-  list-style: none;
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
 }
 
-.hello {
-  background-color: aliceblue;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px;
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border: 6px solid transparent;
+  background-clip: content-box;
 }
 
-.Navigation {
-  display: flex;
-  list-style: none;
-}
-
-.NavigationLinks {
-  background-color: aliceblue;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px;
-}
-
+/* Fonts */
 h1 {
   padding-left: 50px;
+  font-size: calc(2vh + 2vw);
 }
 
-#text {
-  color: rgb(255, 50, 50);
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  color: aliceblue;
-}
-
-.Picture {
-  max-width: 100%;
-  max-height: 100%;
-}
-
+/* Main Page */
 #about {
   background-image: url("Pictures/BackPic.jpg");
   background-color: #1a1a1a;
@@ -68,23 +52,20 @@ footer {
 
   text-align: right;
   padding: 0;
-}
 
-ul {
-  list-style: none;
-}
-
-li {
-  padding: 10px;
+  scroll-snap-align: start;
 }
 
 .PictureDiv {
   position: absolute;
-  bottom: 0%;
+  bottom: 0vh;
   left: 5%;
-  margin: 0%;
-  padding: 0%;
-  max-width: 25%;
+  max-width: 25vw;
+}
+
+.Picture {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .AboutText {
@@ -93,70 +74,93 @@ li {
   bottom: 0;
   right: 5%;
 
-  width: 50%; /* adjust this value as needed */
+  width: 50%;
   height: 60%;
 
-  font-size: 30px;
+  font-size: calc(1vh + 1vw);
 }
 
-@media screen and (max-width: 10000px) {
-  .PictureDiv {
-    max-width: 6in;
-  }
-  li {
-    font-size: 30px;
-  }
+#text {
+  color: rgb(255, 50, 50);
 }
 
-@media screen and (max-width: 2560px) {
-  .PictureDiv {
-    max-width: 25%;
-  }
-  li {
-    font-size: 30px;
-  }
+/* Summary Section */
+#summary {
+  background-color: #1a1a1a;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  display: flex;
+
+  text-align: left;
+
+  scroll-snap-align: start;
 }
 
-@media screen and (max-width: 1500px) {
+#summaryTitle {
+  font-size: 12vw;
+}
+
+#InnerSummary {
+  margin: 5%;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  color: aliceblue;
+
+  scroll-snap-align: start;
+}
+
+/* Phone size */
+@media screen and (max-width: 600px) {
+  #AboutParagraph {
+    text-align: center;
+  }
+  .AboutText {
+    /* position: absolute; */
+    top: 30%;
+    bottom: 0;
+    right: -3%;
+    /* left: 52%; */
+    width: 50%; /* adjust this value as needed */
+    height: 60%;
+    text-align: left;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
   h1 {
-    font-size: 40px;
+    font-size: 8vw;
   }
-  li {
-    font-size: 30px;
-  }
-}
 
-@media screen and (max-width: 1200px) {
-  h1 {
-    font-size: 35;
-  }
-  li {
-    font-size: 25px;
-  }
-}
-
-@media screen and (max-width: 900px) {
   .PictureDiv {
-    max-width: 40%;
-    bottom: 35%;
+    /* position: absolute; */
+    bottom: 0%;
+    left: -20%;
+    margin: 0%;
+    padding: 0%;
+    /* max-height: 1vw; */
+    max-width: 80vw;
   }
-  h1 {
-    font-size: 27;
+
+  #summary {
+    display: block;
   }
-  li {
-    font-size: 20px;
+
+  #PhoneText {
+    font-size: calc(1vh + 2vw); /* font-size: 2vh; */
+  }
+
+  footer {
+    right: 0%;
   }
 }
 
-@media screen and (max-width: 700px) {
-  .PictureDiv {
-    max-width: 40%;
-    bottom: 45%;
-  }
-  h1 {
-    font-size: 22;
-  }
-  li {
-    font-size: 15px;
-  }
+li {
+  list-style: none;
 }
