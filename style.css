@@ -225,13 +225,13 @@ th {
   border-color: rgb(255, 255, 255);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .AboutText {
     /* position: absolute; */
     top: 30%;
     bottom: 0;
-    /* right: 5%; */
-    left: 45%;
+    right: -3%;
+    /* left: 52%; */
     text-align: left;
     width: 50%; /* adjust this value as needed */
     height: 60%;
@@ -261,5 +261,13 @@ th {
 
   #summary {
     display: block;
+  }
+
+  #PhoneText {
+    font-size: calc(1vh + 2vw); /* font-size: 2vh; */
+  }
+
+  footer {
+    right: 0%;
   }
 }
