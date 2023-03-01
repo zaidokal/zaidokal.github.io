@@ -1,15 +1,36 @@
+/* HTML */
 html {
   scroll-snap-type: y mandatory;
 }
 
+/* Body */
 body {
   background-color: #212121;
   color: aliceblue;
+  margin: 0%;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+/* Fonts */
 h1 {
   padding-left: 50px;
-  font-size: calc(2vh + 2vw); /* font-size: 2vh; */
+  font-size: calc(2vh + 2vw);
 }
 
 /* Main Page */
@@ -53,10 +74,10 @@ h1 {
   bottom: 0;
   right: 5%;
 
-  width: 50%; /* adjust this value as needed */
+  width: 50%;
   height: 60%;
 
-  font-size: calc(1vh + 1vw); /* font-size: 2vh; */
+  font-size: calc(1vh + 1vw);
 }
 
 #text {
@@ -70,50 +91,126 @@ h1 {
   width: 100%;
   color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
   text-align: left;
 
   scroll-snap-align: start;
 }
 
+#summaryTitle {
+  font-size: 12vw;
+}
+
 #InnerSummary {
   margin: 5%;
 }
 
-ul {
-  list-style: none;
+/* Experience */
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  margin: 2%;
+  scroll-snap-align: start;
+
+  min-height: 100vh;
 }
 
-li {
-  padding: 10px;
+#experienceTitle {
+  flex-basis: 100%;
 }
 
-#Details {
-  margin: 5%;
+#experience {
+  background-color: #0b2238;
+  border-radius: 20px;
+  width: 20vw;
+  margin: 2%;
+  padding: 2%;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  margin: 2%;
+  scroll-snap-align: start;
+
+  min-height: 100vh;
+}
+
+#projectsTitle {
+  flex-basis: 100%;
+}
+
+#projects {
+  background-color: #0b2238;
+  border-radius: 20px;
+  width: 20vw;
+  margin: 2%;
+  padding: 2%;
+}
+
+/* Education */
+.education {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  margin: 2%;
+  scroll-snap-align: start;
+
+  min-height: 100vh;
+}
+
+#educationTitle {
+  flex-basis: 100%;
+}
+
+#education {
+  background-color: #0b2238;
+  border-radius: 20px;
+  width: 20vw;
+  margin: 2%;
+  padding: 2%;
+}
+
+.Western_University {
+  height: 50px;
+  display: flex;
+}
+
+/* Extracurriculars */
+.extracurriculars {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  margin: 2%;
+  scroll-snap-align: start;
+
+  min-height: 100vh;
+}
+
+#extracurricularsTitle {
+  flex-basis: 100%;
+}
+
+#extracurriculars {
+  background-color: #0b2238;
+  border-radius: 20px;
+  width: 20vw;
+  margin: 2%;
+  padding: 2%;
+}
+
+/* Skills */
+.skills {
   scroll-snap-align: start;
 }
 
-.list {
+.skillsList {
   display: flex;
-  /* align-items: center; */
   width: 100%;
   overflow: auto;
-}
-
-.skillDiv {
-  position: relative;
-  border-radius: 15%;
-  margin: 1%;
-  max-height: 3in;
-  width: 30vw;
-  padding: 2%;
-  align-items: center;
-
-  background-color: rgb(100, 16, 209);
-  color: #012241;
 }
 
 .icons {
@@ -129,55 +226,42 @@ li {
   height: 150px;
 }
 
-.skillText {
-  text-align: center;
-  font-size: 120%;
-}
-
-li {
-  list-style: none;
-}
-
-::-webkit-scrollbar {
-  width: 20px;
-  scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #d6dee1;
-  border-radius: 20px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #d6dee1;
-  border: 6px solid transparent;
-  background-clip: content-box;
-}
-
-.Western_University {
-  height: 50px;
-  display: flex;
-}
-
-.experience {
-  /* background-color: #012241; */
+/* Honors & Awards */
+.Honors {
   display: flex;
   flex-wrap: wrap;
   padding: 2%;
   margin: 2%;
   scroll-snap-align: start;
+
+  min-height: 100vh;
 }
 
-#title {
+#HonorsTitle {
   flex-basis: 100%;
 }
 
-#experience {
+#Honors {
   background-color: #0b2238;
   border-radius: 20px;
   width: 20vw;
   margin: 2%;
   padding: 2%;
+}
+
+/* Courses */
+.Courses {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  margin: 2%;
+  scroll-snap-align: start;
+
+  min-height: 100vh;
+}
+
+#CoursesTitle {
+  flex-basis: 100%;
 }
 
 #courses {
@@ -187,12 +271,6 @@ li {
   /* width: 45vw; */
   margin: 2%;
   /* padding: 1%; */
-}
-
-#clist {
-  font-size: 10px;
-  margin: 0.5em 0;
-  padding: 0;
 }
 
 table {
@@ -213,6 +291,37 @@ th {
   border-color: rgb(255, 255, 255);
 }
 
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+  list-style: none;
+}
+
+/* Languages */
+#languages {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+/* Contact */
+#contact {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  color: aliceblue;
+
+  scroll-snap-align: start;
+}
+
+/* Phone size */
 @media screen and (max-width: 600px) {
   .AboutText {
     /* position: absolute; */
@@ -258,24 +367,4 @@ th {
   footer {
     right: 0%;
   }
-}
-
-#languages {
-  scroll-snap-align: start;
-}
-
-#contact {
-  scroll-snap-align: start;
-}
-
-#skills {
-  scroll-snap-align: start;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  color: aliceblue;
-
-  scroll-snap-align: start;
 }
