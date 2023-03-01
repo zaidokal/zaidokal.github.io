@@ -1,5 +1,5 @@
 window.onload = function () {
-  script();
+  script(); // Calls script function
 
   function script() {
     console.log(window.innerWidth);
@@ -7,11 +7,12 @@ window.onload = function () {
     if (window.innerWidth > 600) {
       changeText();
     } else {
-      var AboutDescription = document.getElementById("AboutDescription");
-      AboutDescription.style.display = "none";
+      var AboutDescription = document.getElementById("AboutDescription"); // AboutDescription ID
+      AboutDescription.style.display = "none"; // Remove AboutDescription
 
-      var summary = document.getElementById("summary");
+      var summary = document.getElementById("summary"); // Summary ID
 
+      // Text added to summary
       summary.innerHTML += ` I am currently in my third year studying software engineering at Western University.
                             In my free time, I enjoy staying active by playing soccer and other sports. I also have a
                             passion for
@@ -23,13 +24,36 @@ window.onload = function () {
                             I am excited to see where my studies in software engineering will take me in the future and
                             am dedicated
                             to continually improving my skills and knowledge in the field.`;
+
+      // Create an array of items for the list
+      const items = [
+        "Zaid Okal",
+        "a Software Engineer",
+        "a Software Developer",
+        "a Software Tester",
+      ];
+
+      // Get the parent element to which the list will be appended
+      var AboutPararaph = document.getElementById("AboutParagraph");
+
+      // Create the UL element
+      const ul = document.createElement("ul");
+
+      ul.id = "PhoneText";
+
+      // Loop through the items array and create an LI element for each item
+      items.forEach((item) => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        ul.appendChild(li);
+      });
+
+      // Append the UL element to the parent element
+      AboutPararaph.appendChild(ul);
     }
-
-    // if (window.innerWidth <= 600) {
-
-    // }
   }
 
+  // ChangeText function
   function changeText() {
     console.log("changeText function called");
     console.log("Window width is less than or equal to 600");
@@ -70,5 +94,3 @@ window.onload = function () {
     changeText(); // Start the text changing
   }
 };
-
-script();
