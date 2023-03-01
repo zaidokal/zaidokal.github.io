@@ -111,7 +111,7 @@ footer {
   bottom: 0;
   color: aliceblue;
 
-  scroll-snap-align: start;
+  right: 0%;
 }
 
 /* Phone size */
