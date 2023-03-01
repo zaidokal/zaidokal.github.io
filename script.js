@@ -10,7 +10,7 @@ window.onload = function () {
       var AboutDescription = document.getElementById("AboutDescription"); // AboutDescription ID
       AboutDescription.style.display = "none"; // Remove AboutDescription
 
-      var summary = document.getElementById("summary"); // Summary ID
+      var summary = document.getElementById("InnerSummary"); // Summary ID
 
       // Text added to summary
       summary.innerHTML += ` I am currently in my third year studying software engineering at Western University.
