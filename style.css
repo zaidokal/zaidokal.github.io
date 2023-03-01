@@ -1,3 +1,7 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
 body {
   margin: 0;
   background-color: #212121;
@@ -45,6 +49,8 @@ footer {
   position: fixed;
   bottom: 0;
   color: aliceblue;
+
+  scroll-snap-align: start;
 }
 
 .Picture {
@@ -70,6 +76,8 @@ footer {
 
   text-align: right;
   padding: 0;
+
+  scroll-snap-align: start;
 }
 
 ul {
@@ -108,6 +116,7 @@ h1 {
 
 #Details {
   margin: 5%;
+  scroll-snap-align: start;
 }
 
 .list {
@@ -154,6 +163,7 @@ li {
 
 ::-webkit-scrollbar {
   width: 20px;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -178,6 +188,7 @@ li {
   flex-wrap: wrap;
   padding: 2%;
   margin: 2%;
+  scroll-snap-align: start;
 }
 
 #title {
@@ -270,4 +281,42 @@ th {
   footer {
     right: 0%;
   }
+}
+
+#summary {
+  /* background-image: url("Pictures/BackPic.jpg"); */
+  background-color: #1a1a1a;
+  /* background-size: cover; */
+
+  /* background-blend-mode: exclusion; */
+
+  /* background-repeat: no-repeat; */
+  height: 100vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: left;
+  /* padding: 3vw; */
+
+  scroll-snap-align: start;
+}
+
+#InnerSummary {
+  margin: 5%;
+}
+
+#languages {
+  scroll-snap-align: start;
+}
+
+#contact {
+  scroll-snap-align: start;
+}
+
+#skills {
+  scroll-snap-align: start;
 }
