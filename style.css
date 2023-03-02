@@ -115,7 +115,7 @@ footer {
 }
 
 /* Phone size */
-@media screen and (max-width: 600px) and (orientation: portrait) {
+@media screen and (max-width: 1600px) and (orientation: portrait) {
   #AboutParagraph {
     text-align: center;
   }

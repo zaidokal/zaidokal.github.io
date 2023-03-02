@@ -4,7 +4,7 @@ window.onload = function () {
   function script() {
     console.log(window.innerWidth);
 
-    if (window.innerWidth > 600) {
+    if (window.innerWidth > 1600) {
       changeText();
     } else {
       var AboutDescription = document.getElementById("AboutDescription"); // AboutDescription ID
