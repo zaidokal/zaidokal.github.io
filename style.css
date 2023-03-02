@@ -159,6 +159,10 @@ footer {
   footer {
     right: 0%;
   }
+
+  #InnerSummary {
+    font-size: 20px;
+  }
 }
 
 li {
