@@ -115,7 +115,7 @@ footer {
 }
 
 /* Phone size */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) and (orientation: portrait) {
   #AboutParagraph {
     text-align: center;
   }
@@ -163,4 +163,16 @@ footer {
 
 li {
   list-style: none;
+}
+
+@media only screen and (max-width: 430px) and (orientation: landscape) {
+  .PictureDiv {
+    /* position: absolute; */
+    bottom: 0%;
+    left: 0%;
+    margin: 0%;
+    padding: 0%;
+    /* max-height: 1vw; */
+    max-width: 10vw;
+  }
 }
