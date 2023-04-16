@@ -94,3 +94,18 @@ window.onload = function () {
     changeText(); // Start the text changing
   }
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+  var navLinks = document.querySelectorAll("nav a");
+  for (var i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener("click", function (event) {
+      event.preventDefault();
+      var target = document.querySelector(this.getAttribute("href"));
+      var targetTop = target.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: targetTop,
+        behavior: "smooth",
+      });
+    });
+  }
+});
