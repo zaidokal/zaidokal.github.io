@@ -1,11 +1,11 @@
 /* HTML */
 html {
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
 }
 
 /* Body */
 body {
-  background-color: #212121;
+  background-color: #282828;
   color: aliceblue;
   margin: 0%;
 }
@@ -85,11 +85,11 @@ h1 {
 }
 
 /* Summary Section */
-#summary {
-  background-color: #1a1a1a;
+.summary {
+  background-color: #ffffff;
   height: 100vh;
   width: 100%;
-  color: white;
+  color: rgb(0, 0, 0);
   display: flex;
 
   text-align: left;
@@ -113,7 +113,7 @@ h1 {
   margin: 2%;
   scroll-snap-align: start;
 
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 #experienceTitle {
@@ -121,11 +121,12 @@ h1 {
 }
 
 #experience {
-  background-color: #0b2238;
+  background: linear-gradient(135deg, #0b2238, #1a3865);
   border-radius: 20px;
   width: 20vw;
   margin: 2%;
   padding: 2%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 /* Projects */
@@ -136,7 +137,7 @@ h1 {
   margin: 2%;
   scroll-snap-align: start;
 
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 #projectsTitle {
@@ -144,11 +145,12 @@ h1 {
 }
 
 #projects {
-  background-color: #0b2238;
+  background: linear-gradient(135deg, #0b2238, #1a3865);
   border-radius: 20px;
   width: 20vw;
   margin: 2%;
   padding: 2%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 /* Education */
@@ -159,7 +161,7 @@ h1 {
   margin: 2%;
   scroll-snap-align: start;
 
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 #educationTitle {
@@ -167,11 +169,12 @@ h1 {
 }
 
 #education {
-  background-color: #0b2238;
+  background: linear-gradient(135deg, #0b2238, #1a3865);
   border-radius: 20px;
   width: 20vw;
   margin: 2%;
   padding: 2%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 .Western_University {
@@ -187,7 +190,7 @@ h1 {
   margin: 2%;
   scroll-snap-align: start;
 
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 #extracurricularsTitle {
@@ -195,11 +198,12 @@ h1 {
 }
 
 #extracurriculars {
-  background-color: #0b2238;
+  background: linear-gradient(135deg, #0b2238, #1a3865);
   border-radius: 20px;
   width: 20vw;
   margin: 2%;
   padding: 2%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 /* Skills */
@@ -227,14 +231,14 @@ h1 {
 }
 
 /* Honors & Awards */
-.Honors {
+.honors {
   display: flex;
   flex-wrap: wrap;
   padding: 2%;
   margin: 2%;
   scroll-snap-align: start;
 
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 #HonorsTitle {
@@ -242,11 +246,12 @@ h1 {
 }
 
 #Honors {
-  background-color: #0b2238;
+  background: linear-gradient(135deg, #0b2238, #1a3865);
   border-radius: 20px;
   width: 20vw;
   margin: 2%;
   padding: 2%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 /* Courses */
@@ -257,7 +262,7 @@ h1 {
   margin: 2%;
   scroll-snap-align: start;
 
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 #CoursesTitle {
@@ -301,13 +306,13 @@ li {
 }
 
 /* Languages */
-#languages {
+.languages {
   scroll-snap-align: start;
   height: 100vh;
 }
 
 /* Contact */
-#contact {
+.contact {
   scroll-snap-align: start;
   height: 100vh;
 }
@@ -370,4 +375,61 @@ footer {
   footer {
     right: 0%;
   }
+}
+
+/* Style the overlay container */
+#overlay {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  /* background-color: rgba(0, 0, 0, 0.9); */
+}
+
+/* Style the navigation menu */
+#overlay nav {
+  background-color: #1a1a1a; /* updated background color */
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#overlay nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#overlay nav li {
+  margin: 1px;
+}
+
+#overlay nav a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff; /* updated text color */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#overlay nav a:hover {
+  background-color: #eee;
+}
+
+/* Show the overlay when the trigger button is clicked */
+.overlay-trigger:checked + #overlay {
+  opacity: 1;
+}
+
+/* Hide the trigger button */
+.overlay-trigger {
+  display: none;
 }
