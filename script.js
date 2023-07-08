@@ -2,8 +2,6 @@ window.onload = function () {
   script(); // Calls script function
 
   function script() {
-    console.log(window.innerWidth);
-
     if (window.innerWidth > 600) {
       changeText();
     } else {
