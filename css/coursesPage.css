@@ -1,0 +1,48 @@
+/* Courses */
+.Courses {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  margin: 2%;
+  scroll-snap-align: start;
+
+  /* min-height: 100vh; */
+}
+
+#CoursesTitle {
+  flex-basis: 100%;
+}
+
+#courses {
+  /* white-space: pre-wrap; */
+  /* background-color: #4d8bc5; */
+  border-radius: 20px;
+  /* width: 45vw; */
+  margin: 2%;
+  /* padding: 1%; */
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td:first-child,
+th:first-child {
+  width: 35%;
+  padding: 5px;
+  text-align: center;
+}
+td,
+th {
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  border-color: rgb(255, 255, 255);
+}
+
+/* Body */
+body {
+  background-color: #282828;
+  color: aliceblue;
+  margin: 0%;
+}
