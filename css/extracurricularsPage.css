@@ -1,0 +1,35 @@
+/* Extracurriculars */
+.extracurriculars {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  margin: 2%;
+  scroll-snap-align: start;
+
+  /* min-height: 100vh; */
+}
+
+#extracurricularsTitle {
+  flex-basis: 100%;
+}
+
+#extracurriculars {
+  background: linear-gradient(135deg, #0b2238, #1a3865);
+  border-radius: 20px;
+  width: 20vw;
+  margin: 2%;
+  padding: 2%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.Western_University {
+  height: 50px;
+  display: flex;
+}
+
+/* Body */
+body {
+  background-color: #282828;
+  color: aliceblue;
+  margin: 0%;
+}
