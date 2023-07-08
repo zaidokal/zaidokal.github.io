@@ -1,0 +1,56 @@
+/* Style the overlay container */
+#overlay {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  /* background-color: rgba(0, 0, 0, 0.9); */
+}
+
+/* Style the navigation menu */
+#overlay nav {
+  background-color: #1a1a1a; /* updated background color */
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#overlay nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#overlay nav li {
+  margin: 1px;
+}
+
+#overlay nav a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff; /* updated text color */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#overlay nav a:hover {
+  background-color: #eee;
+}
+
+/* Show the overlay when the trigger button is clicked */
+.overlay-trigger:checked + #overlay {
+  opacity: 1;
+}
+
+/* Hide the trigger button */
+.overlay-trigger {
+  display: none;
+}
