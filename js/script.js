@@ -1,4 +1,6 @@
 window.onload = function () {
+  let typingSpeed = 50; // Typing speed (milliseconds per character)
+
   script(); // Calls script function
 
   function script() {
@@ -58,8 +60,36 @@ window.onload = function () {
 
     const textElement = document.getElementById("text");
 
-    function updateText(newText) {
-      textElement.innerHTML = newText;
+    function updateText(text, deleteText = false) {
+      if (deleteText) {
+        let currentText = textElement.textContent;
+        let interval = setInterval(function () {
+          if (currentText.length === 0) {
+            clearInterval(interval);
+            changeText(); // Proceed to the next text
+          } else {
+            currentText = currentText.slice(0, -1);
+            textElement.textContent = currentText;
+          }
+        }, typingSpeed);
+      } else {
+        let currentIndex = 0;
+
+        function updateCharacter() {
+          textElement.textContent = text.substring(0, currentIndex + 1);
+          currentIndex++;
+
+          if (currentIndex < text.length) {
+            setTimeout(updateCharacter, typingSpeed); // Delay each character by the typing speed
+          } else {
+            setTimeout(function () {
+              updateText(text, true); // Start deleting the current text after typing it
+            }, 1500); // Delay before deleting the current text
+          }
+        }
+
+        updateCharacter();
+      }
     }
 
     let texts = [
@@ -70,27 +100,21 @@ window.onload = function () {
     ];
     let currentTextIndex = 0;
 
-    function changeText() {
+    function changeText(deleteText = false) {
       let text = texts[currentTextIndex];
-      let currentIndex = 0;
+      updateText(text, deleteText);
 
-      function updateCharacter() {
-        updateText(text.substring(0, currentIndex + 1));
-        currentIndex++;
-
-        if (currentIndex < text.length) {
-          setTimeout(updateCharacter, 50); // Delay each character by 100 milliseconds
-        } else {
-          currentTextIndex = (currentTextIndex + 1) % texts.length;
-          setTimeout(changeText, 800); // Change the text after the entire string has been outputted
-        }
+      if (!deleteText) {
+        currentTextIndex = (currentTextIndex + 1) % texts.length; // Increment the currentTextIndex to proceed to the next text
+      } else {
+        setTimeout(changeText, 3000); // Delay before starting the next text
       }
-
-      updateCharacter();
     }
 
     changeText(); // Start the text changing
   }
+
+  script();
 };
 
 document.addEventListener("DOMContentLoaded", function () {
