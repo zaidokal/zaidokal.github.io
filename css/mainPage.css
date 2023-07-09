@@ -10,27 +10,20 @@
   height: 100vh;
   width: 100%;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   text-align: right;
-  padding: 0;
+  /* padding: 0; */
 
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
 }
 
-.PictureDiv {
+.Picture {
   position: absolute;
   bottom: 0vh;
   left: 5%;
   max-width: 25vw;
-}
-
-.Picture {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 90%;
+  padding: 0%;
 }
 
 .AboutText {
@@ -43,6 +36,9 @@
   height: 60%;
 
   font-size: calc(1vh + 1vw);
+
+  background-color: #0000003d;
+  padding: 1vw;
 }
 
 #text {
@@ -57,7 +53,7 @@
   #AboutDescription {
     /* display: none; */
   }
-  .PictureDiv {
+  .Picture {
     /* position: absolute; */
     bottom: 0%;
     left: -20%;
@@ -98,4 +94,30 @@ li {
 h1 {
   padding-left: 50px;
   font-size: calc(2vh + 2vw);
+}
+
+.contactDiv {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* width: auto; */
+  padding: 10px;
+  margin: 10px;
+  background-color: #0000003d;
+}
+
+.ContactPicDiv {
+  display: flex;
+  align-items: center;
+  justify-content: right; /* Align items to the right */
+}
+
+.ContactPic {
+  width: 3vw;
+  margin-left: 1vw;
+}
+
+.emailIcon {
+  height: 2.5vw;
+  width: auto;
 }
