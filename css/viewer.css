@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.square-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.swiper-slide {
+  width: 15vw;
+  height: 15vw;
+  padding: 1vw;
+  background-color: #d4a024;
+  margin: 1vw;
+  display: inline-block;
+}
+
+.link-wrapper {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
