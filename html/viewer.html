@@ -12,7 +12,7 @@
 
         <div class="square-container">
             <div id="myDiv" class="swiper-slide" data-year="1">
-                <a href="timeline2.html?year=1" class="link-wrapper">
+                <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
                         <span class="timeline-year">Year</span>
                         <h4 class="timeline-title">Title</h4>
@@ -432,7 +432,7 @@
             </div>
         </div>
 
-        <script src="../js/timeline2.js"></script>
+        <script src="../js/timeline.js"></script>
 
 
         <script>
@@ -442,7 +442,7 @@
             // Set the href attribute of each <a> tag dynamically
             linkWrappers.forEach(function (linkWrapper) {
                 var year = linkWrapper.parentElement.dataset.year;
-                linkWrapper.href = "timeline2.html?year=" + year;
+                linkWrapper.href = "timeline.html?year=" + year;
                 linkWrapper.addEventListener("click", goToTimeline);
             });
         </script>

@@ -59,7 +59,7 @@ function goToTimeline() {
   // Set the href attribute of each <a> tag dynamically
   linkWrappers.forEach(function (linkWrapper) {
     var year = linkWrapper.parentElement.dataset.year;
-    linkWrapper.href = "timeline2.html?year=" + year;
+    linkWrapper.href = "timeline.html?year=" + year;
     linkWrapper.addEventListener("click", goToTimeline);
   });
 }
