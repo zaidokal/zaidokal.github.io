@@ -17,6 +17,36 @@ body {
   background-color: #d4a024;
   margin: 1vw;
   display: inline-block;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.swiper-slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.timeline-year {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-text {
+  font-size: 1rem;
+  margin-bottom: 0;
 }
 
 .link-wrapper {
