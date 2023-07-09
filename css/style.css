@@ -50,6 +50,8 @@ body {
 footer {
   position: fixed;
   bottom: 0;
+  right: 0;
+  padding: 5px;
   color: aliceblue;
 
   scroll-snap-align: start;
