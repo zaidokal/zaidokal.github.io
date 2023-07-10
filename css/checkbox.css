@@ -55,6 +55,6 @@ ul li label .icon-box .fa {
 
 #experienceCheckbox,
 #educationCheckbox,
-#projectsCheckbox {
+#projectCheckbox {
   cursor: pointer;
 }
