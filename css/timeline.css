@@ -309,10 +309,8 @@ body {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 200, "opsz" 48;
 }
 
-.homeRedirect:hover {
-  color: #ffb300;
-}
-
+.homeRedirect:hover,
 .viewerRedirect:hover {
   color: #ffb300;
+  background-color: #ffffffaf;
 }
