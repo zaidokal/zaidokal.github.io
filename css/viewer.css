@@ -74,15 +74,18 @@ body {
 .name {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: calc(1.5vh + 1.5vw);
-  padding: 0;
   padding-left: 1vw;
-  margin: 0; /* Add this line */
-  cursor: pointer;
 }
 
 .note {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.fit {
+  height: fit-content;
+  cursor: pointer;
 }
