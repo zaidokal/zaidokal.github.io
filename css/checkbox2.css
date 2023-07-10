@@ -1,0 +1,60 @@
+.checkboxes {
+  display: flex;
+  right: 0;
+  z-index: 9999; /* Set a high z-index value to ensure it appears on top */
+  right: 20px;
+}
+
+ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 10px;
+  width: 210px;
+  background: #ffffff15;
+  box-shadow: -2px -2px 5px white, 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+ul li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  margin: 11px;
+}
+ul li label {
+  position: relative;
+  cursor: pointer;
+}
+ul li label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+ul li label :checked ~ .icon-box {
+  box-shadow: inset -2px -2px 5px white, inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+  color: #d4a024;
+}
+ul li label :checked ~ .icon-box .fa {
+  transform: scale(0.95);
+}
+ul li label .icon-box {
+  width: 40px;
+  height: 40px;
+  background: #ebf5fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px -2px 5px white, 3px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+ul li label .icon-box .fa {
+  font-size: 30px;
+  color: #6a9bd8;
+}
+
+#experienceCheckbox,
+#educationCheckbox,
+#projectCheckbox {
+  cursor: pointer;
+}
