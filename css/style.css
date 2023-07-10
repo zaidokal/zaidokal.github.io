@@ -127,12 +127,12 @@ h1 {
 }
 
 .ContactPic {
-  width: 3vw;
-  margin-left: 1vw;
+  width: 2vw;
+  margin-left: 2vw;
 }
 
 .emailIcon {
-  height: 2.5vw;
+  height: 1.8vw;
   width: auto;
 }
 
@@ -198,4 +198,105 @@ footer {
   footer {
     right: 0%;
   }
+}
+
+/* CSS */
+.redirectButton-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 1px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-right: 1vh;
+}
+
+.redirectButton-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: black;
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.redirectButton-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(0, 3%, 7%) 0%,
+    hsl(340, 100%, 5%) 8%,
+    hsl(340, 100%, 20%) 92%,
+    hsl(342, 100%, 11%) 100%
+  );
+}
+
+.redirectButton-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: #0f0f0f;
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+@media (min-width: 768px) {
+  .redirectButton-front {
+    font-size: 1vw;
+    padding: 0.8vw 3.5vw;
+  }
+}
+
+.redirectButton-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.redirectButton-pushable:hover .redirectButton-front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.redirectButton-pushable:active .redirectButton-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.redirectButton-pushable:hover .redirectButton-shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.redirectButton-pushable:active .redirectButton-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.redirectButton-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.redirectDiv {
+  text-align: center;
+  position: relative;
+  top: 77%;
+  left: 60%;
+  width: fit-content;
 }
