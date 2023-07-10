@@ -314,3 +314,11 @@ body {
   color: #ffb300;
   background-color: #ffffffaf;
 }
+
+.glacier {
+  background-image: url("../Pictures/timelineBackground/bricks.jpeg");
+  background-color: #40167ab2;
+  background-size: cover;
+  background-blend-mode: exclusion;
+  background-repeat: no-repeat;
+}
