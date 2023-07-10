@@ -284,3 +284,17 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
+
+.viewer2 {
+  position: fixed;
+  top: 50px;
+  left: 20px;
+  z-index: 9999; /* Set a high z-index value to ensure it appears on top */
+  background-color: #d4a024;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
