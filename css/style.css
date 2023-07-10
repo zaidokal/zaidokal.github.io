@@ -119,23 +119,6 @@ h1 {
   margin: 0; /* Add this line */
 }
 
-.contactDiv {
-  display: flex;
-  align-items: center;
-  font-size: calc(1.5vh + 1.5vw);
-  padding-right: 1vw; /* Use padding-right instead of padding-left */
-}
-
-.ContactPic {
-  width: 2vw;
-  margin-left: 2vw;
-}
-
-.emailIcon {
-  height: 1.8vw;
-  width: auto;
-}
-
 main {
   margin: 0;
   padding: 0;
@@ -299,4 +282,32 @@ footer {
   top: 77%;
   left: 60%;
   width: fit-content;
+}
+
+.contactDiv {
+  display: flex;
+  align-items: center;
+  font-size: calc(1.5vh + 1.5vw);
+  padding-right: 1vw; /* Use padding-right instead of padding-left */
+}
+
+#emailIcon,
+#linkedinIcon,
+#githubIcon {
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+#emailIcon:hover {
+  color: #fff23e;
+}
+
+#linkedinIcon:hover {
+  color: #00aeff;
+}
+
+#githubIcon:hover {
+  color: #000000;
+  background-color: white;
+  border-radius: 100%;
 }
