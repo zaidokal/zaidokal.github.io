@@ -12,7 +12,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
 
         <script src="https://kit.fontawesome.com/0eab479528.js" crossorigin="anonymous"></script>
-
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
 
 
@@ -206,8 +207,15 @@
                 <div class="swiper-button-prev swiper-button-disabled"></div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
-                <button onclick="window.location.href = '../'" class="viewer">Home</button>
-                <button id="viewSquaresButton" class="viewer2">Viewer</button>
+
+                <button onclick="window.location.href = '../'" class="homeRedirect">
+                    <i class="fa-solid fa-house"></i>
+                </button>
+
+                <button onclick="window.location.href = './viewer.html'" class="viewerRedirect">
+                    <span class="material-symbols-outlined">
+                        apps
+                    </span> </button>
 
                 <div class="checkboxes">
                     <ul>
@@ -239,9 +247,10 @@
                                 </div>
                             </label>
                         </li>
+                    </ul>
+
                 </div>
 
-                </ul>
 
             </div>
         </div>
