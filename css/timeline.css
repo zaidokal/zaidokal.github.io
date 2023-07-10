@@ -118,7 +118,7 @@ body {
   flex-direction: column;
   font-style: italic;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 15px;
   overflow-y: auto; /* Change to auto */
 }
 
@@ -133,7 +133,7 @@ body {
   background: transparent;
   color: #d4a024;
   margin: 10vh;
-  padding: 3px;
+  padding: 1vh;
 }
 
 .timeline .swiper-pagination::-webkit-scrollbar {
@@ -287,7 +287,7 @@ body {
 
 .viewer2 {
   position: fixed;
-  top: 50px;
+  top: 80px;
   left: 20px;
   z-index: 9999; /* Set a high z-index value to ensure it appears on top */
   background-color: #d4a024;
@@ -297,4 +297,32 @@ body {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+}
+
+.checkboxes {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999; /* Set a high z-index value to ensure it appears on top */
+  background-color: #d4a024;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checkbox-icon {
+  cursor: pointer;
+}
+
+.active {
+  color: #ff0000; /* Replace with your preferred color */
+  /* Add any other styling you want for the active checkbox */
+}
+
+.checkbox-icon:hover {
+  color: #ff0000; /* Replace with your preferred color */
+  /* Add any other styling you want for the hover effect */
 }
