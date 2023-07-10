@@ -6,13 +6,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Squares Page</title>
         <link rel="stylesheet" href="../css/viewer.css">
+        <link rel="stylesheet" href="../css/checkbox.css">
+        <script src="https://kit.fontawesome.com/0eab479528.js" crossorigin="anonymous"></script>
+
     </head>
 
     <body>
 
+        <div class="checkboxes">
+            <ul>
+
+                <li>
+                    <label>
+                        <input type="checkbox" name="" id="educationCheckbox" value="education">
+                        <div class="icon-box">
+                            <i id="educationIcon" value="education" class="fas fa-graduation-cap"
+                                aria-hidden="true"></i>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="" id="experienceCheckbox" value="experience">
+                        <div class="icon-box">
+                            <i id="experienceIcon" value="experience" class="fas fa-briefcase" aria-hidden="true"></i>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="" id="projectCheckbox" value="project">
+                        <div class="icon-box">
+                            <i id="projectIcon" value="project" class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+                        </div>
+                    </label>
+                </li>
+        </div>
+
+        </ul>
+
+        </div>
+
         <div class="square-container">
+
             <div class="swiper-slide" id="education"
-                style="background-image: url(../Pictures/timelineBackground/WesternUniversity.png);" id="project"
+                style="background-image: url(../Pictures/timelineBackground/WesternUniversity.png);"
                 data-year="Started University">
                 <a href="" class=" link-wrapper">
                     <div class="swiper-slide-content">
@@ -23,7 +61,7 @@
                 </a>
             </div>
 
-            <div class="swiper-slide" data-year="Data Entry Specialist"
+            <div class="swiper-slide" id="experience" data-year="Data Entry Specialist"
                 style="background-image: url(../Pictures/timelineBackground/WesternUniversity2.jpg);">
                 <a href="" class=" link-wrapper">
                     <div class="swiper-slide-content">
@@ -35,7 +73,7 @@
                 </a>
             </div>
 
-            <div class="swiper-slide" data-year="The Glacier (HW8)">
+            <div class="swiper-slide" id="project" data-year="The Glacier (HW8)">
                 <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
                         <span class="timeline-year">Year</span>
@@ -46,7 +84,7 @@
                 </a>
             </div>
 
-            <div class="swiper-slide" data-year="Projection">
+            <div class="swiper-slide" id="project" data-year="Projection">
                 <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
                         <span class="timeline-year">Year</span>
@@ -57,7 +95,7 @@
                 </a>
             </div>
 
-            <div class="swiper-slide" data-year="Beautiful Flowers">
+            <div class="swiper-slide" id="project" data-year="Beautiful Flowers">
                 <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
                         <span class="timeline-year">Year</span>
@@ -68,7 +106,7 @@
                 </a>
             </div>
 
-            <div class="swiper-slide" data-year="iFashionStore">
+            <div class="swiper-slide" id="project" data-year="iFashionStore">
                 <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
                         <span class="timeline-year">Year</span>
@@ -79,7 +117,7 @@
                 </a>
             </div>
 
-            <div class="swiper-slide" data-year="Hydra Game">
+            <div class="swiper-slide" id="project" data-year="Hydra Game">
                 <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
                         <span class="timeline-year">Year</span>
@@ -90,7 +128,7 @@
                 </a>
             </div>
 
-            <div class="swiper-slide" data-year="Role a Ball">
+            <div class="swiper-slide" id="project" data-year="Role a Ball">
                 <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
                         <span class="timeline-year">Year</span>
@@ -101,7 +139,7 @@
                 </a>
             </div>
 
-            <div class="swiper-slide" data-year="Space-SHUMP-Game">
+            <div class="swiper-slide" id="project" data-year="Space-SHUMP-Game">
                 <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
                         <span class="timeline-year">Year</span>
@@ -112,7 +150,7 @@
                 </a>
             </div>
 
-            <div class="swiper-slide" data-year="Game Scope">
+            <div class="swiper-slide" id="project" data-year="Game Scope">
                 <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
                         <span class="timeline-year">Year</span>
@@ -122,7 +160,7 @@
                     </div>
                 </a>
             </div>
-            <div class="swiper-slide" data-year="Co-Operators"
+            <div class="swiper-slide" id="experience" data-year="Co-Operators"
                 style="background-image: url(../Pictures/timelineBackground/Co-operators.jpg);">
                 <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
@@ -133,7 +171,7 @@
                     </div>
                 </a>
             </div>
-            <div class="swiper-slide" data-year="Intramural Refereeing"
+            <div class="swiper-slide" id="experience" data-year="Intramural Refereeing"
                 style="background-image: url(../Pictures/timelineBackground/mustangsPitch.jpeg);">
                 <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
@@ -144,7 +182,7 @@
                     </div>
                 </a>
             </div>
-            <div class="swiper-slide" data-year="Pokedex">
+            <div class="swiper-slide" id="project" data-year="Pokedex">
                 <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
                         <span class="timeline-year">Year</span>
@@ -154,7 +192,7 @@
                     </div>
                 </a>
             </div>
-            <div class="swiper-slide" data-year="Database Project">
+            <div class="swiper-slide" id="project" data-year="Database Project">
                 <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
                         <span class="timeline-year">Year</span>
@@ -164,7 +202,7 @@
                     </div>
                 </a>
             </div>
-            <div class="swiper-slide" data-year="Music Enthusiast">
+            <div class="swiper-slide" id="project" data-year="Music Enthusiast">
                 <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
                         <span class="timeline-year">Year</span>
@@ -174,7 +212,7 @@
                     </div>
                 </a>
             </div>
-            <div class="swiper-slide" data-year="Calculator">
+            <div class="swiper-slide" id="project" data-year="Calculator">
                 <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
                         <span class="timeline-year">Year</span>
@@ -184,7 +222,7 @@
                     </div>
                 </a>
             </div>
-            <div class="swiper-slide" data-year="Online Tic-Tac-Toe">
+            <div class="swiper-slide" id="project" data-year="Online Tic-Tac-Toe">
                 <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
                         <span class="timeline-year">Year</span>
@@ -194,7 +232,7 @@
                     </div>
                 </a>
             </div>
-            <div class="swiper-slide" data-year="Course Outline Manager">
+            <div class="swiper-slide" id="project" data-year="Course Outline Manager">
                 <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
                         <span class="timeline-year">Year</span>
@@ -204,7 +242,7 @@
                     </div>
                 </a>
             </div>
-            <div class="swiper-slide" data-year="J.D Power"
+            <div class="swiper-slide" id="experience" data-year="J.D Power"
                 style="background-image: url(../Pictures/timelineBackground/JDPower.jpg);">
                 <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
@@ -215,7 +253,7 @@
                     </div>
                 </a>
             </div>
-            <div class="swiper-slide" data-year="Expected Graduation"
+            <div class="swiper-slide" id="education" data-year="Expected Graduation"
                 style="background-image: url(../Pictures/timelineBackground/WesternUniversityEng.jpg);">
                 <a href="" class="link-wrapper">
                     <div class="swiper-slide-content">
