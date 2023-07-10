@@ -2,6 +2,7 @@
 
     <head>
         <link rel="stylesheet" type="text/css" href="../css/timeline.css">
+        <link rel="stylesheet" type="text/css" href="../css/checkbox.css">
 
         <meta charset="UTF-8">
         <title>CodePen Demo</title>
@@ -202,22 +203,38 @@
                 <button id="viewSquaresButton" class="viewer2">Viewer</button>
 
                 <div class="checkboxes">
-                    <input type="checkbox" id="educationCheckbox" value="education" hidden>
-                    <label for="educationCheckbox">
-                        <i id="educationIcon" value="education" class="fas fa-graduation-cap"></i>
-                    </label>
+                    <ul>
 
-                    <input type="checkbox" id="experienceCheckbox" value="experience" hidden>
-                    <label for="experienceCheckbox">
-                        <i id="experienceIcon" value="experience" class="fas fa-briefcase"></i>
-                    </label>
-
-                    <input type="checkbox" id="projectCheckbox" value="project" hidden>
-                    <label for="projectCheckbox">
-                        <i id="projectIcon" value="project" class="fas fa-project-diagram"></i>
-                    </label>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="" id="educationCheckbox" value="education">
+                                <div class="icon-box">
+                                    <i id="educationIcon" value="education" class="fas fa-graduation-cap"
+                                        aria-hidden="true"></i>
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="" id="experienceCheckbox" value="experience">
+                                <div class="icon-box">
+                                    <i id="experienceIcon" value="experience" class="fas fa-briefcase"
+                                        aria-hidden="true"></i>
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="" id="projectCheckbox" value="project">
+                                <div class="icon-box">
+                                    <i id="projectIcon" value="project" class="fas fa-project-diagram"
+                                        aria-hidden="true"></i>
+                                </div>
+                            </label>
+                        </li>
                 </div>
 
+                </ul>
 
 
             </div>
