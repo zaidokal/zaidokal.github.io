@@ -315,10 +315,91 @@ body {
   background-color: #ffffffaf;
 }
 
-.glacier {
-  background-image: url("../Pictures/timelineBackground/bricks.jpeg");
-  background-color: #40167ab2;
+.glacier,
+.projection,
+.beautifulFlowers,
+.iFashionStore,
+.hydraGame,
+.roleABall,
+.spaceShumpGame,
+.gameScope,
+.pokedex,
+.databaseProject,
+.musicEnthusiast,
+.calculator,
+.tic-Tac-Toe,
+.coManager {
   background-size: cover;
   background-blend-mode: exclusion;
   background-repeat: no-repeat;
+}
+
+.glacier {
+  background-image: url("../Pictures/timelineBackground/purpleBlocks.jpg");
+  background-color: #1c053db2;
+}
+
+.projection {
+  background-image: url("../Pictures/timelineBackground/projection.jpg");
+  background-color: #040d3b70;
+}
+
+.beautifulFlowers {
+  background-image: url("../Pictures/timelineBackground/flowers.jpg");
+  background-color: #040d3b70;
+}
+
+.iFashionStore {
+  background-image: url("../Pictures/timelineBackground/store.jpg");
+  background-color: #040d3b70;
+}
+
+.hydraGame {
+  background-image: url("../Pictures/timelineBackground/hydra.jpg");
+  background-color: #040d3b70;
+}
+
+.roleABall {
+  background-image: url("../Pictures/timelineBackground/roleABall.jpg");
+  background-color: #040d3b70;
+}
+
+.spaceShumpGame {
+  background-image: url("../Pictures/timelineBackground/spaceShumpGame.jpg");
+  background-color: #040d3b70;
+}
+
+.gameScope {
+  background-image: url("../Pictures/timelineBackground/soccer.jpg");
+  background-color: #040d3b70;
+}
+
+.pokedex {
+  background-image: url("../Pictures/timelineBackground/pokemon.jpg");
+  background-color: #040d3b70;
+}
+
+.databaseProject {
+  background-image: url("../Pictures/timelineBackground/database.jpg");
+  background-color: #040d3b70;
+}
+
+.musicEnthusiast {
+  background-image: url("../Pictures/timelineBackground/music.jpg");
+  background-color: #040d3b70;
+}
+
+.calculator {
+  background-image: url("../Pictures/timelineBackground/math.jpg");
+  background-color: #040d3b70;
+}
+
+.tic-Tac-Toe {
+  background-image: url("../Pictures/timelineBackground/ticTacToe.jpg");
+  background-color: #040d3b70;
+}
+
+.coManager {
+  background-image: url("../Pictures/timelineBackground/corporate.jpg");
+  background-color: #040d3b70;
 }
