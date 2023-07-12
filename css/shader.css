@@ -1,0 +1,105 @@
+.startedUniversity,
+.dataEntry,
+.glacier,
+.projection,
+.beautifulFlowers,
+.iFashionStore,
+.hydraGame,
+.roleABall,
+.spaceShumpGame,
+.gameScope,
+.co-operators,
+.intramuralRef,
+.pokedex,
+.databaseProject,
+.musicEnthusiast,
+.calculator,
+.tic-Tac-Toe,
+.coManager,
+.JDPower,
+.expectedGraduation {
+  background-color: rgba(0, 0, 0, 0.603);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+}
+
+.startedUniversity {
+  background-image: url("../Pictures/timelineBackground/WesternUniversity.png");
+}
+
+.dataEntry {
+  background-image: url("../Pictures/timelineBackground/WesternUniversity2.jpg");
+}
+
+.glacier {
+  background-image: url("../Pictures/timelineBackground/purpleBlocks.jpg");
+}
+
+.projection {
+  background-image: url("../Pictures/timelineBackground/projection.jpg");
+}
+
+.beautifulFlowers {
+  background-image: url("../Pictures/timelineBackground/flowers.jpg");
+}
+
+.iFashionStore {
+  background-image: url("../Pictures/timelineBackground/store.jpg");
+}
+
+.hydraGame {
+  background-image: url("../Pictures/timelineBackground/hydra.jpg");
+}
+
+.roleABall {
+  background-image: url("../Pictures/timelineBackground/roleABall.jpg");
+}
+
+.spaceShumpGame {
+  background-image: url("../Pictures/timelineBackground/spaceShumpGame.jpg");
+}
+
+.gameScope {
+  background-image: url("../Pictures/timelineBackground/soccer.jpg");
+}
+
+.co-operators {
+  background-image: url("../Pictures/timelineBackground/Co-operators.jpg");
+}
+
+.intramuralRef {
+  background-image: url("../Pictures/timelineBackground/mustangsPitch.jpeg");
+}
+
+.pokedex {
+  background-image: url("../Pictures/timelineBackground/pokemon.jpg");
+}
+
+.databaseProject {
+  background-image: url("../Pictures/timelineBackground/database.jpg");
+}
+
+.musicEnthusiast {
+  background-image: url("../Pictures/timelineBackground/music.jpg");
+}
+
+.calculator {
+  background-image: url("../Pictures/timelineBackground/math.jpg");
+}
+
+.tic-Tac-Toe {
+  background-image: url("../Pictures/timelineBackground/ticTacToe.jpg");
+}
+
+.coManager {
+  background-image: url("../Pictures/timelineBackground/corporate.jpg");
+}
+
+.JDPower {
+  background-image: url("../Pictures/timelineBackground/JDPower.jpg");
+}
+
+.expectedGraduation {
+  background-image: url("../Pictures/timelineBackground/WesternUniversityEng.jpg");
+}
