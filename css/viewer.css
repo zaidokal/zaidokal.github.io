@@ -24,6 +24,8 @@ body {
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
   background-size: cover;
   background-position: center;
+
+  color: aliceblue;
 }
 
 .swiper-slide-content {
