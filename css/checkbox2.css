@@ -1,8 +1,8 @@
 .checkboxes {
   display: flex;
-  right: 0;
+  right: 100px;
   z-index: 9999; /* Set a high z-index value to ensure it appears on top */
-  right: 20px;
+  padding-right: 40px;
 }
 
 ul {
@@ -14,8 +14,8 @@ ul {
   border-radius: 10px;
   padding: 10px;
   width: 210px;
-  background: #ffffff15;
-  box-shadow: -2px -2px 5px white, 3px 3px 5px rgba(0, 0, 0, 0.1);
+  /* background: #ffffff15; */
+  /* box-shadow: -2px -2px 5px white, 3px 3px 5px rgba(0, 0, 0, 0.1); */
 }
 ul li {
   position: relative;
