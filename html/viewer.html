@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/viewer.css">
         <link rel="stylesheet" href="../css/checkbox2.css">
         <link rel="stylesheet" href="../css/shader.css">
+        <link rel="stylesheet" href="../css/scrollbar.css">
 
         <script src="https://kit.fontawesome.com/0eab479528.js" crossorigin="anonymous"></script>
 
@@ -15,264 +16,266 @@
 
     <body>
 
-        <div class="header">
-            <div class="name">
-                <span onclick="window.location.href='../'" class="fit">
-                    Zaid Okal
-                </span>
+        <div class="scroll">
+            <div class="header">
+                <div class="name">
+                    <span onclick="window.location.href='../'" class="fit">
+                        Zaid Okal
+                    </span>
+                </div>
+
+                <div class="note">
+                    Click on any box to view full details
+                </div>
+
+                <div class="checkboxes">
+                    <ul>
+
+                        <li>
+                            <label>
+                                <input type="checkbox" name="" id="educationCheckbox" value="education">
+                                <div class="icon-box">
+                                    <i id="educationIcon" value="education" class="fas fa-graduation-cap"
+                                        aria-hidden="true"></i>
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="" id="experienceCheckbox" value="experience">
+                                <div class="icon-box">
+                                    <i id="experienceIcon" value="experience" class="fas fa-briefcase"
+                                        aria-hidden="true"></i>
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="" id="projectCheckbox" value="project">
+                                <div class="icon-box">
+                                    <i id="projectIcon" value="project" class="fa-solid fa-lightbulb"
+                                        aria-hidden="true"></i>
+                                </div>
+                            </label>
+                        </li>
+
+                    </ul>
+
+                </div>
             </div>
 
-            <div class="note">
-                Click on any box to view full details
-            </div>
+            <div class="square-container">
 
-            <div class="checkboxes">
-                <ul>
+                <div class="swiper-slide startedUniversity" id="education" data-year="Started University">
+                    <a href="" class=" link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">Sep 2020</span>
+                            <h4 class="timeline-title">Started University</h4>
+                            <p class="timeline-text">Description</p>
+                        </div>
+                    </a>
+                </div>
 
-                    <li>
-                        <label>
-                            <input type="checkbox" name="" id="educationCheckbox" value="education">
-                            <div class="icon-box">
-                                <i id="educationIcon" value="education" class="fas fa-graduation-cap"
-                                    aria-hidden="true"></i>
-                            </div>
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input type="checkbox" name="" id="experienceCheckbox" value="experience">
-                            <div class="icon-box">
-                                <i id="experienceIcon" value="experience" class="fas fa-briefcase"
-                                    aria-hidden="true"></i>
-                            </div>
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input type="checkbox" name="" id="projectCheckbox" value="project">
-                            <div class="icon-box">
-                                <i id="projectIcon" value="project" class="fa-solid fa-lightbulb"
-                                    aria-hidden="true"></i>
-                            </div>
-                        </label>
-                    </li>
+                <div class="swiper-slide dataEntry" id="experience" data-year="Data Entry Specialist">
+                    <a href="" class=" link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">Oct 2021 - Apr 2022</span>
+                            <h4 class="timeline-title">Data Entry Specialist</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
 
-                </ul>
+                <div class="swiper-slide glacier" id="project" data-year="The Glacier (HW8)">
+                    <a href="" class="link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">Nov 2021</span>
+                            <h4 class="timeline-title">The Glacier (HW8)</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
 
-            </div>
-        </div>
+                <div class="swiper-slide projection" id="project" data-year="Projection">
+                    <a href="" class="link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">Jan 2022 - Apr 2022</span>
+                            <h4 class="timeline-title">Projection</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
 
-        <div class="square-container">
+                <div class="swiper-slide beautifulFlowers" id="project" data-year="Beautiful Flowers">
+                    <a href="" class="link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">Jan 2022</span>
+                            <h4 class="timeline-title">Beautiful Flowers</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
 
-            <div class="swiper-slide startedUniversity" id="education" data-year="Started University">
-                <a href="" class=" link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">Sep 2020</span>
-                        <h4 class="timeline-title">Started University</h4>
-                        <p class="timeline-text">Description</p>
-                    </div>
-                </a>
-            </div>
+                <div class="swiper-slide iFashionStore" id="project" data-year="iFashionStore">
+                    <a href="" class="link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">Feb 2022 - Apr 2022</span>
+                            <h4 class="timeline-title">iFashionStore</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
 
-            <div class="swiper-slide dataEntry" id="experience" data-year="Data Entry Specialist">
-                <a href="" class=" link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">Oct 2021 - Apr 2022</span>
-                        <h4 class="timeline-title">Data Entry Specialist</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
-            </div>
+                <div class="swiper-slide hydraGame" id="project" data-year="Hydra Game">
+                    <a href="" class="link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">Feb 2022</span>
+                            <h4 class="timeline-title">Hydra Game</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
 
-            <div class="swiper-slide glacier" id="project" data-year="The Glacier (HW8)">
-                <a href="" class="link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">Nov 2021</span>
-                        <h4 class="timeline-title">The Glacier (HW8)</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
-            </div>
+                <div class="swiper-slide roleABall" id="project" data-year="Role a Ball">
+                    <a href="" class="link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">Feb 2022</span>
+                            <h4 class="timeline-title">Role a Ball</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
 
-            <div class="swiper-slide projection" id="project" data-year="Projection">
-                <a href="" class="link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">Jan 2022 - Apr 2022</span>
-                        <h4 class="timeline-title">Projection</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
-            </div>
+                <div class="swiper-slide spaceShumpGame" id="project" data-year="Space-SHUMP-Game">
+                    <a href="" class="link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">Mar 2022</span>
+                            <h4 class="timeline-title">Space-SHUMP-Game</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
 
-            <div class="swiper-slide beautifulFlowers" id="project" data-year="Beautiful Flowers">
-                <a href="" class="link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">Jan 2022</span>
-                        <h4 class="timeline-title">Beautiful Flowers</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="swiper-slide iFashionStore" id="project" data-year="iFashionStore">
-                <a href="" class="link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">Feb 2022 - Apr 2022</span>
-                        <h4 class="timeline-title">iFashionStore</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="swiper-slide hydraGame" id="project" data-year="Hydra Game">
-                <a href="" class="link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">Feb 2022</span>
-                        <h4 class="timeline-title">Hydra Game</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="swiper-slide roleABall" id="project" data-year="Role a Ball">
-                <a href="" class="link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">Feb 2022</span>
-                        <h4 class="timeline-title">Role a Ball</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="swiper-slide spaceShumpGame" id="project" data-year="Space-SHUMP-Game">
-                <a href="" class="link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">Mar 2022</span>
-                        <h4 class="timeline-title">Space-SHUMP-Game</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="swiper-slide gameScope" id="project" data-year="Game Scope">
-                <a href="" class="link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">Mar 2022</span>
-                        <h4 class="timeline-title">Game Scope</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide co-operators" id="experience" data-year="Co-Operators"
-                style="background-image: url(../Pictures/timelineBackground/Co-operators.jpg);">
-                <a href="" class="link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">May 2022 - Aug 2022</span>
-                        <h4 class="timeline-title">Co-Operators</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide intramuralRef" id="experience" data-year="Intramural Refereeing"
-                style="background-image: url(../Pictures/timelineBackground/mustangsPitch.jpeg);">
-                <a href="" class="link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">May 2022 = Present</span>
-                        <h4 class="timeline-title">Intramural Refereeing</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide pokedex" id="project" data-year="Pokedex">
-                <a href="" class="link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">Oct 2022</span>
-                        <h4 class="timeline-title">Pokedex</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide databaseProject" id="project" data-year="Database Project">
-                <a href="" class="link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">Nov 2022</span>
-                        <h4 class="timeline-title">Database Project</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide musicEnthusiast" id="project" data-year="Music Enthusiast">
-                <a href="" class="link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">Nov 2022</span>
-                        <h4 class="timeline-title">Music Enthusiast</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide calculator" id="project" data-year="Calculator">
-                <a href="" class="link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">Mar 2023</span>
-                        <h4 class="timeline-title">Calculator</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide tic-Tac-Toe" id="project" data-year="Online Tic-Tac-Toe">
-                <a href="" class="link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">Apr 2023</span>
-                        <h4 class="timeline-title">Online Tic-Tac-Toe</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide coManager" id="project" data-year="Course Outline Manager">
-                <a href="" class="link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">Jan 2023 - Apr 2023</span>
-                        <h4 class="timeline-title">Course Outline Manager</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide JDPower" id="experience" data-year="J.D Power">
-                <a href="" class="link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">May 2023 - Present</span>
-                        <h4 class="timeline-title">J.D Power</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide expectedGraduation" id="education" data-year="Expected Graduation">
-                <a href="" class="link-wrapper">
-                    <div class="swiper-slide-content">
-                        <span class="timeline-year">Apr 2025</span>
-                        <h4 class="timeline-title">Expected Graduation</h4>
-                        <p class="timeline-text">Description
-                        </p>
-                    </div>
-                </a>
+                <div class="swiper-slide gameScope" id="project" data-year="Game Scope">
+                    <a href="" class="link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">Mar 2022</span>
+                            <h4 class="timeline-title">Game Scope</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide co-operators" id="experience" data-year="Co-Operators"
+                    style="background-image: url(../Pictures/timelineBackground/Co-operators.jpg);">
+                    <a href="" class="link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">May 2022 - Aug 2022</span>
+                            <h4 class="timeline-title">Co-Operators</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide intramuralRef" id="experience" data-year="Intramural Refereeing"
+                    style="background-image: url(../Pictures/timelineBackground/mustangsPitch.jpeg);">
+                    <a href="" class="link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">May 2022 = Present</span>
+                            <h4 class="timeline-title">Intramural Refereeing</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide pokedex" id="project" data-year="Pokedex">
+                    <a href="" class="link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">Oct 2022</span>
+                            <h4 class="timeline-title">Pokedex</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide databaseProject" id="project" data-year="Database Project">
+                    <a href="" class="link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">Nov 2022</span>
+                            <h4 class="timeline-title">Database Project</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide musicEnthusiast" id="project" data-year="Music Enthusiast">
+                    <a href="" class="link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">Nov 2022</span>
+                            <h4 class="timeline-title">Music Enthusiast</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide calculator" id="project" data-year="Calculator">
+                    <a href="" class="link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">Mar 2023</span>
+                            <h4 class="timeline-title">Calculator</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide tic-Tac-Toe" id="project" data-year="Online Tic-Tac-Toe">
+                    <a href="" class="link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">Apr 2023</span>
+                            <h4 class="timeline-title">Online Tic-Tac-Toe</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide coManager" id="project" data-year="Course Outline Manager">
+                    <a href="" class="link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">Jan 2023 - Apr 2023</span>
+                            <h4 class="timeline-title">Course Outline Manager</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide JDPower" id="experience" data-year="J.D Power">
+                    <a href="" class="link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">May 2023 - Present</span>
+                            <h4 class="timeline-title">J.D Power</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide expectedGraduation" id="education" data-year="Expected Graduation">
+                    <a href="" class="link-wrapper">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">Apr 2025</span>
+                            <h4 class="timeline-title">Expected Graduation</h4>
+                            <p class="timeline-text">Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
 
