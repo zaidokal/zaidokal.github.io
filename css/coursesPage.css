@@ -1,18 +1,3 @@
-/* Courses */
-.Courses {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2%;
-  margin: 2%;
-  scroll-snap-align: start;
-
-  /* min-height: 100vh; */
-}
-
-#CoursesTitle {
-  flex-basis: 100%;
-}
-
 #courses {
   /* white-space: pre-wrap; */
   /* background-color: #4d8bc5; */
@@ -38,11 +23,4 @@ th {
   border: 1px solid black;
   padding: 5px;
   border-color: rgb(255, 255, 255);
-}
-
-/* Body */
-body {
-  background-color: #282828;
-  color: aliceblue;
-  margin: 0%;
 }

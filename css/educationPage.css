@@ -1,30 +1,50 @@
-/* Education */
-.education {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2%;
-  margin: 2%;
-  scroll-snap-align: start;
-
-  /* min-height: 100vh; */
-}
-
-#educationTitle {
-  flex-basis: 100%;
-}
-
-#education {
-  background: linear-gradient(135deg, #0b2238, #1a3865);
-  border-radius: 20px;
-  width: 20vw;
-  margin: 2%;
-  padding: 2%;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-}
-
 /* Body */
 body {
   background-color: #282828;
   color: aliceblue;
   margin: 0%;
+  padding: 0%;
+}
+
+/* Extracurriculars */
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  /* scroll-snap-align: start; */
+
+  /* height: 100vh;
+  width: 100vw; */
+
+  display: flex;
+}
+
+.education {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../Pictures/timelineBackground/WesternUniversityEng.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.westernIcon {
+  height: 120px;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+
+#education {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+
+  width: 900px;
+  height: 60%;
+
+  font-size: calc(1vh + 1vw);
+
+  background-color: #00000071;
+  padding: 1vw;
 }
