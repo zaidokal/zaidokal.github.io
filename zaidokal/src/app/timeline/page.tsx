@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import TimelineItem from "@/components/TimelineItem";
 
 export default function TimelinePage() {
   return (
