@@ -31,7 +31,7 @@ export default function Header() {
         />
 
         <RedirectButton
-          href="/documents/Zaid Resume.pdf"
+          href="./documents/Zaid Resume.pdf"
           icon={<FontAwesomeIcon icon={faFileInvoice} className="mr-2" />}
           text="Resume"
           download
