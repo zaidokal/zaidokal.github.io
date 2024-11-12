@@ -25,7 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${KellySlab.variable} antialiased`}>{children}</body>
+      <body
+        className={`${KellySlab.variable} ${KodeMono.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

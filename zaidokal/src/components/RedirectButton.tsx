@@ -1,7 +1,6 @@
 import { ReactNode } from "react";
 import Link from "next/link";
 import styles from "./RedirectButton.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Ensure this import is present
 
 interface RedirectButtonProps {
   href: string;
@@ -36,7 +35,6 @@ export default function RedirectButton({
   }
 
   if (href.startsWith("http")) {
-    // External link
     return (
       <a href={href} target="_blank" rel="noopener noreferrer">
         {buttonContent}
@@ -44,6 +42,5 @@ export default function RedirectButton({
     );
   }
 
-  // Internal link
   return <Link href={href}>{buttonContent}</Link>;
 }

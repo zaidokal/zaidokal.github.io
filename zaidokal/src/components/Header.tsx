@@ -9,13 +9,14 @@ import {
   faGraduationCap,
   faFileInvoice,
 } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <header className="flex justify-between items-center mx-auto my-6 w-full max-w-6xl p-5 text-[40px] bg-white bg-opacity-20 rounded-[45px] font-[KodeMono]">
-      <a href="/" className="ml-6">
+      <Link href="/" className="ml-6">
         <div className="hover:text-gray-400">Zaid Okal</div>
-      </a>
+      </Link>
       <div className="space-x-4">
         <RedirectButton
           href="/timeline"
@@ -38,18 +39,24 @@ export default function Header() {
       </div>
 
       <div className="space-x-4 mr-6">
-        <a href="mailto:zaidokal@gmail.com" className="hover:text-yellow-400">
+        <Link
+          href="mailto:zaidokal@gmail.com"
+          className="hover:text-yellow-400"
+        >
           <FontAwesomeIcon icon={faEnvelope} />
-        </a>
-        <a
+        </Link>
+        <Link
           href="https://www.linkedin.com/in/zaidokal/"
           className="hover:text-blue-400"
         >
           <FontAwesomeIcon icon={faLinkedin} />
-        </a>
-        <a href="https://github.com/zaidokal" className="hover:text-gray-600">
+        </Link>
+        <Link
+          href="https://github.com/zaidokal"
+          className="hover:text-gray-600"
+        >
           <FontAwesomeIcon icon={faGithub} />
-        </a>
+        </Link>
       </div>
     </header>
   );
