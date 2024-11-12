@@ -15,15 +15,12 @@ export default function TimelinePage() {
       title: "Internship at XYZ Corp",
       description: "Worked as a software development intern.",
     },
-    // Add more events as needed
   ];
 
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* Header */}
       <Header />
 
-      {/* Main Content */}
       <main className="p-4">
         <h1 className="text-2xl font-bold mb-4">Timeline</h1>
         <div className="timeline">
@@ -52,7 +49,6 @@ export default function TimelinePage() {
         ))}
       </div>
 
-      {/* Footer */}
       <Footer />
     </div>
   );
