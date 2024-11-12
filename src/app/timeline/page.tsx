@@ -1,5 +1,5 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/Desktop/Components/Header";
+import Footer from "@/components/Desktop/Components/Footer";
 
 export default function TimelinePage() {
   return (

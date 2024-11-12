@@ -3,7 +3,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import RedirectButton from "@/components/RedirectButton";
+import RedirectButton from "./RedirectButton";
 import {
   faTimeline,
   faGraduationCap,
