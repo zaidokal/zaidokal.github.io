@@ -20,10 +20,8 @@ export default function RedirectButton({
       <span className={styles.redirectButtonShadow}></span>
       <span className={styles.redirectButtonEdge}></span>
       <span className={`${styles.redirectButtonFront} text`}>
-        <span className="flex items-center gap-2">
-          <span className="w-7 h-7 inline-block">{icon}</span>
-          {text}
-        </span>
+        {icon}
+        {text}
       </span>
     </button>
   );
@@ -38,7 +36,7 @@ export default function RedirectButton({
 
   if (href.startsWith("http")) {
     return (
-      <a href={href} rel="noopener noreferrer">
+      <a href={href} target="_blank" rel="noopener noreferrer">
         {buttonContent}
       </a>
     );

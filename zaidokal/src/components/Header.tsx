@@ -9,14 +9,15 @@ import {
   faGraduationCap,
   faFileInvoice,
 } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center mx-auto my-[24px] w-[1200px] max-w-[1200px] p-[20px] text-[40px] bg-white bg-opacity-20 rounded-[45px] font-[var(--font-KodeMono)] min-h-[80px]">
-      <a href="/" className="ml-[24px]">
+    <header className="flex justify-between items-center mx-auto my-6 w-full max-w-6xl p-5 text-[40px] bg-white bg-opacity-20 rounded-[45px] font-[KodeMono]">
+      <Link href="/" className="ml-6">
         <div className="hover:text-gray-400">Zaid Okal</div>
-      </a>
-      <div className="space-x-[16px] flex items-center">
+      </Link>
+      <div className="space-x-4">
         <RedirectButton
           href="/timeline"
           icon={<FontAwesomeIcon icon={faTimeline} className="mr-2" />}
@@ -37,25 +38,25 @@ export default function Header() {
         />
       </div>
 
-      <div className="space-x-[16px] mr-[24px] flex items-center">
-        <a
+      <div className="space-x-4 mr-6">
+        <Link
           href="mailto:zaidokal@gmail.com"
-          className="hover:text-yellow-400 w-[35px]"
+          className="hover:text-yellow-400"
         >
           <FontAwesomeIcon icon={faEnvelope} />
-        </a>
-        <a
+        </Link>
+        <Link
           href="https://www.linkedin.com/in/zaidokal/"
-          className="hover:text-blue-400 w-[35px]"
+          className="hover:text-blue-400"
         >
           <FontAwesomeIcon icon={faLinkedin} />
-        </a>
-        <a
+        </Link>
+        <Link
           href="https://github.com/zaidokal"
-          className="hover:text-gray-600 w-[35px]"
+          className="hover:text-gray-600"
         >
           <FontAwesomeIcon icon={faGithub} />
-        </a>
+        </Link>
       </div>
     </header>
   );
