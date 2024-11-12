@@ -1,9 +1,13 @@
-// import type { NextConfig } from "next";
+import type { NextConfig } from "next";
 
-// const nextConfig: NextConfig = {
-//   output: "export",
-//   distDir: "dist",
-//   images: { unoptimized: true },
-// };
+const isProd = process.env.NODE_ENV === "production";
 
-// export default nextConfig;
+const nextConfig: NextConfig = {
+  output: "export",
+  distDir: "dist",
+  images: { unoptimized: true },
+  basePath: isProd ? "/zaidokal.github.io" : "",
+  assetPrefix: isProd ? "/zaidokal.github.io/" : "",
+};
+
+export default nextConfig;
