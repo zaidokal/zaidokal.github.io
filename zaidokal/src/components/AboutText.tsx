@@ -43,13 +43,14 @@ export default function AboutText() {
   }, []);
 
   return (
-    <div className="w-[800px] bg-black bg-opacity-40 md:p-4 text-white rounded-[40px]">
-      <h1 className="text-xl md:text-5xl mb-1 md:mb-2">
-        Hey, I'm <span className="text-red-500">{displayText}</span>
+    <div className="w-[800px] bg-black bg-opacity-55 p-8 md:p-10 text-white rounded-[40px] space-y-6">
+      <h1 className="text-l md:text-4xl mb-3 md:mb-4 font-[KodeMono]">
+        {"Hey, I'm "}
+        <span className="text-red-500">{displayText}</span>
       </h1>
-      <ul className="list-none md:space-y-3 text-[20px]">
+      <ul className="list-none md:space-y-6 text-[24px]">
         <li>
-          I am currently in my third year studying software engineering at
+          I am currently in my final year studying software engineering at
           Western University.
         </li>
         <li>

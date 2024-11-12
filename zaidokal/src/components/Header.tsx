@@ -12,7 +12,7 @@ import {
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center mx-auto my-6 w-full max-w-6xl p-5 text-[40px] bg-white bg-opacity-20 rounded-[45px]">
+    <header className="flex justify-between items-center mx-auto my-6 w-full max-w-6xl p-5 text-[40px] bg-white bg-opacity-20 rounded-[45px] font-[KodeMono]">
       <a href="/" className="ml-6">
         <div className="hover:text-gray-400">Zaid Okal</div>
       </a>
