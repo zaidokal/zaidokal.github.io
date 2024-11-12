@@ -16,8 +16,8 @@ export default function HomePage() {
       <div className="flex flex-1 items-center justify-center overflow-auto gap-20">
         <div className="">
           <Image
-            src="./Pictures/ProfilePic.jpeg"
-            alt="Image of Zaid"
+            src="/Pictures/ProfilePic.jpeg"
+            alt="Profile Picture of Zaid"
             width={700}
             height={700}
             className="rounded-[80px]"
