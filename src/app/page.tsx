@@ -1,32 +1,31 @@
 "use client";
 
-import Image from "next/image";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import AboutText from "@/components/AboutText";
+import { useState, useEffect } from "react";
+import DesktopHomePage from "@/app/desktop/homepage/page";
+import MobileHomePage from "@/app/mobile/homepage/page";
 
-export default function HomePage() {
-  return (
-    <main
-      className="flex flex-col h-screen w-full bg-cover bg-no-repeat bg-center"
-      style={{ backgroundImage: "url(/Pictures/BackPic.jpg)" }}
-    >
-      <Header />
+export default function ClientHomePage() {
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
-      <div className="flex flex-1 items-center justify-center overflow-auto gap-20">
-        <div className="">
-          <Image
-            src="./Pictures/ProfilePic.jpeg"
-            alt="Image of Zaid"
-            width={700}
-            height={700}
-            className="rounded-[80px]"
-          />
-        </div>
-        <AboutText />
+  useEffect(() => {
+    const userAgent =
+      typeof navigator === "undefined" ? "" : navigator.userAgent;
+
+    const isMobileDevice =
+      /Mobile|Android|BlackBerry|iPhone|iPad|iPad Pro|iPad Air|iPod|Opera Mini|IEMobile|WPDesktop/i.test(
+        userAgent
+      );
+
+    setIsMobile(isMobileDevice);
+  }, []);
+
+  if (isMobile === null) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <p>Loading...</p>
       </div>
+    );
+  }
 
-      <Footer />
-    </main>
-  );
+  return isMobile ? <MobileHomePage /> : <DesktopHomePage />;
 }
