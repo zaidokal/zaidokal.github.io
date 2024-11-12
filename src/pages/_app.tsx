@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import DesktopLayout from "@/layouts/DesktopLayout";
 import MobileLayout from "@/layouts/MobileLayout";
-import "@/styles/globals.css";
+import "../app/globals.css";
 import type { AppProps } from "next/app";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
