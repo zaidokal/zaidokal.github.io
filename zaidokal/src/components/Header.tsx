@@ -12,11 +12,11 @@ import {
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center mx-auto my-6 w-full max-w-6xl p-5 text-[40px] bg-white bg-opacity-20 rounded-[45px] font-[KodeMono]">
-      <a href="/" className="ml-6">
+    <header className="flex justify-between items-center mx-auto my-[24px] w-[1200px] max-w-[1200px] p-[20px] text-[40px] bg-white bg-opacity-20 rounded-[45px] font-[var(--font-KodeMono)] min-h-[80px]">
+      <a href="/" className="ml-[24px]">
         <div className="hover:text-gray-400">Zaid Okal</div>
       </a>
-      <div className="space-x-4">
+      <div className="space-x-[16px] flex items-center">
         <RedirectButton
           href="/timeline"
           icon={<FontAwesomeIcon icon={faTimeline} className="mr-2" />}
@@ -37,17 +37,23 @@ export default function Header() {
         />
       </div>
 
-      <div className="space-x-4 mr-6">
-        <a href="mailto:zaidokal@gmail.com" className="hover:text-yellow-400">
+      <div className="space-x-[16px] mr-[24px] flex items-center">
+        <a
+          href="mailto:zaidokal@gmail.com"
+          className="hover:text-yellow-400 w-[35px]"
+        >
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
         <a
           href="https://www.linkedin.com/in/zaidokal/"
-          className="hover:text-blue-400"
+          className="hover:text-blue-400 w-[35px]"
         >
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="https://github.com/zaidokal" className="hover:text-gray-600">
+        <a
+          href="https://github.com/zaidokal"
+          className="hover:text-gray-600 w-[35px]"
+        >
           <FontAwesomeIcon icon={faGithub} />
         </a>
       </div>
