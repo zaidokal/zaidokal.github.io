@@ -1,8 +1,8 @@
 "use client";
 
-import Header from "@/components/Mobile/MobileComponents/Header";
-import Footer from "@/components/Mobile/MobileComponents/Footer";
-import AboutText from "@/components/Mobile/MobileComponents/AboutText";
+import Header from "@/components/Mobile/Header";
+import Footer from "@/components/Mobile/Footer";
+import AboutText from "@/components/Mobile/AboutText";
 import Image from "next/image";
 
 export default function MobileHomePage() {

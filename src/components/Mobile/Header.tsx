@@ -32,7 +32,7 @@ export default function Header() {
         <div className="absolute right-5 top-16 bg-black bg-opacity-90 rounded-[20px] shadow-lg p-5 flex flex-col space-y-4 text-[14px] w-[170px]">
           <div className="py-2 pl-2 pr-4 rounded-lg hover:bg-gray-500 transition duration-200">
             <Link
-              href="/timeline"
+              href="/mobile/timeline"
               className="block text-white flex items-center"
             >
               <FontAwesomeIcon icon={faTimeline} className="mr-2" /> Timeline
@@ -40,7 +40,7 @@ export default function Header() {
           </div>
           <div className="py-2 pl-2 pr-4 rounded-lg hover:bg-gray-500 transition duration-200">
             <Link
-              href="/education"
+              href="/mobile/education"
               className="block text-white flex items-center"
             >
               <FontAwesomeIcon icon={faGraduationCap} className="mr-2" />{" "}
@@ -49,7 +49,8 @@ export default function Header() {
           </div>
           <div className="py-2 pl-2 pr-4 rounded-lg hover:bg-gray-500 transition duration-200">
             <Link
-              href="./PDFs/Zaid Resume.pdf"
+              href="/PDFs/Zaid Resume.pdf"
+              download
               className="block text-white flex items-center"
             >
               <FontAwesomeIcon icon={faFileInvoice} className="mr-2" /> Resume

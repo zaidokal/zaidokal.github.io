@@ -1,8 +1,8 @@
 "use client";
 
-import Header from "@/components/Desktop/Components/Header";
-import Footer from "@/components/Desktop/Components/Footer";
-import AboutText from "@/components/Desktop/Components/AboutText";
+import Header from "@/components/Desktop/Header";
+import Footer from "@/components/Desktop/Footer";
+import AboutText from "@/components/Desktop/AboutText";
 import Image from "next/image";
 
 export default function DesktopHomePage() {

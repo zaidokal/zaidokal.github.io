@@ -19,19 +19,19 @@ export default function Header() {
       </Link>
       <div className="space-x-4">
         <RedirectButton
-          href="/timeline"
+          href="/desktop/timeline"
           icon={<FontAwesomeIcon icon={faTimeline} className="mr-2" />}
           text="Timeline"
         />
 
         <RedirectButton
-          href="/education"
+          href="/desktop/education"
           icon={<FontAwesomeIcon icon={faGraduationCap} className="mr-2" />}
           text="Education"
         />
 
         <RedirectButton
-          href="./PDFs/Zaid Resume.pdf"
+          href="/PDFs/Zaid Resume.pdf"
           icon={<FontAwesomeIcon icon={faFileInvoice} className="mr-2" />}
           text="Resume"
           download
@@ -48,12 +48,16 @@ export default function Header() {
         <Link
           href="https://www.linkedin.com/in/zaidokal/"
           className="hover:text-blue-400"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faLinkedin} />
         </Link>
         <Link
           href="https://github.com/zaidokal"
           className="hover:text-gray-600"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faGithub} />
         </Link>
