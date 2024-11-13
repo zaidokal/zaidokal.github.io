@@ -2,7 +2,6 @@ import React from "react";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 
-// Import components
 const DesktopTimelinePage = dynamic(
   () => import("@/components/Desktop/DesktopTimelinePage")
 );

@@ -11,11 +11,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
-// components/Header.tsx
 import React from "react";
 
 const DesktopHeader: React.FC = React.memo(() => {
-  // Header content
   return (
     <header className="flex justify-between items-center mx-auto my-6 w-full max-w-6xl p-5 text-[40px] bg-white bg-opacity-20 rounded-[45px] font-[KodeMono]">
       <Link href="/" className="ml-6">
