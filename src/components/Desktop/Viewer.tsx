@@ -178,7 +178,7 @@ const Viewer: React.FC = () => {
 
       <div
         className="fixed h-[70vh] w-64 p-4 flex flex-col items-center z-40"
-        style={{ right: "20%", top: "50%", transform: "translateY(-50%)" }}
+        style={{ right: "10%", top: "50%", transform: "translateY(-50%)" }}
       >
         <div className="flex space-x-2 mb-4">
           <button
