@@ -1,0 +1,162 @@
+[
+  {
+    "id": "1",
+    "year": "Sep 2020",
+    "title": "Started University",
+    "description": "Started my engineering journey at Western University, diving into the fundamentals and exploring the field.",
+    "category": "education",
+    "image": "/Pictures/Timeline/WesternUniversity.png"
+  },
+  {
+    "id": "2",
+    "year": "Oct 2021 - Apr 2022",
+    "title": "Research Assistant",
+    "description": "Worked as a Research Assistant in Advancement Services, handling data entry, managing projects for data accuracy, and supporting scheduling and software tools.",
+    "category": "experience",
+    "image": "/Pictures/Timeline/WesternUniversity2.jpg"
+  },
+  {
+    "id": "3",
+    "year": "Nov 2021",
+    "title": "The Glacier (HW8)",
+    "description": "A water intake tracker with a Node.js backend and React frontend, featuring real-time hydration monitoring and a dynamic, responsive UI.",
+    "category": "project",
+    "image": "/Pictures/Timeline/purpleBlocks.jpg"
+  },
+  {
+    "id": "4",
+    "year": "Jan 2022 - Apr 2022",
+    "title": "Projection",
+    "description": "An open-world RPG in Unity with AI-driven boss battles, procedurally generated terrains, and a dynamic mission tracking system.",
+    "category": "project",
+    "image": "/Pictures/Timeline/projection.jpg"
+  },
+  {
+    "id": "5",
+    "year": "Jan 2022",
+    "title": "Beautiful Flowers",
+    "description": "Description",
+    "category": "project",
+    "image": "/Pictures/Timeline/flowers.jpg"
+  },
+  {
+    "id": "6",
+    "year": "Feb 2022 - Apr 2022",
+    "title": "iFashionStore",
+    "description": "An online storefront with JavaFX and Java, hosted on AWS, using SQL Server for database management. Designed with use case modeling and an analysis object model.",
+    "category": "project",
+    "image": "/Pictures/Timeline/store.jpg"
+  },
+  {
+    "id": "7",
+    "year": "Feb 2022",
+    "title": "Hydra Game",
+    "description": "Description",
+    "category": "project",
+    "image": "/Pictures/Timeline/hydra.jpg"
+  },
+  {
+    "id": "8",
+    "year": "Feb 2022",
+    "title": "Role a Ball",
+    "description": "A 3D Unity game with a collectibles system, utilizing Unity libraries and custom 3D models.",
+    "category": "project",
+    "image": "/Pictures/Timeline/roleABall.jpg"
+  },
+  {
+    "id": "9",
+    "year": "Mar 2022",
+    "title": "Space-SHUMP-Game",
+    "description": "Description",
+    "category": "project",
+    "image": "/Pictures/Timeline/spaceShumpGame.jpg"
+  },
+  {
+    "id": "10",
+    "year": "Mar 2022",
+    "title": "Game Scope",
+    "description": "Description",
+    "category": "project",
+    "image": "/Pictures/Timeline/soccer.jpg"
+  },
+  {
+    "id": "11",
+    "year": "May 2022 - Aug 2022",
+    "title": "Co-Operators",
+    "description": "Diagnosed complex database issues and optimized client registration processes, boosting client satisfaction by 15% and registrations by 26%.",
+    "category": "experience",
+    "image": "/Pictures/Timeline/Co-operators.jpg"
+  },
+  {
+    "id": "12",
+    "year": "May 2022 - Present",
+    "title": "Intramural Refereeing",
+    "description": "Maintained play standards, enforced rules, resolved infractions, and coordinated with players, officials, and facility managers.",
+    "category": "experience",
+    "image": "/Pictures/Timeline/mustangsPitch.jpeg"
+  },
+  {
+    "id": "13",
+    "year": "Oct 2022",
+    "title": "Pokedex",
+    "description": "Description",
+    "category": "project",
+    "image": "/Pictures/Timeline/pokemon.jpg"
+  },
+  {
+    "id": "14",
+    "year": "Nov 2022",
+    "title": "Database Project",
+    "description": "Description",
+    "category": "project",
+    "image": "/Pictures/Timeline/database.jpg"
+  },
+  {
+    "id": "15",
+    "year": "Nov 2022",
+    "title": "Music Enthusiast",
+    "description": "A RESTful API with Node.js and Express for music data retrieval, paired with a responsive React frontend, featuring caching and state management for enhanced performance and scalability.",
+    "category": "project",
+    "image": "/Pictures/Timeline/music.jpg"
+  },
+  {
+    "id": "16",
+    "year": "Mar 2023",
+    "title": "Calculator",
+    "description": "Description",
+    "category": "project",
+    "image": "/Pictures/Timeline/math.jpg"
+  },
+  {
+    "id": "17",
+    "year": "Apr 2023",
+    "title": "Online Tic-Tac-Toe",
+    "description": "Description",
+    "category": "project",
+    "image": "/Pictures/Timeline/ticTacToe.jpg"
+  },
+  {
+    "id": "18",
+    "year": "Jan 2023 - Apr 2023",
+    "title": "CourseFlow",
+    "description": "A MERN stack platform for instructors with dynamic CRUD operations, real-time updates, version control, and optimized for scalability and fast data retrieval using GCP.",
+    "category": "project",
+    "image": "/Pictures/Timeline/corporate.jpg"
+  },
+  {
+    "id": "19",
+    "year": "May 2023 - Present",
+    "title": "J.D Power",
+    "description": "Engineered Java-based automation utilities, led migration to Playwright, architected containerized frameworks, developed integration test suites, and accelerated project delivery, earning multiple awards and recognition as a top intern.",
+    "category": "experience",
+    "image": "/Pictures/Timeline/JDPower.jpg"
+  },
+  {
+    "id": "20",
+    "year": "Apr 2025",
+    "title": "Expected Graduation",
+    "description": "Description",
+    "category": "education",
+    "image": "/Pictures/Timeline/WesternUniversityEng.jpg"
+  }
+]
