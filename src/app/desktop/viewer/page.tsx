@@ -126,7 +126,6 @@ const Viewer: React.FC = () => {
     }
   }, [handleScroll]);
 
-  // Scroll to the initial item when data is ready
   useEffect(() => {
     if (filteredData.length > 0) {
       let initialIndex = 0;
@@ -142,7 +141,6 @@ const Viewer: React.FC = () => {
     }
   }, [filteredData, queryId]);
 
-  // Scroll the titles list to keep the highlighted item in view
   useEffect(() => {
     if (titlesListRef.current && titleItemRefs.current[currentIndex]) {
       const container = titlesListRef.current;
@@ -152,13 +150,11 @@ const Viewer: React.FC = () => {
       const itemRect = item.getBoundingClientRect();
 
       if (itemRect.top < containerRect.top) {
-        // Item is above the visible area
         container.scrollBy({
           top: itemRect.top - containerRect.top,
           behavior: "smooth",
         });
       } else if (itemRect.bottom > containerRect.bottom) {
-        // Item is below the visible area
         container.scrollBy({
           top: itemRect.bottom - containerRect.bottom,
           behavior: "smooth",
@@ -172,22 +168,18 @@ const Viewer: React.FC = () => {
       ref={timelineContainerRef}
       className="relative h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth scrollbar-hide pt-[100px] pb-[60px]"
     >
-      {/* Header Overlay */}
       <div className="fixed top-0 left-0 w-full z-50">
         <Header />
       </div>
 
-      {/* Footer Overlay */}
       <div className="fixed bottom-0 left-0 w-full z-50">
         <Footer />
       </div>
 
-      {/* Overlay for buttons and titles */}
       <div
         className="fixed h-[70vh] w-64 p-4 flex flex-col items-center z-40"
         style={{ right: "20%", top: "50%", transform: "translateY(-50%)" }}
       >
-        {/* Filter Buttons */}
         <div className="flex space-x-2 mb-4">
           <button
             onClick={() => handleCategoryClick("education")}
@@ -221,7 +213,6 @@ const Viewer: React.FC = () => {
           </button>
         </div>
 
-        {/* Up Arrow */}
         <button
           className={`text-white text-2xl mb-2 ${
             currentIndex === 0
@@ -234,7 +225,6 @@ const Viewer: React.FC = () => {
           <FontAwesomeIcon icon={faArrowUp} />
         </button>
 
-        {/* Titles List */}
         <div
           className="flex-1 overflow-y-auto scrollbar-hide w-full"
           ref={titlesListRef}
@@ -242,7 +232,7 @@ const Viewer: React.FC = () => {
           {filteredData.map((titleItem, index) => (
             <div
               key={titleItem.id}
-              ref={(el) => (titleItemRefs.current[index] = el)} // Assign ref
+              ref={(el) => (titleItemRefs.current[index] = el)}
               className={`p-2 hover:bg-gray-700 cursor-pointer text-center text-white ${
                 currentIndex === index ? "bg-gray-700" : ""
               }`}
@@ -253,7 +243,6 @@ const Viewer: React.FC = () => {
           ))}
         </div>
 
-        {/* Down Arrow */}
         <button
           className={`text-white text-2xl mt-2 ${
             currentIndex === filteredData.length - 1
@@ -267,7 +256,6 @@ const Viewer: React.FC = () => {
         </button>
       </div>
 
-      {/* Timeline Items */}
       {filteredData.map((item) => (
         <div
           key={item.id}
@@ -275,10 +263,8 @@ const Viewer: React.FC = () => {
           className="relative h-screen w-full snap-start bg-cover bg-center pt-[100px] pb-[60px]"
           style={{ backgroundImage: `url(${item.image})` }}
         >
-          {/* Dark Overlay */}
           <div className="absolute inset-0 bg-black/60"></div>
 
-          {/* Overlay Content */}
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4">
             <h2 className="text-4xl font-bold mb-2">{item.year}</h2>
             <h3 className="text-2xl mb-4">{item.title}</h3>
