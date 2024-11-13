@@ -1,4 +1,3 @@
-// app/desktop/viewer/page.tsx
 import React, { Suspense } from "react";
 import Viewer from "@/components/Desktop/Viewer";
 
