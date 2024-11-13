@@ -27,6 +27,7 @@ const Viewer: React.FC = () => {
   const [filteredData, setFilteredData] = useState<TimelineItem[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isScrolling, setIsScrolling] = useState(false);
 
   const timelineContainerRef = useRef<HTMLDivElement>(null);
   const titlesListRef = useRef<HTMLDivElement>(null);
@@ -65,19 +66,22 @@ const Viewer: React.FC = () => {
     });
   };
 
-  const scrollToItem = (index: number) => {
-    const item = filteredData[index];
-    if (item) {
-      const element = document.getElementById(`item-${item.id}`);
-      if (element && timelineContainerRef.current) {
-        timelineContainerRef.current.scrollTo({
-          top: element.offsetTop - timelineContainerRef.current.offsetTop,
-          behavior: "smooth",
-        });
-        setCurrentIndex(index);
+  const scrollToItem = useCallback(
+    (index: number) => {
+      const item = filteredData[index];
+      if (item) {
+        const element = document.getElementById(`item-${item.id}`);
+        if (element && timelineContainerRef.current) {
+          timelineContainerRef.current.scrollTo({
+            top: element.offsetTop - timelineContainerRef.current.offsetTop,
+            behavior: "smooth",
+          });
+          setCurrentIndex(index);
+        }
       }
-    }
-  };
+    },
+    [filteredData]
+  );
 
   const scrollToNext = () => {
     if (currentIndex < filteredData.length - 1) {
@@ -92,28 +96,36 @@ const Viewer: React.FC = () => {
   };
 
   const handleScroll = useCallback(() => {
-    if (timelineContainerRef.current) {
-      const container = timelineContainerRef.current;
-      const scrollPosition = container.scrollTop + container.clientHeight / 2;
-      let closestIndex = 0;
-      let closestDistance = Infinity;
+    if (isScrolling) return;
+    setIsScrolling(true);
 
-      filteredData.forEach((item, index) => {
-        const element = document.getElementById(`item-${item.id}`);
-        if (element) {
-          const elementTop = element.offsetTop - container.offsetTop;
-          const elementCenter = elementTop + element.clientHeight / 2;
-          const distance = Math.abs(scrollPosition - elementCenter);
-          if (distance < closestDistance) {
-            closestDistance = distance;
-            closestIndex = index;
+    setTimeout(() => {
+      if (timelineContainerRef.current) {
+        const container = timelineContainerRef.current;
+        const containerRect = container.getBoundingClientRect();
+        const containerCenter = containerRect.top + containerRect.height / 2;
+
+        let closestIndex = 0;
+        let closestDistance = Infinity;
+
+        filteredData.forEach((item, index) => {
+          const element = document.getElementById(`item-${item.id}`);
+          if (element) {
+            const elementRect = element.getBoundingClientRect();
+            const elementCenter = elementRect.top + elementRect.height / 2;
+            const distance = Math.abs(containerCenter - elementCenter);
+            if (distance < closestDistance) {
+              closestDistance = distance;
+              closestIndex = index;
+            }
           }
-        }
-      });
+        });
 
-      setCurrentIndex(closestIndex);
-    }
-  }, [filteredData]);
+        setCurrentIndex(closestIndex);
+      }
+      setIsScrolling(false);
+    }, 150);
+  }, [filteredData, isScrolling]);
 
   useEffect(() => {
     const container = timelineContainerRef.current;
@@ -141,24 +153,13 @@ const Viewer: React.FC = () => {
   }, [filteredData, queryId, scrollToItem]);
 
   useEffect(() => {
-    if (titlesListRef.current && titleItemRefs.current[currentIndex]) {
-      const container = titlesListRef.current;
-      const item = titleItemRefs.current[currentIndex];
-
-      const containerRect = container.getBoundingClientRect();
-      const itemRect = item.getBoundingClientRect();
-
-      if (itemRect.top < containerRect.top) {
-        container.scrollBy({
-          top: itemRect.top - containerRect.top,
-          behavior: "smooth",
-        });
-      } else if (itemRect.bottom > containerRect.bottom) {
-        container.scrollBy({
-          top: itemRect.bottom - containerRect.bottom,
-          behavior: "smooth",
-        });
-      }
+    const selectedTitleItem = titleItemRefs.current[currentIndex];
+    if (selectedTitleItem && titlesListRef.current) {
+      selectedTitleItem.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "center",
+      });
     }
   }, [currentIndex]);
 
