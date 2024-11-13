@@ -8,4 +8,6 @@ const DesktopFooter: React.FC = React.memo(() => {
   );
 });
 
+DesktopFooter.displayName = "DesktopFooter";
+
 export default DesktopFooter;

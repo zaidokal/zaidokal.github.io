@@ -92,4 +92,6 @@ const MobileHeader: React.FC = React.memo(() => {
   );
 });
 
+MobileHeader.displayName = "MobileHeader";
+
 export default MobileHeader;

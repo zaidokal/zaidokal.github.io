@@ -68,4 +68,6 @@ const DesktopHeader: React.FC = React.memo(() => {
   );
 });
 
+DesktopHeader.displayName = "DesktopHeader";
+
 export default DesktopHeader;

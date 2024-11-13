@@ -8,4 +8,6 @@ const MobileFooter: React.FC = React.memo(() => {
   );
 });
 
+MobileFooter.displayName = "MobileFooter";
+
 export default MobileFooter;

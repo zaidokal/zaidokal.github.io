@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import DesktopHeader from "@/components/Desktop/Header";
-import DesktopFooter from "@/components/Desktop/Footer";
-import MobileHeader from "@/components/Mobile/Header";
-import MobileFooter from "@/components/Mobile/Footer";
+import DesktopHeader from "@/components/Desktop/DesktopHeader";
+import DesktopFooter from "@/components/Desktop/DesktopFooter";
+import MobileHeader from "@/components/Mobile/MobileHeader";
+import MobileFooter from "@/components/Mobile/MobileFooter";
 import "../app/globals.css";
 import type { AppProps } from "next/app";
 

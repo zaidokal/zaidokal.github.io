@@ -1,7 +1,7 @@
 "use client";
 
-import Header from "@/components/Desktop/Header";
-import Footer from "@/components/Desktop/Footer";
+import Header from "@/components/Desktop/DesktopHeader";
+import Footer from "@/components/Desktop/DesktopFooter";
 import AboutText from "@/components/Desktop/AboutText";
 import Image from "next/image";
 
