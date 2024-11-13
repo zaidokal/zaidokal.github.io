@@ -3,14 +3,14 @@ import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 
 // Import components
-const DesktopTimelinePage = dynamic(
-  () => import("@/components/Desktop/DesktopTimelinePage")
+const DesktopEducationPage = dynamic(
+  () => import("@/components/Desktop/DesktopEducationPage")
 );
-const MobileTimelinePage = dynamic(
-  () => import("@/components/Mobile/MobileTimelinePage")
+const MobileEducationPage = dynamic(
+  () => import("@/components/Mobile/MobileEducationPage")
 );
 
-const TimelinePage: React.FC = () => {
+const EducationPage: React.FC = () => {
   const [isMobileDevice, setIsMobileDevice] = useState<boolean>(false);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const TimelinePage: React.FC = () => {
     setIsMobileDevice(isMobile);
   }, []);
 
-  return isMobileDevice ? <MobileTimelinePage /> : <DesktopTimelinePage />;
+  return isMobileDevice ? <MobileEducationPage /> : <DesktopEducationPage />;
 };
 
-export default TimelinePage;
+export default EducationPage;
