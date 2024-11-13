@@ -11,7 +11,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
-export default function Header() {
+import React from "react";
+
+const DesktopHeader: React.FC = React.memo(() => {
   return (
     <header className="flex justify-between items-center mx-auto my-6 w-full max-w-6xl p-5 text-[40px] bg-white bg-opacity-20 rounded-[45px] font-[KodeMono]">
       <Link href="/" className="ml-6">
@@ -19,13 +21,13 @@ export default function Header() {
       </Link>
       <div className="space-x-4">
         <RedirectButton
-          href="/desktop/timeline"
+          href="/timeline"
           icon={<FontAwesomeIcon icon={faTimeline} className="mr-2" />}
           text="Timeline"
         />
 
         <RedirectButton
-          href="/desktop/education"
+          href="/education"
           icon={<FontAwesomeIcon icon={faGraduationCap} className="mr-2" />}
           text="Education"
         />
@@ -64,4 +66,8 @@ export default function Header() {
       </div>
     </header>
   );
-}
+});
+
+DesktopHeader.displayName = "DesktopHeader";
+
+export default DesktopHeader;

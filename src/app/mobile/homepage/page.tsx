@@ -1,7 +1,7 @@
 "use client";
 
-import Header from "@/components/Mobile/Header";
-import Footer from "@/components/Mobile/Footer";
+import Header from "@/components/Mobile/MobileHeader";
+import Footer from "@/components/Mobile/MobileFooter";
 import AboutText from "@/components/Mobile/AboutText";
 import Image from "next/image";
 

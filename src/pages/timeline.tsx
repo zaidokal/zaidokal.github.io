@@ -1,26 +1,23 @@
-import { GetServerSideProps } from "next";
-import { parse } from "next-useragent";
-import DesktopTimelinePage from "@/app/desktop/timeline/page";
-import MobileTimelinePage from "@/app/mobile/timeline/page";
+import React from "react";
+import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
 
-interface TimelinePageProps {
-  isMobile: boolean;
-}
+const DesktopTimelinePage = dynamic(
+  () => import("@/components/Desktop/DesktopTimelinePage")
+);
+const MobileTimelinePage = dynamic(
+  () => import("@/components/Mobile/MobileTimelinePage")
+);
 
-const TimelinePage: React.FC<TimelinePageProps> = ({ isMobile }) => {
-  return isMobile ? <MobileTimelinePage /> : <DesktopTimelinePage />;
+const TimelinePage: React.FC = () => {
+  const [isMobileDevice, setIsMobileDevice] = useState<boolean>(false);
+
+  useEffect(() => {
+    const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
+    setIsMobileDevice(isMobile);
+  }, []);
+
+  return isMobileDevice ? <MobileTimelinePage /> : <DesktopTimelinePage />;
 };
 
 export default TimelinePage;
-
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const userAgent = context.req.headers["user-agent"] || "";
-  const ua = parse(userAgent);
-  const isMobile = ua.isMobile;
-
-  return {
-    props: {
-      isMobile,
-    },
-  };
-};

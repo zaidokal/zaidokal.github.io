@@ -1,38 +1,42 @@
 import { useEffect, useState } from "react";
-import DesktopLayout from "@/layouts/DesktopLayout";
-import MobileLayout from "@/layouts/MobileLayout";
+import DesktopHeader from "@/components/Desktop/DesktopHeader";
+import DesktopFooter from "@/components/Desktop/DesktopFooter";
+import MobileHeader from "@/components/Mobile/MobileHeader";
+import MobileFooter from "@/components/Mobile/MobileFooter";
 import "../app/globals.css";
 import type { AppProps } from "next/app";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  const [isMobile, setIsMobile] = useState<boolean | null>(null);
+  const [isMobileDevice, setIsMobileDevice] = useState<boolean>(false);
 
   useEffect(() => {
     const userAgent =
       typeof navigator === "undefined" ? "" : navigator.userAgent;
-    const isMobileDevice =
-      /Mobile|Android|BlackBerry|iPhone|iPad|iPad Pro|iPad Air|iPod|Opera Mini|IEMobile|WPDesktop/i.test(
+    const isMobile =
+      /Mobile|Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(
         userAgent
       );
 
-    setIsMobile(isMobileDevice);
+    setIsMobileDevice(isMobile);
   }, []);
 
-  if (isMobile === null) {
-    return (
-      <div className="flex items-center justify-center min-h-screen">
-        <p>Loading...</p>
-      </div>
-    );
-  }
+  const Header = isMobileDevice ? MobileHeader : DesktopHeader;
+  const Footer = isMobileDevice ? MobileFooter : DesktopFooter;
 
-  return isMobile ? (
-    <MobileLayout>
-      <Component {...pageProps} />
-    </MobileLayout>
-  ) : (
-    <DesktopLayout>
-      <Component {...pageProps} />
-    </DesktopLayout>
+  const backgroundImageUrl = isMobileDevice
+    ? "/Pictures/MobileBackgroundPic.jpg"
+    : "/Pictures/BackgroundPic.jpg";
+
+  return (
+    <div
+      className="flex flex-col min-h-screen bg-cover bg-no-repeat bg-center"
+      style={{ backgroundImage: `url(${backgroundImageUrl})` }}
+    >
+      <Header />
+      <main className="flex-grow">
+        <Component {...pageProps} />
+      </main>
+      <Footer />
+    </div>
   );
 }

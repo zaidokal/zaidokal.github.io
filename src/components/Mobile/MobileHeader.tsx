@@ -12,7 +12,9 @@ import {
 import Link from "next/link";
 import { useState } from "react";
 
-export default function Header() {
+import React from "react";
+
+const MobileHeader: React.FC = React.memo(() => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
@@ -32,7 +34,7 @@ export default function Header() {
         <div className="absolute right-5 top-16 bg-black bg-opacity-90 rounded-[20px] shadow-lg p-5 flex flex-col space-y-4 text-[14px] w-[170px]">
           <div className="py-2 pl-2 pr-4 rounded-lg hover:bg-gray-500 transition duration-200">
             <Link
-              href="/mobile/timeline"
+              href="/timeline"
               className="block text-white flex items-center"
             >
               <FontAwesomeIcon icon={faTimeline} className="mr-2" /> Timeline
@@ -40,7 +42,7 @@ export default function Header() {
           </div>
           <div className="py-2 pl-2 pr-4 rounded-lg hover:bg-gray-500 transition duration-200">
             <Link
-              href="/mobile/education"
+              href="/education"
               className="block text-white flex items-center"
             >
               <FontAwesomeIcon icon={faGraduationCap} className="mr-2" />{" "}
@@ -88,4 +90,8 @@ export default function Header() {
       )}
     </header>
   );
-}
+});
+
+MobileHeader.displayName = "MobileHeader";
+
+export default MobileHeader;
