@@ -3,10 +3,10 @@ import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 
 const DesktopEducationPage = dynamic(
-  () => import("@/components/Desktop/DesktopEducationPage")
+  () => import("@/components/Desktop/Pages/DesktopEducationPage")
 );
 const MobileEducationPage = dynamic(
-  () => import("@/components/Mobile/MobileEducationPage")
+  () => import("@/components/Mobile/Pages/MobileEducationPage")
 );
 
 const EducationPage: React.FC = () => {

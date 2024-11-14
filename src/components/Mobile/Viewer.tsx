@@ -1,16 +1,13 @@
 "use client";
 
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import Header from "@/components/Desktop/DesktopHeader";
-import Footer from "@/components/Desktop/DesktopFooter";
 import { useSearchParams } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faBars,
   faGraduationCap,
   faBriefcase,
   faLightbulb,
-  faArrowUp,
-  faArrowDown,
 } from "@fortawesome/free-solid-svg-icons";
 
 interface TimelineItem {
@@ -83,18 +80,6 @@ const Viewer: React.FC = () => {
     [filteredData]
   );
 
-  const scrollToNext = () => {
-    if (currentIndex < filteredData.length - 1) {
-      scrollToItem(currentIndex + 1);
-    }
-  };
-
-  const scrollToPrevious = () => {
-    if (currentIndex > 0) {
-      scrollToItem(currentIndex - 1);
-    }
-  };
-
   const handleScroll = useCallback(() => {
     if (isScrolling) return;
     setIsScrolling(true);
@@ -163,24 +148,58 @@ const Viewer: React.FC = () => {
     }
   }, [currentIndex]);
 
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const handleItemClick = (index: number) => {
+    scrollToItem(index);
+    setIsDropdownOpen(false);
+  };
+
   return (
     <div
       ref={timelineContainerRef}
       className="relative h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth scrollbar-hide pt-[100px] pb-[60px]"
     >
-      <div className="fixed top-0 left-0 w-full z-50">
-        <Header />
-      </div>
+      <button
+        onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+        style={{ left: "5%", top: "48%", transform: "translateY(-50%)" }}
+        className="fixed h-[70vh] w-30 flex flex-col items-center z-40"
+      >
+        <FontAwesomeIcon icon={faBars} />
+      </button>
 
-      <div className="fixed bottom-0 left-0 w-full z-50">
-        <Footer />
-      </div>
+      {isDropdownOpen && (
+        <div
+          style={{
+            left: "3%",
+            top: "33%",
+            transform: "translateY(-50%)",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+          }}
+          className="fixed h-[35vh] w-[150px] flex flex-col items-center z-40 h-[200px] overflow-y-scroll p-3 rounded-[15px]"
+        >
+          {filteredData.map((titleItem, index) => (
+            <div
+              key={titleItem.id}
+              ref={(el) => {
+                titleItemRefs.current[index] = el;
+              }}
+              className={`p-2 hover:bg-gray-700 cursor-pointer text-center text-[12px] text-white rounded-[15px] w-[100%] ${
+                currentIndex === index ? "bg-blue-500" : ""
+              }`}
+              onClick={() => handleItemClick(index)}
+            >
+              {titleItem.title}
+            </div>
+          ))}
+        </div>
+      )}
 
       <div
-        className="fixed h-[70vh] w-64 p-4 flex flex-col items-center z-40"
-        style={{ right: "5%", top: "53%", transform: "translateY(-50%)" }}
+        className="fixed h-[70vh] w-30 flex flex-col items-center z-40"
+        style={{ right: "2%", top: "47%", transform: "translateY(-50%)" }}
       >
-        <div className="flex space-x-2 mb-4">
+        <div className="flex space-x-2 mb-4 text-[10px]">
           <button
             onClick={() => handleCategoryClick("education")}
             className={`p-3 rounded-full ${
@@ -212,50 +231,6 @@ const Viewer: React.FC = () => {
             <FontAwesomeIcon icon={faLightbulb} size="lg" />
           </button>
         </div>
-
-        <button
-          className={`text-white text-2xl mb-2 ${
-            currentIndex === 0
-              ? "opacity-50 cursor-not-allowed"
-              : "hover:text-blue-500"
-          }`}
-          onClick={scrollToPrevious}
-          disabled={currentIndex === 0}
-        >
-          <FontAwesomeIcon icon={faArrowUp} />
-        </button>
-
-        <div
-          className="flex-1 overflow-y-auto scrollbar-hide w-full"
-          ref={titlesListRef}
-        >
-          {filteredData.map((titleItem, index) => (
-            <div
-              key={titleItem.id}
-              ref={(el) => {
-                titleItemRefs.current[index] = el;
-              }}
-              className={`p-2 hover:bg-gray-700 cursor-pointer text-center text-white rounded-[20px] ${
-                currentIndex === index ? "bg-gray-700" : ""
-              }`}
-              onClick={() => scrollToItem(index)}
-            >
-              {titleItem.title}
-            </div>
-          ))}
-        </div>
-
-        <button
-          className={`text-white text-2xl mt-2 ${
-            currentIndex === filteredData.length - 1
-              ? "opacity-50 cursor-not-allowed"
-              : "hover:text-blue-500"
-          }`}
-          onClick={scrollToNext}
-          disabled={currentIndex === filteredData.length - 1}
-        >
-          <FontAwesomeIcon icon={faArrowDown} />
-        </button>
       </div>
 
       {filteredData.map((item) => (
