@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import DesktopHomePage from "@/app/desktop/homepage/page";
-import MobileHomePage from "@/app/mobile/homepage/page";
+import DesktopHomePage from "@/components/Desktop/Pages/DesktopHomePage";
+import MobileHomePage from "@/components/Mobile/Pages/MobileHomePage";
 
 const preloadImages = (imageUrls: string[]): Promise<void[]> => {
   return Promise.all(
@@ -31,10 +31,7 @@ export default function ClientHomePage() {
       );
     setIsMobile(isMobileDevice);
 
-    const criticalImages = [
-      "/Pictures/ProfilePic.jpeg",
-      "/Pictures/BackgroundPic.jpg",
-    ];
+    const criticalImages = ["/Pictures/ProfilePic.jpeg"];
 
     preloadImages(criticalImages).then(() => {
       setIsLoading(false);

@@ -21,7 +21,7 @@ const TimelineBox: React.FC<TimelineBoxProps> = ({
   const router = useRouter();
 
   const handleClick = () => {
-    router.push(`/desktop/viewer?id=${id}`);
+    router.push(`/viewer?id=${id}`);
   };
 
   return (
