@@ -20,7 +20,7 @@ const MobileTimelinePage: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-wrap justify-center items-center bg-black pt-[70px] pb-[40px]">
+    <div className="flex flex-wrap justify-center items-center pt-[70px] pb-[40px]">
       {timelineData.map((item) => (
         <TimelineBox
           key={item.id}

@@ -23,15 +23,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   const Header = isMobileDevice ? MobileHeader : DesktopHeader;
   const Footer = isMobileDevice ? MobileFooter : DesktopFooter;
 
-  const backgroundImageUrl = isMobileDevice
-    ? "/Pictures/MobileBackgroundPic.jpg"
-    : "/Pictures/BackgroundPic.jpg";
-
   return (
-    <div
-      className="relative min-h-screen flex flex-col bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${backgroundImageUrl})` }}
-    >
+    <div className="relative min-h-screen flex flex-col bg-cover bg-center bg-no-repeat">
       <div className="absolute top-0 left-0 w-full z-50">
         <Header />
       </div>
