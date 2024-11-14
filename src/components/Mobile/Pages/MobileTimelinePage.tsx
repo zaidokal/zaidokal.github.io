@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import TimelineBox from "@/components/Desktop/TimelineBox";
+import TimelineBox from "@/components/Mobile/TimelineBox";
 
 interface TimelineData {
   id: string;
@@ -10,7 +10,7 @@ interface TimelineData {
   image: string;
 }
 
-const DesktopTimelinePage: React.FC = () => {
+const MobileTimelinePage: React.FC = () => {
   const [timelineData, setTimelineData] = useState<TimelineData[]>([]);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const DesktopTimelinePage: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-wrap justify-center items-center p-10">
+    <div className="flex flex-wrap justify-center items-center bg-black pt-[70px] pb-[40px]">
       {timelineData.map((item) => (
         <TimelineBox
           key={item.id}
@@ -35,4 +35,4 @@ const DesktopTimelinePage: React.FC = () => {
   );
 };
 
-export default DesktopTimelinePage;
+export default MobileTimelinePage;

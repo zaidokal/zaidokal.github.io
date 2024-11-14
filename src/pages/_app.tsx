@@ -29,14 +29,20 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <div
-      className="flex flex-col min-h-screen bg-cover bg-no-repeat bg-center"
+      className="relative min-h-screen flex flex-col bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${backgroundImageUrl})` }}
     >
-      <Header />
-      <main className="flex-grow">
+      <div className="absolute top-0 left-0 w-full z-50">
+        <Header />
+      </div>
+
+      <main className={`flex-grow relative z-10${isMobileDevice ? " " : " "}`}>
         <Component {...pageProps} />
       </main>
-      <Footer />
+
+      <div className="absolute bottom-0 left-0 w-full z-50">
+        <Footer />
+      </div>
     </div>
   );
 }
