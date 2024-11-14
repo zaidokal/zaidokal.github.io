@@ -17,6 +17,10 @@ import React from "react";
 const MobileHeader: React.FC = React.memo(() => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
+  const handleOptionClick = () => {
+    setIsDropdownOpen(false);
+  };
+
   return (
     <header className="flex justify-between items-center mx-auto my-3 w-[90%] max-w-6xl p-3 text-[24px] bg-white bg-opacity-20 rounded-[55px] font-[KodeMono]">
       <Link href="/" className="text-left ml-6">
@@ -35,6 +39,7 @@ const MobileHeader: React.FC = React.memo(() => {
           <div className="py-2 pl-2 pr-4 rounded-lg hover:bg-gray-500 transition duration-200">
             <Link
               href="/timeline"
+              onClick={handleOptionClick}
               className="block text-white flex items-center"
             >
               <FontAwesomeIcon icon={faTimeline} className="mr-2" /> Timeline
@@ -43,6 +48,7 @@ const MobileHeader: React.FC = React.memo(() => {
           <div className="py-2 pl-2 pr-4 rounded-lg hover:bg-gray-500 transition duration-200">
             <Link
               href="/education"
+              onClick={handleOptionClick}
               className="block text-white flex items-center"
             >
               <FontAwesomeIcon icon={faGraduationCap} className="mr-2" />{" "}
@@ -53,6 +59,7 @@ const MobileHeader: React.FC = React.memo(() => {
             <Link
               href="/PDFs/Zaid Resume.pdf"
               download
+              onClick={handleOptionClick}
               className="block text-white flex items-center"
             >
               <FontAwesomeIcon icon={faFileInvoice} className="mr-2" /> Resume
@@ -61,6 +68,7 @@ const MobileHeader: React.FC = React.memo(() => {
           <div className="py-2 pl-2 pr-4 rounded-lg hover:bg-gray-500 transition duration-200">
             <a
               href="mailto:zaidokal@gmail.com"
+              onClick={handleOptionClick}
               className="block text-white flex items-center"
             >
               <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> Email
@@ -71,6 +79,7 @@ const MobileHeader: React.FC = React.memo(() => {
               href="https://www.linkedin.com/in/zaidokal/"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleOptionClick}
               className="block text-white flex items-center"
             >
               <FontAwesomeIcon icon={faLinkedin} className="mr-2" /> LinkedIn
@@ -81,6 +90,7 @@ const MobileHeader: React.FC = React.memo(() => {
               href="https://github.com/zaidokal"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleOptionClick}
               className="block text-white flex items-center"
             >
               <FontAwesomeIcon icon={faGithub} className="mr-2" /> GitHub

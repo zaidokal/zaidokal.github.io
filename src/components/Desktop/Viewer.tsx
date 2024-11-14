@@ -178,7 +178,7 @@ const Viewer: React.FC = () => {
 
       <div
         className="fixed h-[70vh] w-64 p-4 flex flex-col items-center z-40"
-        style={{ right: "10%", top: "50%", transform: "translateY(-50%)" }}
+        style={{ right: "5%", top: "53%", transform: "translateY(-50%)" }}
       >
         <div className="flex space-x-2 mb-4">
           <button
@@ -235,7 +235,7 @@ const Viewer: React.FC = () => {
               ref={(el) => {
                 titleItemRefs.current[index] = el;
               }}
-              className={`p-2 hover:bg-gray-700 cursor-pointer text-center text-white ${
+              className={`p-2 hover:bg-gray-700 cursor-pointer text-center text-white rounded-[20px] ${
                 currentIndex === index ? "bg-gray-700" : ""
               }`}
               onClick={() => scrollToItem(index)}

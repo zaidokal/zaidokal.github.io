@@ -150,6 +150,11 @@ const Viewer: React.FC = () => {
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
+  const handleItemClick = (index: number) => {
+    scrollToItem(index);
+    setIsDropdownOpen(false);
+  };
+
   return (
     <div
       ref={timelineContainerRef}
@@ -165,8 +170,13 @@ const Viewer: React.FC = () => {
 
       {isDropdownOpen && (
         <div
-          style={{ left: "3%", top: "33%", transform: "translateY(-50%)" }}
-          className="fixed h-[35vh] w-[150px] flex flex-col items-center z-40 bg-black opacity-[50%] h-[200px] overflow-y-scroll p-3 rounded-[15px]"
+          style={{
+            left: "3%",
+            top: "33%",
+            transform: "translateY(-50%)",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+          }}
+          className="fixed h-[35vh] w-[150px] flex flex-col items-center z-40 h-[200px] overflow-y-scroll p-3 rounded-[15px]"
         >
           {filteredData.map((titleItem, index) => (
             <div
@@ -174,12 +184,10 @@ const Viewer: React.FC = () => {
               ref={(el) => {
                 titleItemRefs.current[index] = el;
               }}
-              className={`p-2 hover:bg-gray-700 cursor-pointer text-center text-[12px] text-white rounded-[15px] w-[100%]${
-                currentIndex === index
-                  ? "bg-gray-700 rounded-[15px] w-[100%]"
-                  : ""
+              className={`p-2 hover:bg-gray-700 cursor-pointer text-center text-[12px] text-white rounded-[15px] w-[100%] ${
+                currentIndex === index ? "bg-blue-500" : ""
               }`}
-              onClick={() => scrollToItem(index)}
+              onClick={() => handleItemClick(index)}
             >
               {titleItem.title}
             </div>
