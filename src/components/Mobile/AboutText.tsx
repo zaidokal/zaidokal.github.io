@@ -43,8 +43,8 @@ export default function AboutText() {
   }, []);
 
   return (
-    <div className="bg-black bg-opacity-55 text-white rounded-[40px] space-y-2 p-8 w-[95%] max-w-[95%] mx-auto">
-      <h1 className="text-[20px] md:text-[20px] lg:text-[28px] xl:text-[36px] mb-3 md:mb-4 font-[KodeMono]">
+    <div className="mx-auto w-[95%] max-w-[95%] space-y-2 rounded-[40px] bg-black bg-opacity-55 p-8 text-white">
+      <h1 className="mb-3 font-[KodeMono] text-[20px] md:mb-4 md:text-[20px] lg:text-[28px] xl:text-[36px]">
         {"Hey, I'm "}
         <br />
         <span className="text-red-500">{displayText || "\u00A0"}</span>

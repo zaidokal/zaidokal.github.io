@@ -15,7 +15,7 @@ import React from "react";
 
 const DesktopHeader: React.FC = React.memo(() => {
   return (
-    <header className="flex justify-between items-center mx-auto my-6 w-full max-w-6xl p-5 text-[40px] bg-white bg-opacity-20 rounded-[45px] font-[KodeMono]">
+    <header className="mx-auto my-6 flex w-full max-w-6xl items-center justify-between rounded-[45px] bg-white bg-opacity-20 p-5 font-[KodeMono] text-[40px]">
       <Link href="/" className="ml-6">
         <div className="hover:text-gray-400">Zaid Okal</div>
       </Link>
@@ -40,7 +40,7 @@ const DesktopHeader: React.FC = React.memo(() => {
         />
       </div>
 
-      <div className="space-x-4 mr-6">
+      <div className="mr-6 space-x-4">
         <Link
           href="mailto:zaidokal@gmail.com"
           className="hover:text-yellow-400"

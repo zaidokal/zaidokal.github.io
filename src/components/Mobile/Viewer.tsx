@@ -48,7 +48,7 @@ const Viewer: React.FC = () => {
       setFilteredData(data);
     } else {
       setFilteredData(
-        data.filter((item) => selectedCategories.includes(item.category))
+        data.filter((item) => selectedCategories.includes(item.category)),
       );
     }
   }, [selectedCategories, data]);
@@ -77,7 +77,7 @@ const Viewer: React.FC = () => {
         }
       }
     },
-    [filteredData]
+    [filteredData],
   );
 
   const handleScroll = useCallback(() => {
@@ -158,12 +158,12 @@ const Viewer: React.FC = () => {
   return (
     <div
       ref={timelineContainerRef}
-      className="relative h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth scrollbar-hide pt-[100px] pb-[60px]"
+      className="relative h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth pb-[60px] pt-[100px] scrollbar-hide"
     >
       <button
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
         style={{ left: "5%", top: "48%", transform: "translateY(-50%)" }}
-        className="fixed h-[70vh] w-30 flex flex-col items-center z-40"
+        className="w-30 fixed z-40 flex h-[70vh] flex-col items-center"
       >
         <FontAwesomeIcon icon={faBars} />
       </button>
@@ -176,7 +176,7 @@ const Viewer: React.FC = () => {
             transform: "translateY(-50%)",
             backgroundColor: "rgba(0, 0, 0, 0.5)",
           }}
-          className="fixed h-[35vh] w-[150px] flex flex-col items-center z-40 h-[200px] overflow-y-scroll p-3 rounded-[15px]"
+          className="fixed z-40 flex h-[35vh] w-[150px] flex-col items-center overflow-y-scroll rounded-[15px] p-3"
         >
           {filteredData.map((titleItem, index) => (
             <div
@@ -184,7 +184,7 @@ const Viewer: React.FC = () => {
               ref={(el) => {
                 titleItemRefs.current[index] = el;
               }}
-              className={`p-2 hover:bg-gray-700 cursor-pointer text-center text-[12px] text-white rounded-[15px] w-[100%] ${
+              className={`w-[100%] cursor-pointer rounded-[15px] p-2 text-center text-[12px] text-white hover:bg-gray-700 ${
                 currentIndex === index ? "bg-blue-500" : ""
               }`}
               onClick={() => handleItemClick(index)}
@@ -196,13 +196,13 @@ const Viewer: React.FC = () => {
       )}
 
       <div
-        className="fixed h-[70vh] w-30 flex flex-col items-center z-40"
+        className="w-30 fixed z-40 flex h-[70vh] flex-col items-center"
         style={{ right: "2%", top: "47%", transform: "translateY(-50%)" }}
       >
-        <div className="flex space-x-2 mb-4 text-[10px]">
+        <div className="mb-4 flex space-x-2 text-[10px]">
           <button
             onClick={() => handleCategoryClick("education")}
-            className={`p-3 rounded-full ${
+            className={`rounded-full p-3 ${
               selectedCategories.includes("education")
                 ? "bg-blue-500 text-white"
                 : "bg-gray-200 text-gray-700"
@@ -212,7 +212,7 @@ const Viewer: React.FC = () => {
           </button>
           <button
             onClick={() => handleCategoryClick("experience")}
-            className={`p-3 rounded-full ${
+            className={`rounded-full p-3 ${
               selectedCategories.includes("experience")
                 ? "bg-blue-500 text-white"
                 : "bg-gray-200 text-gray-700"
@@ -222,7 +222,7 @@ const Viewer: React.FC = () => {
           </button>
           <button
             onClick={() => handleCategoryClick("project")}
-            className={`p-3 rounded-full ${
+            className={`rounded-full p-3 ${
               selectedCategories.includes("project")
                 ? "bg-blue-500 text-white"
                 : "bg-gray-200 text-gray-700"
@@ -237,14 +237,14 @@ const Viewer: React.FC = () => {
         <div
           key={item.id}
           id={`item-${item.id}`}
-          className="relative h-screen w-full snap-start bg-cover bg-center pt-[100px] pb-[60px]"
+          className="relative h-screen w-full snap-start bg-cover bg-center pb-[60px] pt-[100px]"
           style={{ backgroundImage: `url(${item.image})` }}
         >
           <div className="absolute inset-0 bg-black/60"></div>
 
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4">
-            <h2 className="text-4xl font-bold mb-2">{item.year}</h2>
-            <h3 className="text-2xl mb-4">{item.title}</h3>
+          <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white">
+            <h2 className="mb-2 text-4xl font-bold">{item.year}</h2>
+            <h3 className="mb-4 text-2xl">{item.title}</h3>
             <p className="max-w-xl">{item.description}</p>
           </div>
         </div>
