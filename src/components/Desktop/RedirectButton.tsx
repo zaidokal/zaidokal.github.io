@@ -19,7 +19,7 @@ export default function RedirectButton({
     <button className={styles.redirectButtonPushable} role="button">
       <span className={styles.redirectButtonShadow}></span>
       <span className={styles.redirectButtonEdge}></span>
-      <span className={`${styles.redirectButtonFront} text`}>
+      <span className={`${styles.redirectButtonFront} text neon-shadow-purple`}>
         {icon}
         {text}
       </span>

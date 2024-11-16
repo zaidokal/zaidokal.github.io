@@ -24,7 +24,7 @@ const TimelineBox: React.FC<TimelineBoxProps> = ({ id, title, image }) => {
       className="m-5 h-[100px] w-[150px] rounded-[20px] bg-cover bg-center text-white shadow-md hover:ring focus:ring-violet-300 active:bg-violet-700"
       style={{ backgroundImage: `url(${image})` }}
     >
-      <div className="flex h-full flex-col justify-center rounded-[20px] bg-black bg-opacity-65 text-center">
+      <div className="neon-shadow-purple flex h-full flex-col justify-center rounded-[20px] bg-black bg-opacity-65 text-center">
         <h4 className="mb-2 text-[12px]">{title}</h4>
       </div>
     </button>

@@ -30,7 +30,7 @@ const TimelineBox: React.FC<TimelineBoxProps> = ({
       className="m-5 h-64 w-96 rounded-[40px] bg-cover bg-center text-white shadow-md hover:ring focus:ring-violet-300 active:bg-violet-700"
       style={{ backgroundImage: `url(${image})` }}
     >
-      <div className="flex h-full flex-col justify-center rounded-[40px] bg-black bg-opacity-75 text-center">
+      <div className="neon-shadow-purple flex h-full flex-col justify-center rounded-[40px] bg-black bg-opacity-75 text-center">
         <span className="mb-2 text-xl font-bold">{year}</span>
         <h4 className="mb-2 text-lg">{title}</h4>
         <p>{description}</p>

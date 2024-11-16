@@ -43,7 +43,7 @@ export default function AboutText() {
   }, []);
 
   return (
-    <div className="mx-auto w-[95%] max-w-[95%] space-y-2 rounded-[40px] bg-black bg-opacity-55 p-8 text-white">
+    <div className="neon-shadow-blue mx-auto w-[95%] max-w-[95%] space-y-2 rounded-[40px] bg-black bg-opacity-55 p-8 text-white">
       <h1 className="mb-3 font-[KodeMono] text-[20px] md:mb-4 md:text-[20px] lg:text-[28px] xl:text-[36px]">
         {"Hey, I'm "}
         <br />

@@ -17,7 +17,7 @@ export default function DesktopHomePage() {
             alt="Profile Picture of Zaid"
             width={700}
             height={700}
-            className="neon-shadow rounded-[80px]"
+            className="neon-shadow-purple rounded-[80px]"
           />
         </div>
         <AboutText />

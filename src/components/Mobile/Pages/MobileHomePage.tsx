@@ -16,7 +16,7 @@ export default function MobileHomePage() {
           alt="Profile Picture of Zaid"
           width={330}
           height={330}
-          className="w-[300px] rounded-[80px] sm:w-[350px] md:w-[400px] lg:w-[500px] xl:w-[600px] 2xl:w-[700px]"
+          className="neon-shadow-purple w-[300px] rounded-[80px] sm:w-[350px] md:w-[400px] lg:w-[500px] xl:w-[600px] 2xl:w-[700px]"
         />
       </div>
 
