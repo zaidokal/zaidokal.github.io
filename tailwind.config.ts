@@ -8,6 +8,10 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx,html,js}",
   ],
   theme: {
+    fontFamily: {
+      KodeMono: ["KodeMono"],
+      KellySlab: ["KellySlab"],
+    },
     extend: {
       colors: {
         background: "var(--background)",
