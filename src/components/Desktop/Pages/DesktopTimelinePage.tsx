@@ -20,7 +20,7 @@ const DesktopTimelinePage: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-wrap items-center justify-center p-10 pb-[40px] pt-[130px]">
+    <div className="flex flex-wrap items-center justify-center p-10 pb-[40px] pt-[170px]">
       {timelineData.map((item) => (
         <TimelineBox
           key={item.id}
