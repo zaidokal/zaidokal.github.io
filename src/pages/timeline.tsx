@@ -3,10 +3,10 @@ import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 
 const DesktopTimelinePage = dynamic(
-  () => import("@/components/Desktop/Pages/DesktopTimelinePage")
+  () => import("@/components/Desktop/Pages/DesktopTimelinePage"),
 );
 const MobileTimelinePage = dynamic(
-  () => import("@/components/Mobile/Pages/MobileTimelinePage")
+  () => import("@/components/Mobile/Pages/MobileTimelinePage"),
 );
 
 const TimelinePage: React.FC = () => {

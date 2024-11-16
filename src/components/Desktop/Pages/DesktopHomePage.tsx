@@ -7,17 +7,17 @@ import Image from "next/image";
 
 export default function DesktopHomePage() {
   return (
-    <main className="flex flex-col h-screen w-full bg-cover bg-no-repeat bg-center">
+    <main className="flex h-screen w-full flex-col bg-cover bg-center bg-no-repeat">
       <Header />
 
-      <div className="flex flex-1 items-center justify-center overflow-auto gap-20">
+      <div className="flex flex-1 items-center justify-center gap-20 overflow-auto">
         <div className="">
           <Image
             src="/Pictures/ProfilePic.jpeg"
             alt="Profile Picture of Zaid"
             width={700}
             height={700}
-            className="rounded-[80px] neon-shadow"
+            className="neon-shadow rounded-[80px]"
           />
         </div>
         <AboutText />

@@ -14,7 +14,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       typeof navigator === "undefined" ? "" : navigator.userAgent;
     const isMobile =
       /Mobile|Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(
-        userAgent
+        userAgent,
       );
 
     setIsMobileDevice(isMobile);
@@ -24,16 +24,16 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   const Footer = isMobileDevice ? MobileFooter : DesktopFooter;
 
   return (
-    <div className="relative min-h-screen flex flex-col bg-cover bg-center bg-no-repeat">
-      <div className="absolute top-0 left-0 w-full z-50">
+    <div className="relative flex min-h-screen flex-col bg-cover bg-center bg-no-repeat">
+      <div className="absolute left-0 top-0 z-50 w-full">
         <Header />
       </div>
 
-      <main className={`flex-grow relative z-10${isMobileDevice ? " " : " "}`}>
+      <main className={`relative flex-grow z-10${isMobileDevice ? " " : " "}`}>
         <Component {...pageProps} />
       </main>
 
-      <div className="absolute bottom-0 left-0 w-full z-50">
+      <div className="absolute bottom-0 left-0 z-50 w-full">
         <Footer />
       </div>
     </div>

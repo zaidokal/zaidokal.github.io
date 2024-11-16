@@ -13,8 +13,8 @@ const preloadImages = (imageUrls: string[]): Promise<void[]> => {
           img.src = src;
           img.onload = () => resolve();
           img.onerror = () => resolve();
-        })
-    )
+        }),
+    ),
   );
 };
 
@@ -27,7 +27,7 @@ export default function ClientHomePage() {
       typeof navigator === "undefined" ? "" : navigator.userAgent;
     const isMobileDevice =
       /Mobile|Android|BlackBerry|iPhone|iPad|iPad Pro|iPad Air|iPod|Opera Mini|IEMobile|WPDesktop/i.test(
-        userAgent
+        userAgent,
       );
     setIsMobile(isMobileDevice);
 
@@ -40,7 +40,7 @@ export default function ClientHomePage() {
 
   if (isLoading) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-black text-white">
+      <div className="flex min-h-screen items-center justify-center bg-black text-white">
         <p>Loading...</p>
       </div>
     );
@@ -48,7 +48,7 @@ export default function ClientHomePage() {
 
   if (isMobile === null) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-black text-white">
+      <div className="flex min-h-screen items-center justify-center bg-black text-white">
         <p>Loading...</p>
       </div>
     );

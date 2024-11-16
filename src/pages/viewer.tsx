@@ -3,10 +3,10 @@ import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 
 const DesktopViewerPage = dynamic(
-  () => import("@/components/Desktop/Pages/DesktopViewerPage")
+  () => import("@/components/Desktop/Pages/DesktopViewerPage"),
 );
 const MobileViewerPage = dynamic(
-  () => import("@/components/Mobile/Pages/MobileViewerPage")
+  () => import("@/components/Mobile/Pages/MobileViewerPage"),
 );
 
 const ViewerPage: React.FC = () => {
