@@ -20,17 +20,19 @@ const DesktopTimelinePage: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-wrap items-center justify-center p-10 pb-[40px] pt-[170px]">
-      {timelineData.map((item) => (
-        <TimelineBox
-          key={item.id}
-          id={item.id}
-          year={item.year}
-          title={item.title}
-          description={item.description}
-          image={item.image}
-        />
-      ))}
+    <div className="flex flex-wrap items-center justify-center p-10 pb-[40px] pt-[100px]">
+      <div className="relative z-10 grid grid-cols-1 gap-10 px-10 py-20 md:grid-cols-2 lg:grid-cols-3">
+        {timelineData.map((item) => (
+          <TimelineBox
+            key={item.id}
+            id={item.id}
+            year={item.year}
+            title={item.title}
+            description={item.description}
+            image={item.image}
+          />
+        ))}
+      </div>
     </div>
   );
 };
