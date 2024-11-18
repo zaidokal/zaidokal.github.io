@@ -5,6 +5,7 @@ import TechnologiesSection from "@/components/Desktop/Education/TechnologiesSect
 import technologies from "@/data/technologiesData";
 import ExtracurricularsSection from "@/components/Desktop/Education/ExtracurricularsSection";
 import Extracurriculars from "@/data/ExtracurricularsData";
+import CoursesSection from "../Education/CoursesSection";
 
 const DesktopEducationPage: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const DesktopEducationPage: React.FC = () => {
       <EducationSection />
       <TechnologiesSection technologies={technologies} />
       <ExtracurricularsSection Extracurriculars={Extracurriculars} />
+      <CoursesSection />
     </div>
   );
 };
