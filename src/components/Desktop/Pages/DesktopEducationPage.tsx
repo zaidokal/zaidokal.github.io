@@ -5,7 +5,7 @@ import TechnologiesSection from "@/components/Desktop/Education/TechnologiesSect
 import technologies from "@/data/technologiesData";
 import ExtracurricularsSection from "@/components/Desktop/Education/ExtracurricularsSection";
 import Extracurriculars from "@/data/ExtracurricularsData";
-import CoursesSection from "../Education/CoursesSection";
+import CoursesSection from "@/components/Desktop/Education/CoursesSection";
 
 const DesktopEducationPage: React.FC = () => {
   return (
