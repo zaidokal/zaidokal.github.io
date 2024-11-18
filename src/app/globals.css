@@ -31,15 +31,15 @@ body {
   background-color: #2a2a2a;
   background-image: radial-gradient(
       circle at 10% 20%,
-      rgba(255, 0, 150, 0.4),
+      rgba(255, 0, 149, 0.651),
       transparent 35%
     ),
-    radial-gradient(circle at 80% 80%, rgba(0, 200, 255, 0.4), transparent 35%),
     radial-gradient(
-      circle at 50% 50%,
-      rgba(100, 100, 255, 0.3),
-      transparent 60%
+      circle at 80% 80%,
+      rgba(0, 200, 255, 0.842),
+      transparent 35%
     ),
+    radial-gradient(circle at 50% 50%, rgba(25, 66, 177, 0.74), transparent 60%),
     linear-gradient(
       45deg,
       rgba(255, 255, 255, 0.08) 25%,
