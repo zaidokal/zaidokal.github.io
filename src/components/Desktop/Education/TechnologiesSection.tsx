@@ -8,6 +8,13 @@ interface Technology {
   color: string;
 }
 
+const colorMap: { [key: string]: string } = {
+  green: "bg-gradient-to-br from-green-400 to-green-600",
+  blue: "bg-gradient-to-br from-blue-400 to-blue-600",
+  purple: "bg-gradient-to-br from-purple-400 to-purple-600",
+  yellow: "bg-gradient-to-br from-yellow-400 to-yellow-600",
+};
+
 const TechnologiesSection: React.FC<{ technologies: Technology[] }> = ({
   technologies,
 }) => (
@@ -20,11 +27,14 @@ const TechnologiesSection: React.FC<{ technologies: Technology[] }> = ({
       {technologies.map((tech, idx) => (
         <div key={idx} className="container mx-auto px-6">
           <h3
-            className={`bg-gradient-to-r bg-clip-text text-4xl font-bold text-transparent ${tech.color} mb-12`}
+            className={`bg-gradient-to-r bg-clip-text text-4xl font-bold text-transparent ${
+              colorMap[tech.color] ||
+              "bg-gradient-to-r from-gray-400 to-gray-600"
+            } mb-12`}
           >
             {tech.category}
           </h3>
-          <div className="${tech.color} grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
             {tech.items.map((item, i) => (
               <GridItem key={i} name={item} color={tech.color} index={i} />
             ))}

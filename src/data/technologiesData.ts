@@ -12,7 +12,7 @@ const technologies = [
       "XML",
       "SQL",
     ],
-    color: "bg-gradient-to-br from-green-400 to-green-600",
+    color: "green",
   },
   {
     category: "Frameworks & Libraries",
@@ -25,17 +25,17 @@ const technologies = [
       "Unity",
       "JavaFX",
     ],
-    color: "bg-gradient-to-br from-blue-400 to-blue-600",
+    color: "blue",
   },
   {
     category: "Databases",
     items: ["MongoDB", "JavaDB", "MySQL", "SQL"],
-    color: "bg-gradient-to-br from-purple-400 to-purple-600",
+    color: "purple",
   },
   {
     category: "Tools & Platforms",
     items: ["Git", "AWS", "GCP", "Gradle"],
-    color: "bg-gradient-to-br from-yellow-400 to-yellow-600",
+    color: "yellow",
   },
 ];
 
