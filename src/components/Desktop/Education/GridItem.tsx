@@ -22,6 +22,7 @@ const GridItem: React.FC<GridItemProps> = ({ name, color, index }) => {
       className={`group relative flex items-center justify-center overflow-hidden rounded-lg p-6 shadow-lg ${colorClass}`}
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
+      whileHover={{ scale: 1.1 }}
       transition={{
         type: "spring",
         stiffness: 150,

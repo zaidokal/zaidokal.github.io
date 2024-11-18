@@ -12,8 +12,8 @@ const HeroSection: React.FC = () => (
     </div>
     <motion.div
       className="relative flex h-80 w-80 items-center justify-center rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 shadow-2xl blur-xl"
-      animate={{ rotate: [0, 360] }}
-      transition={{ duration: 30, repeat: Infinity }}
+      animate={{ scale: [1, 1.2, 1] }}
+      transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
     >
       <div className="absolute inset-10 rounded-full bg-gradient-to-b from-purple-500 to-indigo-700 shadow-lg"></div>
     </motion.div>
