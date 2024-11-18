@@ -1,11 +1,10 @@
 import React from "react";
+import IntroSection from "@/components/Desktop/Education/IntroSection";
 
 const DesktopEducationPage: React.FC = () => {
   return (
-    <div className="flex flex-wrap items-center justify-center pb-[40px] pt-[130px]">
-      <div className="flex flex-1 items-center justify-center gap-20 overflow-auto text-[200px]">
-        Coming Soon
-      </div>
+    <div>
+      <IntroSection />
     </div>
   );
 };
