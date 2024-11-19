@@ -30,6 +30,9 @@ const Viewer: React.FC = () => {
   const titlesListRef = useRef<HTMLDivElement>(null);
   const titleItemRefs = useRef<(HTMLDivElement | null)[]>([]);
 
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
   const searchParams = useSearchParams();
   const queryId = searchParams?.get("id");
 
@@ -155,12 +158,31 @@ const Viewer: React.FC = () => {
     setIsDropdownOpen(false);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        buttonRef.current &&
+        !dropdownRef.current.contains(event.target as Node) &&
+        !buttonRef.current.contains(event.target as Node)
+      ) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div
       ref={timelineContainerRef}
       className="relative h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth pb-[60px] pt-[100px] scrollbar-hide"
     >
       <button
+        ref={buttonRef}
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
         style={{ left: "5%", top: "48%", transform: "translateY(-50%)" }}
         className="w-30 fixed z-40 flex h-[70vh] flex-col items-center"
@@ -170,6 +192,7 @@ const Viewer: React.FC = () => {
 
       {isDropdownOpen && (
         <div
+          ref={dropdownRef}
           style={{
             left: "3%",
             top: "33%",

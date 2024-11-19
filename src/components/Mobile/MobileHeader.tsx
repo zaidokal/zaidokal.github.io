@@ -10,16 +10,35 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import { useState } from "react";
-
+import { useState, useRef, useEffect } from "react";
 import React from "react";
 
 const MobileHeader: React.FC = React.memo(() => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   const handleOptionClick = () => {
     setIsDropdownOpen(false);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        buttonRef.current &&
+        !dropdownRef.current.contains(event.target as Node) &&
+        !buttonRef.current.contains(event.target as Node)
+      ) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className="mx-auto my-3 flex w-[90%] max-w-6xl items-center justify-between rounded-[55px] bg-white bg-opacity-20 p-3 font-[KodeMono] text-[24px]">
@@ -28,6 +47,7 @@ const MobileHeader: React.FC = React.memo(() => {
       </Link>
 
       <button
+        ref={buttonRef}
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
         className="mr-3 text-xl focus:outline-none"
       >
@@ -35,7 +55,10 @@ const MobileHeader: React.FC = React.memo(() => {
       </button>
 
       {isDropdownOpen && (
-        <div className="absolute right-5 top-16 flex w-[170px] flex-col space-y-4 rounded-[20px] bg-black bg-opacity-90 p-5 text-[14px] shadow-lg">
+        <div
+          ref={dropdownRef}
+          className="absolute right-5 top-16 flex w-[170px] flex-col space-y-4 rounded-[20px] bg-black bg-opacity-90 p-5 text-[14px] shadow-lg"
+        >
           <div className="rounded-lg py-2 pl-2 pr-4 transition duration-200 hover:bg-gray-500">
             <Link
               href="/timeline"
