@@ -6,12 +6,7 @@ export default function AboutText() {
   const [displayText, setDisplayText] = useState("");
 
   useEffect(() => {
-    const texts = [
-      "Zaid Okal",
-      "a Software Engineer",
-      "a Software Developer",
-      "a Software Tester",
-    ];
+    const texts = ["Zaid Okal", "a Software Engineer"];
     let currentIndex = 0;
     let currentCharIndex = 0;
     let deleting = false;
