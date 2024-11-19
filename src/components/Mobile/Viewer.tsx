@@ -179,12 +179,12 @@ const Viewer: React.FC = () => {
   return (
     <div
       ref={timelineContainerRef}
-      className="relative h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth pb-[60px] pt-[100px] scrollbar-hide"
+      className="max-height: 100vh; relative h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth pb-[60px] pt-[100px] scrollbar-hide"
     >
       <button
         ref={buttonRef}
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-        style={{ left: "5%", top: "48%", transform: "translateY(-50%)" }}
+        style={{ left: "5%", top: "50%", transform: "translateY(-50%)" }}
         className="w-30 fixed z-40 flex h-[70vh] flex-col items-center"
       >
         <FontAwesomeIcon icon={faBars} />
@@ -220,7 +220,7 @@ const Viewer: React.FC = () => {
 
       <div
         className="w-30 fixed z-40 flex h-[70vh] flex-col items-center"
-        style={{ right: "2%", top: "47%", transform: "translateY(-50%)" }}
+        style={{ right: "2%", top: "49%", transform: "translateY(-50%)" }}
       >
         <div className="mb-4 flex space-x-2 text-[10px]">
           <button
@@ -260,7 +260,7 @@ const Viewer: React.FC = () => {
         <div
           key={item.id}
           id={`item-${item.id}`}
-          className="relative h-screen w-full snap-start bg-cover bg-center pb-[60px] pt-[100px]"
+          className="relative h-screen w-full snap-start bg-cover bg-center"
           style={{ backgroundImage: `url(${item.image})` }}
         >
           <div className="absolute inset-0 bg-black/60"></div>
