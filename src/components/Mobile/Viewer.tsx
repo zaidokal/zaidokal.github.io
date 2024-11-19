@@ -30,6 +30,9 @@ const Viewer: React.FC = () => {
   const titlesListRef = useRef<HTMLDivElement>(null);
   const titleItemRefs = useRef<(HTMLDivElement | null)[]>([]);
 
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
   const searchParams = useSearchParams();
   const queryId = searchParams?.get("id");
 
@@ -155,14 +158,33 @@ const Viewer: React.FC = () => {
     setIsDropdownOpen(false);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        buttonRef.current &&
+        !dropdownRef.current.contains(event.target as Node) &&
+        !buttonRef.current.contains(event.target as Node)
+      ) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div
       ref={timelineContainerRef}
-      className="relative h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth pb-[60px] pt-[100px] scrollbar-hide"
+      className="max-height: 100vh; relative h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth pb-[60px] pt-[100px] scrollbar-hide"
     >
       <button
+        ref={buttonRef}
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-        style={{ left: "5%", top: "48%", transform: "translateY(-50%)" }}
+        style={{ left: "5%", top: "50%", transform: "translateY(-50%)" }}
         className="w-30 fixed z-40 flex h-[70vh] flex-col items-center"
       >
         <FontAwesomeIcon icon={faBars} />
@@ -170,6 +192,7 @@ const Viewer: React.FC = () => {
 
       {isDropdownOpen && (
         <div
+          ref={dropdownRef}
           style={{
             left: "3%",
             top: "33%",
@@ -197,7 +220,7 @@ const Viewer: React.FC = () => {
 
       <div
         className="w-30 fixed z-40 flex h-[70vh] flex-col items-center"
-        style={{ right: "2%", top: "47%", transform: "translateY(-50%)" }}
+        style={{ right: "2%", top: "49%", transform: "translateY(-50%)" }}
       >
         <div className="mb-4 flex space-x-2 text-[10px]">
           <button
@@ -237,7 +260,7 @@ const Viewer: React.FC = () => {
         <div
           key={item.id}
           id={`item-${item.id}`}
-          className="relative h-screen w-full snap-start bg-cover bg-center pb-[60px] pt-[100px]"
+          className="relative h-screen w-full snap-start bg-cover bg-center"
           style={{ backgroundImage: `url(${item.image})` }}
         >
           <div className="absolute inset-0 bg-black/60"></div>
