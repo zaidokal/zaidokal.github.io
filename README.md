@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Personal Portfolio Website
 
-## Getting Started
+## 🔗 Check Out My Website  
+👉 [Visit My Website](https://www.zaidokal.com)  
 
-First, run the development server:
+## ✨ Description  
+This is my personal portfolio website designed to showcase my skills, projects, and professional experience. It is built using modern technologies like Next.js, TypeScript, and Tailwind CSS, offering a seamless user experience across desktop and mobile platforms. The website highlights my journey, achievements, and work samples while providing easy navigation for visitors.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 Features  
+- **Responsive Design**: Optimized for viewing on all devices, including desktops, tablets, and smartphones.  
+- **Dynamic Components**: Interactive sections for timeline, education, and resume, with direct links to GitHub, LinkedIn, and email.  
+- **Custom Fonts**: Unique typography with Aboreto and KellySlab fonts for a professional and creative feel.  
+- **Mobile and Desktop Specific Navigation**: Separate designs for mobile and desktop views with tailored redirects for each.  
+- **Modern Tech Stack**: Built with Next.js for speed and scalability, styled with Tailwind CSS for a clean and elegant UI.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Technologies Used  
+- **Framework**: [Next.js](https://nextjs.org/)  
+- **Programming Language**: TypeScript, JavaScript  
+- **Styling**: Tailwind CSS  
+- **Fonts**: Aboreto-Regular.ttf, KellySlab  
+- **Version Control**: GitHub  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📖 Usage  
+Visit the live site to explore:  
+- My background, education, skills, and professional journey.  
+- Detailed projects and their respective technologies.  
+- Direct links to connect with me via LinkedIn, GitHub, and email.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📬 Contact  
+For any questions or feedback, reach out to me via:  
+- ✉️ Email: [zaidokal@gmail.com](mailto:zaidokal@gmail.com)  
+- [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zaidokal/)  
+- [![GitHub](https://img.shields.io/badge/-GitHub-black?logo=github&logoColor=white)](https://github.com/zaidokal)  
