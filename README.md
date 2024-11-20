@@ -14,7 +14,7 @@ This is my personal portfolio website designed to showcase my skills, projects, 
 - **Modern Tech Stack**: Built with Next.js for speed and scalability, styled with Tailwind CSS for a clean and elegant UI.  
 
 ## 🛠️ Technologies Used  
-- **Framework**: [Next.js](https://nextjs.org/)  
+- **Framework**: Next.js
 - **Programming Language**: TypeScript, JavaScript  
 - **Styling**: Tailwind CSS  
 - **Fonts**: Aboreto-Regular.ttf, KellySlab  
