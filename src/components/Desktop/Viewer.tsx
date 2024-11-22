@@ -11,6 +11,9 @@ import {
   faLightbulb,
   faArrowUp,
   faArrowDown,
+  faTimes,
+  faChevronLeft,
+  faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 interface TimelineItem {
@@ -20,6 +23,7 @@ interface TimelineItem {
   description: string;
   category: string;
   image: string;
+  screenshots: string[];
 }
 
 const Viewer: React.FC = () => {
@@ -28,6 +32,9 @@ const Viewer: React.FC = () => {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentScreenshots, setCurrentScreenshots] = useState<string[]>([]);
 
   const timelineContainerRef = useRef<HTMLDivElement>(null);
   const titlesListRef = useRef<HTMLDivElement>(null);
@@ -35,6 +42,26 @@ const Viewer: React.FC = () => {
 
   const searchParams = useSearchParams();
   const queryId = searchParams?.get("id");
+
+  const openGallery = (screenshots: string[]) => {
+    setCurrentScreenshots(screenshots);
+    setShowModal(true);
+    setCurrentImageIndex(0);
+  };
+
+  const closeGallery = () => setShowModal(false);
+
+  const nextImage = () => {
+    if (currentImageIndex < currentScreenshots.length - 1) {
+      setCurrentImageIndex((prev) => prev + 1);
+    }
+  };
+
+  const prevImage = () => {
+    if (currentImageIndex > 0) {
+      setCurrentImageIndex((prev) => prev - 1);
+    }
+  };
 
   useEffect(() => {
     fetch("/data/timeline.json")
@@ -271,9 +298,117 @@ const Viewer: React.FC = () => {
             <h2 className="mb-2 text-4xl font-bold">{item.year}</h2>
             <h3 className="mb-4 text-2xl">{item.title}</h3>
             <p className="max-w-xl">{item.description}</p>
+
+            {item.screenshots.length > 0 ? (
+              <div className="absolute left-4 top-1/2 flex w-[400px] -translate-y-1/2 flex-col items-center gap-4 rounded-lg">
+                <h3 className="mb-2 text-lg font-semibold text-white">
+                  Screenshots
+                </h3>
+                <div
+                  className="grid cursor-pointer grid-cols-2 gap-2"
+                  onClick={() => openGallery(item.screenshots)}
+                >
+                  {item.screenshots.slice(0, 4).map((screenshot, index) => (
+                    <div
+                      key={index}
+                      className="relative h-[150px] w-[150px] overflow-hidden rounded-lg bg-gray-800 shadow-md transition-transform duration-300 hover:scale-105"
+                    >
+                      <img
+                        src={screenshot}
+                        alt={`Preview ${index + 1}`}
+                        className="h-full w-full object-cover"
+                      />
+                      {index === 3 && item.screenshots.length > 4 && (
+                        <div className="absolute bottom-0 right-0 flex h-full w-full items-center justify-center bg-black/60 text-white">
+                          +{item.screenshots.length - 4} more
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <div className="absolute left-4 top-1/2 flex w-[400px] -translate-y-1/2 items-center justify-center">
+                <div className="text-center text-lg italic text-gray-400">
+                  No Screenshots Yet
+                </div>
+              </div>
+            )}
           </div>
         </div>
       ))}
+
+      {showModal && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-95"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) closeGallery();
+          }}
+        >
+          <div className="relative flex w-full max-w-6xl flex-col items-center p-6">
+            <div className="relative flex w-full items-center justify-center">
+              <img
+                src={currentScreenshots[currentImageIndex]}
+                alt={`Screenshot ${currentImageIndex + 1}`}
+                className="h-[70vh] w-full max-w-4xl rounded-lg object-contain shadow-lg"
+              />
+
+              <button
+                className="absolute right-[-20px] top-[90px] rounded-full bg-black bg-opacity-50 p-2 text-white transition hover:bg-opacity-70 hover:text-gray-400"
+                onClick={closeGallery}
+              >
+                <FontAwesomeIcon icon={faTimes} size="2x" />
+              </button>
+
+              {currentImageIndex > 0 && (
+                <button
+                  className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-black bg-opacity-50 p-3 text-white hover:bg-opacity-70"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    prevImage();
+                  }}
+                >
+                  <FontAwesomeIcon icon={faChevronLeft} size="2x" />
+                </button>
+              )}
+              {currentImageIndex < currentScreenshots.length - 1 && (
+                <button
+                  className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-black bg-opacity-50 p-3 text-white hover:bg-opacity-70"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    nextImage();
+                  }}
+                >
+                  <FontAwesomeIcon icon={faChevronRight} size="2x" />
+                </button>
+              )}
+            </div>
+
+            <div className="mt-6 flex items-center justify-center gap-4 overflow-x-auto px-2 scrollbar-hide">
+              {currentScreenshots.map((screenshot, index) => (
+                <div
+                  key={index}
+                  className={`h-[80px] w-[120px] cursor-pointer rounded-md border-2 transition-transform ${
+                    index === currentImageIndex
+                      ? "scale-110 border-blue-500"
+                      : "border-gray-600"
+                  } hover:scale-105`}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setCurrentImageIndex(index);
+                  }}
+                >
+                  <img
+                    src={screenshot}
+                    alt={`Thumbnail ${index + 1}`}
+                    className="h-full w-full rounded object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
