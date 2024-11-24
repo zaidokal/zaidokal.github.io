@@ -39,7 +39,7 @@ const PageContent: React.FC<PageContentProps> = ({
         <ScreenshotPreview
           screenshots={item.screenshots}
           openGallery={handleOpenGallery}
-          githubLink={item.github} // Pass GitHub link to ScreenshotPreview
+          githubLink={item.github}
         />
       </div>
     </div>

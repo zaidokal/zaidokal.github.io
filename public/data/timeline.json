@@ -6,8 +6,7 @@
     "description": "Started my engineering journey at Western University, diving into the fundamentals and exploring the field.",
     "category": "education",
     "image": "/Pictures/Timeline/WesternUniversity.png",
-    "screenshots": [],
-    "github": ""
+    "screenshots": []
   },
   {
     "id": "2",
@@ -16,8 +15,7 @@
     "description": "Worked as a Research Assistant in Advancement Services, handling data entry, managing projects for data accuracy, and supporting scheduling and software tools.",
     "category": "experience",
     "image": "/Pictures/Timeline/WesternUniversity2.jpg",
-    "screenshots": [],
-    "github": ""
+    "screenshots": []
   },
   {
     "id": "3",
@@ -26,8 +24,14 @@
     "description": "A water intake tracker with a Node.js backend and React frontend, featuring real-time hydration monitoring and a dynamic, responsive UI.",
     "category": "project",
     "image": "/Pictures/Timeline/purpleBlocks.jpg",
-    "screenshots": [],
-    "github": ""
+    "screenshots": [
+      "/screenshots/Glacier/UI.png",
+      "/screenshots/Glacier/UI_2.png",
+      "/screenshots/Glacier/UI_3.png",
+      "/screenshots/Glacier/UI_4.png",
+      "/screenshots/Glacier/UI_5.png"
+    ],
+    "github": "https://github.com/zaidokal/Glacier"
   },
   {
     "id": "4",
@@ -36,8 +40,11 @@
     "description": "An open-world RPG in Unity with AI-driven boss battles, procedurally generated terrains, and a dynamic mission tracking system.",
     "category": "project",
     "image": "/Pictures/Timeline/projection.jpg",
-    "screenshots": [],
-    "github": ""
+    "screenshots": [
+      "/screenshots/Projection/Level1Design.gif",
+      "/screenshots/Projection/EnemyAI.gif"
+    ],
+    "github": "https://github.com/zaidokal/Projection"
   },
   {
     "id": "5",
@@ -46,8 +53,14 @@
     "description": "COMING SOON",
     "category": "project",
     "image": "/Pictures/Timeline/flowers.jpg",
-    "screenshots": [],
-    "github": ""
+    "screenshots": [
+      "/screenshots/Beautiful-Flowers/UI_Page1.png",
+      "/screenshots/Beautiful-Flowers/UI_Page2.png",
+      "/screenshots/Beautiful-Flowers/UI_Page3.png",
+      "/screenshots/Beautiful-Flowers/UI_Page4.png",
+      "/screenshots/Beautiful-Flowers/UI_Page5.png"
+    ],
+    "github": "https://github.com/zaidokal/Beautiful-Flowers"
   },
   {
     "id": "6",
@@ -66,18 +79,27 @@
     "description": "COMING SOON",
     "category": "project",
     "image": "/Pictures/Timeline/hydra.jpg",
-    "screenshots": [],
-    "github": ""
+    "screenshots": [
+      "/screenshots/Hydra-Game/Gameplay.png",
+      "/screenshots/Hydra-Game/UI.png",
+      "/screenshots/Hydra-Game/GameWin.png",
+      "/screenshots/Hydra-Game/GameOver.png"
+    ],
+    "github": "https://github.com/zaidokal/Hydra-Game"
   },
   {
     "id": "8",
     "year": "Feb 2022",
-    "title": "Role a Ball",
+    "title": "Role A Ball",
     "description": "A 3D Unity game with a collectibles system, utilizing Unity libraries and custom 3D models.",
     "category": "project",
     "image": "/Pictures/Timeline/roleABall.jpg",
-    "screenshots": [],
-    "github": ""
+    "screenshots": [
+      "/screenshots/Roll-A-Ball/RoleABall_Gameplay.png",
+      "/screenshots/Roll-A-Ball/RoleABall_Gameplay2.png",
+      "/screenshots/Roll-A-Ball/RoleABall_Winner.png"
+    ],
+    "github": "https://github.com/zaidokal/Roll-A-Ball"
   },
   {
     "id": "9",
@@ -86,18 +108,12 @@
     "description": "COMING SOON",
     "category": "project",
     "image": "/Pictures/Timeline/spaceShumpGame.jpg",
-    "screenshots": [],
-    "github": ""
-  },
-  {
-    "id": "10",
-    "year": "Mar 2022",
-    "title": "Game Scope",
-    "description": "COMING SOON",
-    "category": "project",
-    "image": "/Pictures/Timeline/soccer.jpg",
-    "screenshots": [],
-    "github": ""
+    "screenshots": [
+      "/screenshots/Space-SHUMP-Game/GamePlay.png",
+      "/screenshots/Space-SHUMP-Game/GamePlay_Shooting.png",
+      "/screenshots/Space-SHUMP-Game/GamePlay_Shooting2.png"
+    ],
+    "github": "https://github.com/zaidokal/Space-SHUMP-Game"
   },
   {
     "id": "11",
@@ -106,8 +122,7 @@
     "description": "Diagnosed complex database issues and optimized client registration processes, boosting client satisfaction by 15% and registrations by 26%.",
     "category": "experience",
     "image": "/Pictures/Timeline/Co-operators.jpg",
-    "screenshots": [],
-    "github": ""
+    "screenshots": []
   },
   {
     "id": "12",
@@ -116,8 +131,7 @@
     "description": "Maintained play standards, enforced rules, resolved infractions, and coordinated with players, officials, and facility managers.",
     "category": "experience",
     "image": "/Pictures/Timeline/mustangsPitch.jpeg",
-    "screenshots": [],
-    "github": ""
+    "screenshots": []
   },
   {
     "id": "13",
@@ -126,8 +140,14 @@
     "description": "COMING SOON",
     "category": "project",
     "image": "/Pictures/Timeline/pokemon.jpg",
-    "screenshots": [],
-    "github": ""
+    "screenshots": [
+      "/screenshots/Pokedex/Pokedex_UI.png",
+      "/screenshots/Pokedex/Pokedex_Name.png",
+      "/screenshots/Pokedex/Pokedex_Name2.png",
+      "/screenshots/Pokedex/Pokedex_Num.png",
+      "/screenshots/Pokedex/Pokedex_Error.png"
+    ],
+    "github": "https://github.com/zaidokal/Pokedex"
   },
   {
     "id": "14",
@@ -146,57 +166,132 @@
     "description": "A RESTful API with Node.js and Express for music data retrieval, paired with a responsive React frontend, featuring caching and state management for enhanced performance and scalability.",
     "category": "project",
     "image": "/Pictures/Timeline/music.jpg",
-    "screenshots": [],
-    "github": ""
-  },
-  {
-    "id": "16",
-    "year": "Mar 2023",
-    "title": "Calculator",
-    "description": "COMING SOON",
-    "category": "project",
-    "image": "/Pictures/Timeline/math.jpg",
-    "screenshots": [],
-    "github": ""
+    "screenshots": [
+      "/screenshots/Music-Enthusiast/HomePage.png",
+      "/screenshots/Music-Enthusiast/LoginPage.png",
+      "/screenshots/Music-Enthusiast/RegisterPage.png",
+      "/screenshots/Music-Enthusiast/ChangePasswordPage.png",
+      "/screenshots/Music-Enthusiast/SearchPage.png",
+      "/screenshots/Music-Enthusiast/SearchPage2.png",
+      "/screenshots/Music-Enthusiast/ResultsPage.png",
+      "/screenshots/Music-Enthusiast/TrackPage.png",
+      "/screenshots/Music-Enthusiast/PlaylistPage.png",
+      "/screenshots/Music-Enthusiast/CreatePlaylistPage.png",
+      "/screenshots/Music-Enthusiast/CreateReviewPage.png",
+      "/screenshots/Music-Enthusiast/HomePage2.png"
+    ],
+    "github": "https://github.com/zaidokal/Music-Enthusiast"
   },
   {
     "id": "17",
     "year": "Apr 2023",
-    "title": "Online Tic-Tac-Toe",
+    "title": "Tic-Tac-Toe",
     "description": "COMING SOON",
     "category": "project",
     "image": "/Pictures/Timeline/ticTacToe.jpg",
-    "screenshots": [],
-    "github": ""
+    "screenshots": [
+      "/screenshots/Tic-Tac-Toe/UI.png",
+      "/screenshots/Tic-Tac-Toe/UI_2.png",
+      "/screenshots/Tic-Tac-Toe/X_Win.png",
+      "/screenshots/Tic-Tac-Toe/O_Win.png",
+      "/screenshots/Tic-Tac-Toe/Draw.png"
+    ],
+    "github": "https://github.com/zaidokal/Tic-Tac-Toe"
   },
   {
     "id": "18",
     "year": "Jan 2023 - Apr 2023",
-    "title": "CourseFlow",
+    "title": "CourseCanvas",
     "description": "A MERN stack platform for instructors with dynamic CRUD operations, real-time updates, version control, and optimized for scalability and fast data retrieval using GCP.",
     "category": "project",
     "image": "/Pictures/Timeline/corporate.jpg",
-    "screenshots": [],
-    "github": ""
+    "screenshots": [
+      "/screenshots/CourseCanvas/LoginPage.png",
+      "/screenshots/CourseCanvas/Instructor_View.png",
+      "/screenshots/CourseCanvas/Instructor_CourseView.png",
+      "/screenshots/CourseCanvas/Admin_View.png",
+      "/screenshots/CourseCanvas/Admin_CourseView.png",
+      "/screenshots/CourseCanvas/Admin_InstructorAssignment.png",
+      "/screenshots/CourseCanvas/Admin_ApprovalScreen.png",
+      "/screenshots/CourseCanvas/ProgramDirector_View.png",
+      "/screenshots/CourseCanvas/ProgramDirector_View2.png",
+      "/screenshots/CourseCanvas/ProgramDirector_CourseView.png",
+      "/screenshots/CourseCanvas/ProgramDirector_ApprovalScreen.png"
+    ],
+    "github": "https://github.com/zaidokal/CourseCanvas"
   },
   {
     "id": "19",
+    "year": "Sept 2024 - Oct 2024",
+    "title": "John-Lemons-Haunted-Jaunt",
+    "description": "",
+    "category": "project",
+    "image": "",
+    "screenshots": [
+      "/screenshots/John-Lemons-Haunted-Jaunt/GamePlay.png",
+      "/screenshots/John-Lemons-Haunted-Jaunt/GamePlay2.png",
+      "/screenshots/John-Lemons-Haunted-Jaunt/GamePlay3.png",
+      "/screenshots/John-Lemons-Haunted-Jaunt/Collected_Key.png",
+      "/screenshots/John-Lemons-Haunted-Jaunt/Winner.png",
+      "/screenshots/John-Lemons-Haunted-Jaunt/Loser.png"
+    ],
+    "github": "https://github.com/zaidokal/John-Lemons-Haunted-Jaunt"
+  },
+  {
+    "id": "20",
+    "year": "TBD",
+    "title": "Connect-4-Multiplayer-Game",
+    "description": "",
+    "category": "project",
+    "image": "",
+    "screenshots": [
+      "/screenshots/Connect-4-Multiplayer-Game/Start.png",
+      "/screenshots/Connect-4-Multiplayer-Game/Server.png",
+      "/screenshots/Connect-4-Multiplayer-Game/Client_Start.png",
+      "/screenshots/Connect-4-Multiplayer-Game/Step_2.png",
+      "/screenshots/Connect-4-Multiplayer-Game/Step_3.png",
+      "/screenshots/Connect-4-Multiplayer-Game/Winner.png"
+    ],
+    "github": "https://github.com/zaidokal/Connect-4-Multiplayer-Game"
+  },
+  {
+    "id": "21",
     "year": "May 2023 - Present",
     "title": "J.D Power",
     "description": "Engineered Java-based automation utilities, led migration to Playwright, architected containerized frameworks, developed integration test suites, and accelerated project delivery, earning multiple awards and recognition as a top intern.",
     "category": "experience",
     "image": "/Pictures/Timeline/JDPower.jpg",
-    "screenshots": [],
-    "github": ""
+    "screenshots": [
+      "/screenshots/J.D-Power/Day1.JPEG",
+      "/screenshots/J.D-Power/FirstDayGroup.JPEG",
+      "/screenshots/J.D-Power/InnovationAward.JPEG",
+      "/screenshots/J.D-Power/InnovationAwardSlide.PNG",
+      "/screenshots/J.D-Power/TeamLunch.JPEG",
+      "/screenshots/J.D-Power/LastDay.JPEG"
+    ]
   },
   {
     "id": "20",
+    "year": "TBD",
+    "title": "The-Maze-Runner",
+    "description": "",
+    "category": "project",
+    "image": "",
+    "screenshots": [
+      "/screenshots/The-Maze-Runner/UI.png",
+      "/screenshots/The-Maze-Runner/GamePlay.png",
+      "/screenshots/The-Maze-Runner/GamePlay2.png",
+      "/screenshots/The-Maze-Runner/Winner.png"
+    ],
+    "github": "https://github.com/zaidokal/The-Maze-Runner"
+  },
+  {
+    "id": "22",
     "year": "Apr 2025",
     "title": "Expected Graduation",
     "description": "COMING SOON",
     "category": "education",
     "image": "/Pictures/Timeline/WesternUniversityEng.jpg",
-    "screenshots": [],
-    "github": ""
+    "screenshots": []
   }
 ]
