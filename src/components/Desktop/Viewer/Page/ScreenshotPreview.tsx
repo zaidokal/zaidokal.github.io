@@ -4,7 +4,7 @@ import GitHubButton from "@/components/Desktop/Viewer/GitHubButton";
 interface ScreenshotPreviewProps {
   screenshots: string[];
   openGallery: (screenshots: string[]) => void;
-  githubLink?: string; // Optional prop for the GitHub link
+  githubLink?: string;
 }
 
 const ScreenshotPreview: React.FC<ScreenshotPreviewProps> = ({
@@ -16,7 +16,7 @@ const ScreenshotPreview: React.FC<ScreenshotPreviewProps> = ({
     <div className="absolute left-4 top-1/2 flex w-[400px] -translate-y-1/2 flex-col items-center gap-6 rounded-lg">
       {screenshots.length > 0 ? (
         <>
-          <h3 className="mb-2 text-lg font-semibold text-white">Screenshots</h3>
+          <h3 className="mb-2 text-lg font-semibold text-white">Photos</h3>
           <div
             className="grid cursor-pointer grid-cols-2 gap-2"
             onClick={() => openGallery(screenshots)}
@@ -24,7 +24,7 @@ const ScreenshotPreview: React.FC<ScreenshotPreviewProps> = ({
             {screenshots.slice(0, 4).map((screenshot, index) => (
               <div
                 key={index}
-                className="relative h-[150px] w-[150px] overflow-hidden rounded-lg bg-gray-800 shadow-md transition-transform duration-300 hover:scale-105"
+                className="relative h-[200px] w-[200px] overflow-hidden rounded-lg bg-gray-800 shadow-md transition-transform duration-300 hover:scale-105"
               >
                 <img
                   src={screenshot}
@@ -42,11 +42,10 @@ const ScreenshotPreview: React.FC<ScreenshotPreviewProps> = ({
         </>
       ) : (
         <div className="text-center text-lg italic text-gray-400">
-          No Screenshots Yet
+          No Photos Yet
         </div>
       )}
 
-      {/* Render GitHub Button if a link is provided */}
       {githubLink && <GitHubButton link={githubLink} />}
     </div>
   );
