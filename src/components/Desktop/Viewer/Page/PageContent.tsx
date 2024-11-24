@@ -24,10 +24,15 @@ const PageContent: React.FC<PageContentProps> = ({
   return (
     <div
       id={`item-${item.id}`}
-      className="relative h-screen w-full snap-start bg-cover bg-center pb-[60px] pt-[100px]"
-      style={{ backgroundImage: `url(${item.image})` }}
+      className={`relative h-screen w-full snap-start bg-cover bg-center pb-[60px] pt-[100px] ${
+        item.image ? "" : ""
+      }`}
+      style={item.image ? { backgroundImage: `url(${item.image})` } : {}}
     >
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div
+        className="absolute inset-0 bg-black/60"
+        style={{ opacity: item.image ? 1 : 0 }}
+      ></div>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white">
         <h2 className="mb-4 text-4xl font-extrabold">{item.year}</h2>

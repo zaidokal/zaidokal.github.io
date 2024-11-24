@@ -37,8 +37,8 @@ const TimelineBox: React.FC<TimelineBoxProps> = ({
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black to-black opacity-75"></div>
 
       <div className="relative z-10 flex h-full flex-col justify-end p-6 text-white">
-        <h2 className="neon-shadow text-2xl font-bold">{year}</h2>
-        <h3 className="text-lg font-semibold">{title}</h3>
+        <h2 className="neon-shadow text-2xl font-bold">{title}</h2>
+        <h3 className="text-lg font-semibold"> {year}</h3>
         <p className="mt-2 text-sm text-gray-300">{description}</p>
       </div>
     </div>

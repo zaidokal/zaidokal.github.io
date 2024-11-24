@@ -90,7 +90,7 @@ const TitleNavigator: React.FC<TitleNavigatorProps> = ({
               currentIndex === index ? "bg-gray-700" : ""
             }`}
             onClick={() =>
-              scrollToNext(
+              scrollToItem(
                 index,
                 filteredData,
                 timelineContainerRef,

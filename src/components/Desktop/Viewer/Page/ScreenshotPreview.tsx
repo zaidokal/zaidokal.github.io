@@ -18,7 +18,7 @@ const ScreenshotPreview: React.FC<ScreenshotPreviewProps> = ({
         <>
           <h3 className="mb-2 text-lg font-semibold text-white">Photos</h3>
           <div
-            className="grid cursor-pointer grid-cols-2 gap-2"
+            className="grid cursor-pointer grid-cols-2 gap-4 gap-x-7"
             onClick={() => openGallery(screenshots)}
           >
             {screenshots.slice(0, 4).map((screenshot, index) => (
