@@ -6,7 +6,9 @@
     "description": "Started my engineering journey at Western University, diving into the fundamentals and exploring the field.",
     "category": "education",
     "image": "/Pictures/Timeline/WesternUniversity.png",
-    "screenshots": []
+    "screenshots": [],
+    "github": "",
+    "favourites": false
   },
   {
     "id": "2",
@@ -15,7 +17,9 @@
     "description": "Worked as a Research Assistant in Advancement Services, handling data entry, managing projects for data accuracy, and supporting scheduling and software tools.",
     "category": "experience",
     "image": "/Pictures/Timeline/WesternUniversity2.jpg",
-    "screenshots": []
+    "screenshots": [],
+    "github": "",
+    "favourites": false
   },
   {
     "id": "3",
@@ -31,7 +35,8 @@
       "/screenshots/Glacier/UI_4.png",
       "/screenshots/Glacier/UI_5.png"
     ],
-    "github": "https://github.com/zaidokal/Glacier"
+    "github": "https://github.com/zaidokal/Glacier",
+    "favourites": false
   },
   {
     "id": "4",
@@ -44,7 +49,8 @@
       "/screenshots/Projection/Level1Design.gif",
       "/screenshots/Projection/EnemyAI.gif"
     ],
-    "github": "https://github.com/zaidokal/Projection"
+    "github": "https://github.com/zaidokal/Projection",
+    "favourites": false
   },
   {
     "id": "5",
@@ -60,7 +66,8 @@
       "/screenshots/Beautiful-Flowers/UI_Page4.png",
       "/screenshots/Beautiful-Flowers/UI_Page5.png"
     ],
-    "github": "https://github.com/zaidokal/Beautiful-Flowers"
+    "github": "https://github.com/zaidokal/Beautiful-Flowers",
+    "favourites": false
   },
   {
     "id": "6",
@@ -70,7 +77,8 @@
     "category": "project",
     "image": "/Pictures/Timeline/store.jpg",
     "screenshots": [],
-    "github": ""
+    "github": "",
+    "favourites": false
   },
   {
     "id": "7",
@@ -85,7 +93,8 @@
       "/screenshots/Hydra-Game/GameWin.png",
       "/screenshots/Hydra-Game/GameOver.png"
     ],
-    "github": "https://github.com/zaidokal/Hydra-Game"
+    "github": "https://github.com/zaidokal/Hydra-Game",
+    "favourites": false
   },
   {
     "id": "8",
@@ -99,7 +108,8 @@
       "/screenshots/Roll-A-Ball/RoleABall_Gameplay2.png",
       "/screenshots/Roll-A-Ball/RoleABall_Winner.png"
     ],
-    "github": "https://github.com/zaidokal/Roll-A-Ball"
+    "github": "https://github.com/zaidokal/Roll-A-Ball",
+    "favourites": false
   },
   {
     "id": "9",
@@ -113,7 +123,8 @@
       "/screenshots/Space-SHUMP-Game/GamePlay_Shooting.png",
       "/screenshots/Space-SHUMP-Game/GamePlay_Shooting2.png"
     ],
-    "github": "https://github.com/zaidokal/Space-SHUMP-Game"
+    "github": "https://github.com/zaidokal/Space-SHUMP-Game",
+    "favourites": false
   },
   {
     "id": "11",
@@ -122,7 +133,9 @@
     "description": "Diagnosed complex database issues and optimized client registration processes, boosting client satisfaction by 15% and registrations by 26%.",
     "category": "experience",
     "image": "/Pictures/Timeline/Co-operators.jpg",
-    "screenshots": []
+    "screenshots": [],
+    "github": "",
+    "favourites": false
   },
   {
     "id": "12",
@@ -131,7 +144,9 @@
     "description": "Maintained play standards, enforced rules, resolved infractions, and coordinated with players, officials, and facility managers.",
     "category": "experience",
     "image": "/Pictures/Timeline/mustangsPitch.jpeg",
-    "screenshots": []
+    "screenshots": [],
+    "github": "",
+    "favourites": false
   },
   {
     "id": "13",
@@ -147,7 +162,8 @@
       "/screenshots/Pokedex/Pokedex_Num.png",
       "/screenshots/Pokedex/Pokedex_Error.png"
     ],
-    "github": "https://github.com/zaidokal/Pokedex"
+    "github": "https://github.com/zaidokal/Pokedex",
+    "favourites": false
   },
   {
     "id": "14",
@@ -157,7 +173,8 @@
     "category": "project",
     "image": "/Pictures/Timeline/database.jpg",
     "screenshots": [],
-    "github": ""
+    "github": "",
+    "favourites": false
   },
   {
     "id": "15",
@@ -180,7 +197,8 @@
       "/screenshots/Music-Enthusiast/CreateReviewPage.png",
       "/screenshots/Music-Enthusiast/HomePage2.png"
     ],
-    "github": "https://github.com/zaidokal/Music-Enthusiast"
+    "github": "https://github.com/zaidokal/Music-Enthusiast",
+    "favourites": false
   },
   {
     "id": "17",
@@ -196,7 +214,8 @@
       "/screenshots/Tic-Tac-Toe/O_Win.png",
       "/screenshots/Tic-Tac-Toe/Draw.png"
     ],
-    "github": "https://github.com/zaidokal/Tic-Tac-Toe"
+    "github": "https://github.com/zaidokal/Tic-Tac-Toe",
+    "favourites": false
   },
   {
     "id": "18",
@@ -218,7 +237,8 @@
       "/screenshots/CourseCanvas/ProgramDirector_CourseView.png",
       "/screenshots/CourseCanvas/ProgramDirector_ApprovalScreen.png"
     ],
-    "github": "https://github.com/zaidokal/CourseCanvas"
+    "github": "https://github.com/zaidokal/CourseCanvas",
+    "favourites": false
   },
   {
     "id": "19",
@@ -235,7 +255,8 @@
       "/screenshots/John-Lemons-Haunted-Jaunt/Winner.png",
       "/screenshots/John-Lemons-Haunted-Jaunt/Loser.png"
     ],
-    "github": "https://github.com/zaidokal/John-Lemons-Haunted-Jaunt"
+    "github": "https://github.com/zaidokal/John-Lemons-Haunted-Jaunt",
+    "favourites": false
   },
   {
     "id": "20",
@@ -252,7 +273,8 @@
       "/screenshots/Connect-4-Multiplayer-Game/Step_3.png",
       "/screenshots/Connect-4-Multiplayer-Game/Winner.png"
     ],
-    "github": "https://github.com/zaidokal/Connect-4-Multiplayer-Game"
+    "github": "https://github.com/zaidokal/Connect-4-Multiplayer-Game",
+    "favourites": false
   },
   {
     "id": "21",
@@ -268,7 +290,9 @@
       "/screenshots/J.D-Power/InnovationAwardSlide.PNG",
       "/screenshots/J.D-Power/TeamLunch.JPEG",
       "/screenshots/J.D-Power/LastDay.JPEG"
-    ]
+    ],
+    "github": "",
+    "favourites": false
   },
   {
     "id": "20",
@@ -283,7 +307,8 @@
       "/screenshots/The-Maze-Runner/GamePlay2.png",
       "/screenshots/The-Maze-Runner/Winner.png"
     ],
-    "github": "https://github.com/zaidokal/The-Maze-Runner"
+    "github": "https://github.com/zaidokal/The-Maze-Runner",
+    "favourites": false
   },
   {
     "id": "22",
@@ -292,6 +317,8 @@
     "description": "COMING SOON",
     "category": "education",
     "image": "/Pictures/Timeline/WesternUniversityEng.jpg",
-    "screenshots": []
+    "screenshots": [],
+    "github": "",
+    "favourites": false
   }
 ]
