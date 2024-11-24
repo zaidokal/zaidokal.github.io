@@ -30,13 +30,16 @@ const PageContent: React.FC<PageContentProps> = ({
       <div className="absolute inset-0 bg-black/60"></div>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white">
-        <h2 className="mb-2 text-4xl font-bold">{item.year}</h2>
-        <h3 className="mb-4 text-2xl">{item.title}</h3>
-        <p className="max-w-xl">{item.description}</p>
+        <h2 className="mb-4 text-4xl font-extrabold">{item.year}</h2>
+        <h3 className="mb-6 text-2xl font-semibold">{item.title}</h3>
+        <p className="mb-8 max-w-xl text-lg leading-relaxed">
+          {item.description}
+        </p>
 
         <ScreenshotPreview
           screenshots={item.screenshots}
           openGallery={handleOpenGallery}
+          githubLink={item.github} // Pass GitHub link to ScreenshotPreview
         />
       </div>
     </div>

@@ -6,4 +6,5 @@ export interface TimelineItem {
   category: string;
   image: string;
   screenshots: string[];
+  github: string;
 }

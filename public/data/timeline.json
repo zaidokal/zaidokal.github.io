@@ -6,7 +6,8 @@
     "description": "Started my engineering journey at Western University, diving into the fundamentals and exploring the field.",
     "category": "education",
     "image": "/Pictures/Timeline/WesternUniversity.png",
-    "screenshots": []
+    "screenshots": [],
+    "github": ""
   },
   {
     "id": "2",
@@ -15,7 +16,8 @@
     "description": "Worked as a Research Assistant in Advancement Services, handling data entry, managing projects for data accuracy, and supporting scheduling and software tools.",
     "category": "experience",
     "image": "/Pictures/Timeline/WesternUniversity2.jpg",
-    "screenshots": []
+    "screenshots": [],
+    "github": ""
   },
   {
     "id": "3",
@@ -24,7 +26,8 @@
     "description": "A water intake tracker with a Node.js backend and React frontend, featuring real-time hydration monitoring and a dynamic, responsive UI.",
     "category": "project",
     "image": "/Pictures/Timeline/purpleBlocks.jpg",
-    "screenshots": []
+    "screenshots": [],
+    "github": ""
   },
   {
     "id": "4",
@@ -33,7 +36,8 @@
     "description": "An open-world RPG in Unity with AI-driven boss battles, procedurally generated terrains, and a dynamic mission tracking system.",
     "category": "project",
     "image": "/Pictures/Timeline/projection.jpg",
-    "screenshots": []
+    "screenshots": [],
+    "github": ""
   },
   {
     "id": "5",
@@ -42,7 +46,8 @@
     "description": "COMING SOON",
     "category": "project",
     "image": "/Pictures/Timeline/flowers.jpg",
-    "screenshots": []
+    "screenshots": [],
+    "github": ""
   },
   {
     "id": "6",
@@ -51,7 +56,8 @@
     "description": "An online storefront with JavaFX and Java, hosted on AWS, using SQL Server for database management. Designed with use case modeling and an analysis object model.",
     "category": "project",
     "image": "/Pictures/Timeline/store.jpg",
-    "screenshots": []
+    "screenshots": [],
+    "github": ""
   },
   {
     "id": "7",
@@ -60,7 +66,8 @@
     "description": "COMING SOON",
     "category": "project",
     "image": "/Pictures/Timeline/hydra.jpg",
-    "screenshots": []
+    "screenshots": [],
+    "github": ""
   },
   {
     "id": "8",
@@ -69,7 +76,8 @@
     "description": "A 3D Unity game with a collectibles system, utilizing Unity libraries and custom 3D models.",
     "category": "project",
     "image": "/Pictures/Timeline/roleABall.jpg",
-    "screenshots": []
+    "screenshots": [],
+    "github": ""
   },
   {
     "id": "9",
@@ -78,7 +86,8 @@
     "description": "COMING SOON",
     "category": "project",
     "image": "/Pictures/Timeline/spaceShumpGame.jpg",
-    "screenshots": []
+    "screenshots": [],
+    "github": ""
   },
   {
     "id": "10",
@@ -87,7 +96,8 @@
     "description": "COMING SOON",
     "category": "project",
     "image": "/Pictures/Timeline/soccer.jpg",
-    "screenshots": []
+    "screenshots": [],
+    "github": ""
   },
   {
     "id": "11",
@@ -96,7 +106,8 @@
     "description": "Diagnosed complex database issues and optimized client registration processes, boosting client satisfaction by 15% and registrations by 26%.",
     "category": "experience",
     "image": "/Pictures/Timeline/Co-operators.jpg",
-    "screenshots": []
+    "screenshots": [],
+    "github": ""
   },
   {
     "id": "12",
@@ -105,7 +116,8 @@
     "description": "Maintained play standards, enforced rules, resolved infractions, and coordinated with players, officials, and facility managers.",
     "category": "experience",
     "image": "/Pictures/Timeline/mustangsPitch.jpeg",
-    "screenshots": []
+    "screenshots": [],
+    "github": ""
   },
   {
     "id": "13",
@@ -114,7 +126,8 @@
     "description": "COMING SOON",
     "category": "project",
     "image": "/Pictures/Timeline/pokemon.jpg",
-    "screenshots": []
+    "screenshots": [],
+    "github": ""
   },
   {
     "id": "14",
