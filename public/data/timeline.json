@@ -8,7 +8,7 @@
     "image": "/Pictures/Timeline/WesternUniversity.png",
     "screenshots": [],
     "github": "",
-    "favourites": false
+    "favourites": true
   },
   {
     "id": "2",
@@ -127,7 +127,7 @@
     "favourites": false
   },
   {
-    "id": "11",
+    "id": "10",
     "year": "May 2022 - Aug 2022",
     "title": "Co-Operators",
     "description": "Diagnosed complex database issues and optimized client registration processes, boosting client satisfaction by 15% and registrations by 26%.",
@@ -135,10 +135,10 @@
     "image": "/Pictures/Timeline/Co-operators.jpg",
     "screenshots": [],
     "github": "",
-    "favourites": false
+    "favourites": true
   },
   {
-    "id": "12",
+    "id": "11",
     "year": "May 2022 - Present",
     "title": "Intramural Refereeing",
     "description": "Maintained play standards, enforced rules, resolved infractions, and coordinated with players, officials, and facility managers.",
@@ -149,7 +149,7 @@
     "favourites": false
   },
   {
-    "id": "13",
+    "id": "12",
     "year": "Oct 2022",
     "title": "Pokedex",
     "description": "COMING SOON",
@@ -166,7 +166,7 @@
     "favourites": false
   },
   {
-    "id": "14",
+    "id": "13",
     "year": "Nov 2022",
     "title": "Database Project",
     "description": "COMING SOON",
@@ -177,7 +177,7 @@
     "favourites": false
   },
   {
-    "id": "15",
+    "id": "14",
     "year": "Nov 2022",
     "title": "Music Enthusiast",
     "description": "A RESTful API with Node.js and Express for music data retrieval, paired with a responsive React frontend, featuring caching and state management for enhanced performance and scalability.",
@@ -198,10 +198,10 @@
       "/screenshots/Music-Enthusiast/HomePage2.png"
     ],
     "github": "https://github.com/zaidokal/Music-Enthusiast",
-    "favourites": false
+    "favourites": true
   },
   {
-    "id": "17",
+    "id": "15",
     "year": "Apr 2023",
     "title": "Tic-Tac-Toe",
     "description": "COMING SOON",
@@ -218,7 +218,7 @@
     "favourites": false
   },
   {
-    "id": "18",
+    "id": "16",
     "year": "Jan 2023 - Apr 2023",
     "title": "CourseCanvas",
     "description": "A MERN stack platform for instructors with dynamic CRUD operations, real-time updates, version control, and optimized for scalability and fast data retrieval using GCP.",
@@ -238,11 +238,47 @@
       "/screenshots/CourseCanvas/ProgramDirector_ApprovalScreen.png"
     ],
     "github": "https://github.com/zaidokal/CourseCanvas",
+    "favourites": true
+  },
+  {
+    "id": "17",
+    "year": "Jan 2023 - Apr 2023",
+    "title": "Connect-4-Multiplayer-Game",
+    "description": "",
+    "category": "project",
+    "image": "",
+    "screenshots": [
+      "/screenshots/Connect-4-Multiplayer-Game/Start.png",
+      "/screenshots/Connect-4-Multiplayer-Game/Server.png",
+      "/screenshots/Connect-4-Multiplayer-Game/Client_Start.png",
+      "/screenshots/Connect-4-Multiplayer-Game/Step_2.png",
+      "/screenshots/Connect-4-Multiplayer-Game/Step_3.png",
+      "/screenshots/Connect-4-Multiplayer-Game/Winner.png"
+    ],
+    "github": "https://github.com/zaidokal/Connect-4-Multiplayer-Game",
     "favourites": false
   },
   {
+    "id": "18",
+    "year": "May 2023 - Present",
+    "title": "J.D Power",
+    "description": "Engineered Java-based automation utilities, led migration to Playwright, architected containerized frameworks, developed integration test suites, and accelerated project delivery, earning multiple awards and recognition as a top intern.",
+    "category": "experience",
+    "image": "/Pictures/Timeline/JDPower.jpg",
+    "screenshots": [
+      "/screenshots/J.D-Power/Day1.JPEG",
+      "/screenshots/J.D-Power/FirstDayGroup.JPEG",
+      "/screenshots/J.D-Power/InnovationAward.JPEG",
+      "/screenshots/J.D-Power/InnovationAwardSlide.PNG",
+      "/screenshots/J.D-Power/TeamLunch.JPEG",
+      "/screenshots/J.D-Power/LastDay.JPEG"
+    ],
+    "github": "",
+    "favourites": true
+  },
+  {
     "id": "19",
-    "year": "Sept 2024 - Oct 2024",
+    "year": "Sept 2024",
     "title": "John-Lemons-Haunted-Jaunt",
     "description": "",
     "category": "project",
@@ -260,43 +296,7 @@
   },
   {
     "id": "20",
-    "year": "TBD",
-    "title": "Connect-4-Multiplayer-Game",
-    "description": "",
-    "category": "project",
-    "image": "",
-    "screenshots": [
-      "/screenshots/Connect-4-Multiplayer-Game/Start.png",
-      "/screenshots/Connect-4-Multiplayer-Game/Server.png",
-      "/screenshots/Connect-4-Multiplayer-Game/Client_Start.png",
-      "/screenshots/Connect-4-Multiplayer-Game/Step_2.png",
-      "/screenshots/Connect-4-Multiplayer-Game/Step_3.png",
-      "/screenshots/Connect-4-Multiplayer-Game/Winner.png"
-    ],
-    "github": "https://github.com/zaidokal/Connect-4-Multiplayer-Game",
-    "favourites": false
-  },
-  {
-    "id": "21",
-    "year": "May 2023 - Present",
-    "title": "J.D Power",
-    "description": "Engineered Java-based automation utilities, led migration to Playwright, architected containerized frameworks, developed integration test suites, and accelerated project delivery, earning multiple awards and recognition as a top intern.",
-    "category": "experience",
-    "image": "/Pictures/Timeline/JDPower.jpg",
-    "screenshots": [
-      "/screenshots/J.D-Power/Day1.JPEG",
-      "/screenshots/J.D-Power/FirstDayGroup.JPEG",
-      "/screenshots/J.D-Power/InnovationAward.JPEG",
-      "/screenshots/J.D-Power/InnovationAwardSlide.PNG",
-      "/screenshots/J.D-Power/TeamLunch.JPEG",
-      "/screenshots/J.D-Power/LastDay.JPEG"
-    ],
-    "github": "",
-    "favourites": false
-  },
-  {
-    "id": "20",
-    "year": "TBD",
+    "year": "Oct 2024",
     "title": "The-Maze-Runner",
     "description": "",
     "category": "project",
@@ -311,7 +311,7 @@
     "favourites": false
   },
   {
-    "id": "22",
+    "id": "21",
     "year": "Apr 2025",
     "title": "Expected Graduation",
     "description": "COMING SOON",
@@ -319,6 +319,6 @@
     "image": "/Pictures/Timeline/WesternUniversityEng.jpg",
     "screenshots": [],
     "github": "",
-    "favourites": false
+    "favourites": true
   }
 ]
