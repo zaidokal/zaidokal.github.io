@@ -1,3 +1,5 @@
+import technologies from "./technologiesData";
+
 const TimelineData = [
   {
     id: "1",
@@ -5,12 +7,18 @@ const TimelineData = [
     title: "Started University",
     description:
       "Started my engineering journey at Western University, diving into the fundamentals and exploring the field.",
+    accomplishments: "",
     category: "education",
     image: "/Pictures/Timeline/WesternUniversity.png",
     screenshots: [],
     github: "",
     favourites: true,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "2",
@@ -23,7 +31,12 @@ const TimelineData = [
     screenshots: [],
     github: "",
     favourites: false,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "3",
@@ -42,7 +55,12 @@ const TimelineData = [
     ],
     github: "https://github.com/zaidokal/Glacier",
     favourites: false,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "4",
@@ -58,7 +76,12 @@ const TimelineData = [
     ],
     github: "https://github.com/zaidokal/Projection",
     favourites: false,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "5",
@@ -77,7 +100,12 @@ const TimelineData = [
     ],
     github: "https://github.com/zaidokal/Beautiful-Flowers",
     favourites: false,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "6",
@@ -90,7 +118,12 @@ const TimelineData = [
     screenshots: [],
     github: "",
     favourites: false,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "7",
@@ -108,7 +141,12 @@ const TimelineData = [
     ],
     github: "https://github.com/zaidokal/Hydra-Game",
     favourites: false,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "8",
@@ -125,7 +163,12 @@ const TimelineData = [
     ],
     github: "https://github.com/zaidokal/Roll-A-Ball",
     favourites: false,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "9",
@@ -142,7 +185,12 @@ const TimelineData = [
     ],
     github: "https://github.com/zaidokal/Space-SHUMP-Game",
     favourites: false,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "10",
@@ -155,7 +203,12 @@ const TimelineData = [
     screenshots: [],
     github: "",
     favourites: true,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "11",
@@ -168,7 +221,12 @@ const TimelineData = [
     screenshots: [],
     github: "",
     favourites: false,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "12",
@@ -187,7 +245,12 @@ const TimelineData = [
     ],
     github: "https://github.com/zaidokal/Pokedex",
     favourites: false,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "13",
@@ -199,7 +262,12 @@ const TimelineData = [
     screenshots: [],
     github: "",
     favourites: false,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "14",
@@ -225,7 +293,12 @@ const TimelineData = [
     ],
     github: "https://github.com/zaidokal/Music-Enthusiast",
     favourites: true,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "15",
@@ -244,7 +317,12 @@ const TimelineData = [
     ],
     github: "https://github.com/zaidokal/Tic-Tac-Toe",
     favourites: false,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "16",
@@ -269,7 +347,12 @@ const TimelineData = [
     ],
     github: "https://github.com/zaidokal/CourseCanvas",
     favourites: true,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "17",
@@ -289,7 +372,12 @@ const TimelineData = [
     ],
     github: "https://github.com/zaidokal/Connect-4-Multiplayer-Game",
     favourites: false,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "18",
@@ -309,7 +397,12 @@ const TimelineData = [
     ],
     github: "",
     favourites: true,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "19",
@@ -329,7 +422,12 @@ const TimelineData = [
     ],
     github: "https://github.com/zaidokal/John-Lemons-Haunted-Jaunt",
     favourites: false,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "20",
@@ -347,7 +445,12 @@ const TimelineData = [
     ],
     github: "https://github.com/zaidokal/The-Maze-Runner",
     favourites: false,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
   {
     id: "21",
@@ -359,7 +462,12 @@ const TimelineData = [
     screenshots: [],
     github: "",
     favourites: true,
-    programmingLanguages: [],
+    technologies: {
+      programmingLanguages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+    },
   },
 ];
 
