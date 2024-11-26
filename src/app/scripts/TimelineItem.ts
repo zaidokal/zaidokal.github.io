@@ -7,4 +7,5 @@ export interface TimelineItem {
   image: string;
   screenshots: string[];
   github: string;
+  programmingLanguages: string[];
 }

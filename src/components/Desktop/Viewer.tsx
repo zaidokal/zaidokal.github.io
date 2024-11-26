@@ -9,7 +9,7 @@ import PageContent from "@/components/Desktop/Viewer/Page/PageContent";
 import ScreenshotOverlay from "@/components/Desktop/Viewer/Page/ScreenshotOverlay";
 
 import { fetchData } from "@/app/scripts/fetchData";
-import { TimelineItem } from "@/app/scripts/types";
+import { TimelineItem } from "@/app/scripts/TimelineItem";
 
 const Viewer: React.FC = () => {
   const [data, setData] = useState<TimelineItem[]>([]);

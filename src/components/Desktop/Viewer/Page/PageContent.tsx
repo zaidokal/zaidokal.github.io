@@ -1,6 +1,6 @@
 import React from "react";
 import ScreenshotPreview from "./ScreenshotPreview";
-import { TimelineItem } from "@/app/scripts/types";
+import { TimelineItem } from "@/app/scripts/TimelineItem";
 
 interface PageContentProps {
   item: TimelineItem;

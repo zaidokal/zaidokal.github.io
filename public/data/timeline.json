@@ -8,7 +8,8 @@
     "image": "/Pictures/Timeline/WesternUniversity.png",
     "screenshots": [],
     "github": "",
-    "favourites": true
+    "favourites": true,
+    "programmingLanguages": []
   },
   {
     "id": "2",
@@ -19,7 +20,8 @@
     "image": "/Pictures/Timeline/WesternUniversity2.jpg",
     "screenshots": [],
     "github": "",
-    "favourites": false
+    "favourites": false,
+    "programmingLanguages": []
   },
   {
     "id": "3",
@@ -36,7 +38,8 @@
       "/screenshots/Glacier/UI_5.png"
     ],
     "github": "https://github.com/zaidokal/Glacier",
-    "favourites": false
+    "favourites": false,
+    "programmingLanguages": []
   },
   {
     "id": "4",
@@ -50,7 +53,8 @@
       "/screenshots/Projection/EnemyAI.gif"
     ],
     "github": "https://github.com/zaidokal/Projection",
-    "favourites": false
+    "favourites": false,
+    "programmingLanguages": []
   },
   {
     "id": "5",
@@ -67,7 +71,8 @@
       "/screenshots/Beautiful-Flowers/UI_Page5.png"
     ],
     "github": "https://github.com/zaidokal/Beautiful-Flowers",
-    "favourites": false
+    "favourites": false,
+    "programmingLanguages": []
   },
   {
     "id": "6",
@@ -78,7 +83,8 @@
     "image": "/Pictures/Timeline/store.jpg",
     "screenshots": [],
     "github": "",
-    "favourites": false
+    "favourites": false,
+    "programmingLanguages": []
   },
   {
     "id": "7",
@@ -94,7 +100,8 @@
       "/screenshots/Hydra-Game/GameOver.png"
     ],
     "github": "https://github.com/zaidokal/Hydra-Game",
-    "favourites": false
+    "favourites": false,
+    "programmingLanguages": []
   },
   {
     "id": "8",
@@ -109,7 +116,8 @@
       "/screenshots/Roll-A-Ball/RoleABall_Winner.png"
     ],
     "github": "https://github.com/zaidokal/Roll-A-Ball",
-    "favourites": false
+    "favourites": false,
+    "programmingLanguages": []
   },
   {
     "id": "9",
@@ -124,7 +132,8 @@
       "/screenshots/Space-SHUMP-Game/GamePlay_Shooting2.png"
     ],
     "github": "https://github.com/zaidokal/Space-SHUMP-Game",
-    "favourites": false
+    "favourites": false,
+    "programmingLanguages": []
   },
   {
     "id": "10",
@@ -135,7 +144,8 @@
     "image": "/Pictures/Timeline/Co-operators.jpg",
     "screenshots": [],
     "github": "",
-    "favourites": true
+    "favourites": true,
+    "programmingLanguages": []
   },
   {
     "id": "11",
@@ -146,7 +156,8 @@
     "image": "/Pictures/Timeline/mustangsPitch.jpeg",
     "screenshots": [],
     "github": "",
-    "favourites": false
+    "favourites": false,
+    "programmingLanguages": []
   },
   {
     "id": "12",
@@ -163,7 +174,8 @@
       "/screenshots/Pokedex/Pokedex_Error.png"
     ],
     "github": "https://github.com/zaidokal/Pokedex",
-    "favourites": false
+    "favourites": false,
+    "programmingLanguages": []
   },
   {
     "id": "13",
@@ -174,7 +186,8 @@
     "image": "/Pictures/Timeline/database.jpg",
     "screenshots": [],
     "github": "",
-    "favourites": false
+    "favourites": false,
+    "programmingLanguages": []
   },
   {
     "id": "14",
@@ -198,7 +211,8 @@
       "/screenshots/Music-Enthusiast/HomePage2.png"
     ],
     "github": "https://github.com/zaidokal/Music-Enthusiast",
-    "favourites": true
+    "favourites": true,
+    "programmingLanguages": []
   },
   {
     "id": "15",
@@ -215,7 +229,8 @@
       "/screenshots/Tic-Tac-Toe/Draw.png"
     ],
     "github": "https://github.com/zaidokal/Tic-Tac-Toe",
-    "favourites": false
+    "favourites": false,
+    "programmingLanguages": []
   },
   {
     "id": "16",
@@ -238,7 +253,8 @@
       "/screenshots/CourseCanvas/ProgramDirector_ApprovalScreen.png"
     ],
     "github": "https://github.com/zaidokal/CourseCanvas",
-    "favourites": true
+    "favourites": true,
+    "programmingLanguages": []
   },
   {
     "id": "17",
@@ -256,7 +272,8 @@
       "/screenshots/Connect-4-Multiplayer-Game/Winner.png"
     ],
     "github": "https://github.com/zaidokal/Connect-4-Multiplayer-Game",
-    "favourites": false
+    "favourites": false,
+    "programmingLanguages": []
   },
   {
     "id": "18",
@@ -274,7 +291,8 @@
       "/screenshots/J.D-Power/LastDay.JPEG"
     ],
     "github": "",
-    "favourites": true
+    "favourites": true,
+    "programmingLanguages": []
   },
   {
     "id": "19",
@@ -292,7 +310,8 @@
       "/screenshots/John-Lemons-Haunted-Jaunt/Loser.png"
     ],
     "github": "https://github.com/zaidokal/John-Lemons-Haunted-Jaunt",
-    "favourites": false
+    "favourites": false,
+    "programmingLanguages": []
   },
   {
     "id": "20",
@@ -308,7 +327,8 @@
       "/screenshots/The-Maze-Runner/Winner.png"
     ],
     "github": "https://github.com/zaidokal/The-Maze-Runner",
-    "favourites": false
+    "favourites": false,
+    "programmingLanguages": []
   },
   {
     "id": "21",
@@ -319,6 +339,7 @@
     "image": "/Pictures/Timeline/WesternUniversityEng.jpg",
     "screenshots": [],
     "github": "",
-    "favourites": true
+    "favourites": true,
+    "programmingLanguages": []
   }
 ]
