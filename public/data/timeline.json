@@ -25,7 +25,7 @@
     "id": "3",
     "year": "Nov 2021",
     "title": "The Glacier (HW8)",
-    "description": "A water intake tracker with a Node.js backend and React frontend, featuring real-time hydration monitoring and a dynamic, responsive UI.",
+    "description": "Glacier is a beginner-friendly web app that helps you stay hydrated by tracking your water consumption and guiding you to drink the recommended 2 liters of water daily. This project was created during Hack Western 8.",
     "category": "project",
     "image": "/Pictures/Timeline/purpleBlocks.jpg",
     "screenshots": [
@@ -56,7 +56,7 @@
     "id": "5",
     "year": "Jan 2022",
     "title": "Beautiful Flowers",
-    "description": "COMING SOON",
+    "description": "Beautiful Flowers is a simple JavaFX application designed to showcase the beauty and unique characteristics of various flowers. Users can explore detailed descriptions and images of flowers through an interactive tabbed interface, with options to navigate between tabs.",
     "category": "project",
     "image": "/Pictures/Timeline/flowers.jpg",
     "screenshots": [
@@ -84,7 +84,7 @@
     "id": "7",
     "year": "Feb 2022",
     "title": "Hydra Game",
-    "description": "COMING SOON",
+    "description": "A fun and interactive JavaFX-based game where players test their reflexes by cutting down Hydra heads. Each time you cut a head, two or more smaller heads grow in its place. Can you cut all the heads before time runs out?",
     "category": "project",
     "image": "/Pictures/Timeline/hydra.jpg",
     "screenshots": [
@@ -100,7 +100,7 @@
     "id": "8",
     "year": "Feb 2022",
     "title": "Role A Ball",
-    "description": "A 3D Unity game with a collectibles system, utilizing Unity libraries and custom 3D models.",
+    "description": "A 3D Unity game where the player rolls a ball around an arena to collect pickup objects and score points. The game leverages Unity's physics engine to create a fun, interactive experience that encourages precise control and strategy.",
     "category": "project",
     "image": "/Pictures/Timeline/roleABall.jpg",
     "screenshots": [
@@ -115,7 +115,7 @@
     "id": "9",
     "year": "Mar 2022",
     "title": "Space-SHUMP-Game",
-    "description": "COMING SOON",
+    "description": "A 2D space shooter built with Unity. In this fast-paced arcade-style game, players control a hero spaceship to defeat waves of enemies by shooting bullets while avoiding collisions. The game provides an endless challenge as enemies continuously spawn, and the player restarts upon being destroyed.",
     "category": "project",
     "image": "/Pictures/Timeline/spaceShumpGame.jpg",
     "screenshots": [
@@ -152,7 +152,7 @@
     "id": "12",
     "year": "Oct 2022",
     "title": "Pokedex",
-    "description": "COMING SOON",
+    "description": "An interactive and user-friendly web application to explore Pokémon details, including images, rarity, and region. Built with HTML, CSS, and JavaScript.",
     "category": "project",
     "image": "/Pictures/Timeline/pokemon.jpg",
     "screenshots": [
@@ -180,7 +180,7 @@
     "id": "14",
     "year": "Nov 2022",
     "title": "Music Enthusiast",
-    "description": "A RESTful API with Node.js and Express for music data retrieval, paired with a responsive React frontend, featuring caching and state management for enhanced performance and scalability.",
+    "description": "A feature-rich web application for music lovers to explore, create, and share playlists. It enables users to manage accounts, search for music, interact with playlists, and engage with reviews — all through a sleek and responsive interface.",
     "category": "project",
     "image": "/Pictures/Timeline/music.jpg",
     "screenshots": [
@@ -204,7 +204,7 @@
     "id": "15",
     "year": "Apr 2023",
     "title": "Tic-Tac-Toe",
-    "description": "COMING SOON",
+    "description": "This is a modern and visually striking implementation of the classic Tic Tac Toe game. It features a sleek neon-glow aesthetic, fluid animations, and interactive gameplay. The game is fully responsive, includes a dynamic winning highlight, and supports restart functionality. Perfect for a fun and immersive gaming experience!",
     "category": "project",
     "image": "/Pictures/Timeline/ticTacToe.jpg",
     "screenshots": [
@@ -221,7 +221,7 @@
     "id": "16",
     "year": "Jan 2023 - Apr 2023",
     "title": "CourseCanvas",
-    "description": "A MERN stack platform for instructors with dynamic CRUD operations, real-time updates, version control, and optimized for scalability and fast data retrieval using GCP.",
+    "description": "A web-based application to automate the creation, editing, approval, and tracking of course outlines in the ECE department at Western University. It provides role-based functionalities for instructors and administrators to streamline the process while ensuring compliance with departmental templates and guidelines.",
     "category": "project",
     "image": "/Pictures/Timeline/corporate.jpg",
     "screenshots": [
@@ -244,7 +244,7 @@
     "id": "17",
     "year": "Jan 2023 - Apr 2023",
     "title": "Connect-4-Multiplayer-Game",
-    "description": "",
+    "description": "Connect 4 is a classic two-player strategy game implemented in C++ with a client-server architecture. The server handles player connections, board updates, and game logic, while clients interact by sending their moves to the server.",
     "category": "project",
     "image": "",
     "screenshots": [
@@ -280,7 +280,7 @@
     "id": "19",
     "year": "Sept 2024",
     "title": "John-Lemons-Haunted-Jaunt",
-    "description": "",
+    "description": "John Lemon's Haunted Jaunt is a 3D adventure game where players navigate a haunted mansion as John Lemon. The goal is to collect all five keys scattered throughout the mansion before finding and exiting through the final door. Explore spooky corridors, solve challenges, and manage your time wisely in this fun and eerie experience.",
     "category": "project",
     "image": "",
     "screenshots": [
@@ -298,7 +298,7 @@
     "id": "20",
     "year": "Oct 2024",
     "title": "The-Maze-Runner",
-    "description": "",
+    "description": "The Maze Runner is a 3D maze game where players navigate a labyrinth, collect keys to unlock doors, and race against the clock to reach the exit. Compete for the fastest time and save your score on the leaderboard!",
     "category": "project",
     "image": "",
     "screenshots": [
