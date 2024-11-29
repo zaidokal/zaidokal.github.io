@@ -41,6 +41,40 @@ const PageContent: React.FC<PageContentProps> = ({
           {item.description}
         </p>
 
+        {item.accomplishments && (
+          <p className="mb-4 max-w-xl text-lg font-medium">
+            <strong>Accomplishments: </strong>
+            {item.accomplishments}
+          </p>
+        )}
+
+        <div className="mb-8 max-w-xl text-left">
+          {item.technologies.programmingLanguages.length > 0 && (
+            <div className="mb-2">
+              <strong>Programming Languages: </strong>
+              {item.technologies.programmingLanguages.join(", ")}
+            </div>
+          )}
+          {item.technologies.frameworks.length > 0 && (
+            <div className="mb-2">
+              <strong>Frameworks: </strong>
+              {item.technologies.frameworks.join(", ")}
+            </div>
+          )}
+          {item.technologies.databases.length > 0 && (
+            <div className="mb-2">
+              <strong>Databases: </strong>
+              {item.technologies.databases.join(", ")}
+            </div>
+          )}
+          {item.technologies.tools.length > 0 && (
+            <div className="mb-2">
+              <strong>Tools: </strong>
+              {item.technologies.tools.join(", ")}
+            </div>
+          )}
+        </div>
+
         <ScreenshotPreview
           screenshots={item.screenshots}
           openGallery={handleOpenGallery}

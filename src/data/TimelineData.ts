@@ -7,17 +7,17 @@ const TimelineData = [
     title: "Started University",
     description:
       "Started my engineering journey at Western University, diving into the fundamentals and exploring the field.",
-    accomplishments: "",
+    accomplishments: "Tester",
     category: "education",
     image: "/Pictures/Timeline/WesternUniversity.png",
     screenshots: [],
     github: "",
     favourites: true,
     technologies: {
-      programmingLanguages: [],
-      frameworks: [],
-      databases: [],
-      tools: [],
+      programmingLanguages: ["Test"],
+      frameworks: ["Test2"],
+      databases: ["Test3"],
+      tools: ["Test4"],
     },
   },
   {
