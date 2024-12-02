@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TimelineBox from "@/components/Desktop/TimelineBox";
-
-interface TimelineData {
+import TimelineData from "@/data/TimelineData";
+interface TimelineDataType {
   id: string;
   year: string;
   title: string;
@@ -12,12 +12,14 @@ interface TimelineData {
 }
 
 const DesktopTimelinePage: React.FC = () => {
-  const [timelineData, setTimelineData] = useState<TimelineData[]>([]);
+  const [timelineData, setTimelineData] = useState<TimelineDataType[]>([]);
 
   useEffect(() => {
-    fetch("/data/timeline.json")
-      .then((response) => response.json())
-      .then((data) => setTimelineData(data));
+    const fetchData = async () => {
+      setTimelineData(TimelineData);
+    };
+
+    fetchData();
   }, []);
 
   const favouriteTimelineData = timelineData.filter((item) => item.favourites);
