@@ -5,7 +5,7 @@
     "title": "Started University",
     "description": "Started my engineering journey at Western University, diving into the fundamentals and exploring the field.",
     "category": "education",
-    "image": "/Pictures/Timeline/WesternUniversity.png",
+    "image": "/Pictures/Timeline/WesternUniversity.webp",
     "screenshots": [],
     "github": "",
     "favourites": true
@@ -16,7 +16,7 @@
     "title": "Research Assistant",
     "description": "Worked as a Research Assistant in Advancement Services, handling data entry, managing projects for data accuracy, and supporting scheduling and software tools.",
     "category": "experience",
-    "image": "/Pictures/Timeline/WesternUniversity2.jpg",
+    "image": "/Pictures/Timeline/WesternUniversity2.webp",
     "screenshots": [],
     "github": "",
     "favourites": false
@@ -27,7 +27,7 @@
     "title": "The Glacier (HW8)",
     "description": "Glacier is a beginner-friendly web app that helps you stay hydrated by tracking your water consumption and guiding you to drink the recommended 2 liters of water daily. This project was created during Hack Western 8.",
     "category": "project",
-    "image": "/Pictures/Timeline/purpleBlocks.jpg",
+    "image": "/Pictures/Timeline/purpleBlocks.webp",
     "screenshots": [
       "/screenshots/Glacier/UI.png",
       "/screenshots/Glacier/UI_2.png",
@@ -44,7 +44,7 @@
     "title": "Projection",
     "description": "An open-world RPG in Unity with AI-driven boss battles, procedurally generated terrains, and a dynamic mission tracking system.",
     "category": "project",
-    "image": "/Pictures/Timeline/projection.jpg",
+    "image": "/Pictures/Timeline/projection.webp",
     "screenshots": [
       "/screenshots/Projection/Level1Design.gif",
       "/screenshots/Projection/EnemyAI.gif"
@@ -58,7 +58,7 @@
     "title": "Beautiful Flowers",
     "description": "Beautiful Flowers is a simple JavaFX application designed to showcase the beauty and unique characteristics of various flowers. Users can explore detailed descriptions and images of flowers through an interactive tabbed interface, with options to navigate between tabs.",
     "category": "project",
-    "image": "/Pictures/Timeline/flowers.jpg",
+    "image": "/Pictures/Timeline/flowers.webp",
     "screenshots": [
       "/screenshots/Beautiful-Flowers/UI_Page1.png",
       "/screenshots/Beautiful-Flowers/UI_Page2.png",
@@ -75,7 +75,7 @@
     "title": "iFashionStore",
     "description": "An online storefront with JavaFX and Java, hosted on AWS, using SQL Server for database management. Designed with use case modeling and an analysis object model.",
     "category": "project",
-    "image": "/Pictures/Timeline/store.jpg",
+    "image": "/Pictures/Timeline/store.webp",
     "screenshots": [],
     "github": "",
     "favourites": false
@@ -86,7 +86,7 @@
     "title": "Hydra Game",
     "description": "A fun and interactive JavaFX-based game where players test their reflexes by cutting down Hydra heads. Each time you cut a head, two or more smaller heads grow in its place. Can you cut all the heads before time runs out?",
     "category": "project",
-    "image": "/Pictures/Timeline/hydra.jpg",
+    "image": "/Pictures/Timeline/hydra.webp",
     "screenshots": [
       "/screenshots/Hydra-Game/Gameplay.png",
       "/screenshots/Hydra-Game/UI.png",
@@ -102,7 +102,7 @@
     "title": "Role A Ball",
     "description": "A 3D Unity game where the player rolls a ball around an arena to collect pickup objects and score points. The game leverages Unity's physics engine to create a fun, interactive experience that encourages precise control and strategy.",
     "category": "project",
-    "image": "/Pictures/Timeline/roleABall.jpg",
+    "image": "/Pictures/Timeline/roleABall.webp",
     "screenshots": [
       "/screenshots/Roll-A-Ball/RoleABall_Gameplay.png",
       "/screenshots/Roll-A-Ball/RoleABall_Gameplay2.png",
@@ -117,7 +117,7 @@
     "title": "Space-SHUMP-Game",
     "description": "A 2D space shooter built with Unity. In this fast-paced arcade-style game, players control a hero spaceship to defeat waves of enemies by shooting bullets while avoiding collisions. The game provides an endless challenge as enemies continuously spawn, and the player restarts upon being destroyed.",
     "category": "project",
-    "image": "/Pictures/Timeline/spaceShumpGame.jpg",
+    "image": "/Pictures/Timeline/spaceShumpGame.webp",
     "screenshots": [
       "/screenshots/Space-SHUMP-Game/GamePlay.png",
       "/screenshots/Space-SHUMP-Game/GamePlay_Shooting.png",
@@ -132,7 +132,7 @@
     "title": "Co-Operators",
     "description": "Diagnosed complex database issues and optimized client registration processes, boosting client satisfaction by 15% and registrations by 26%.",
     "category": "experience",
-    "image": "/Pictures/Timeline/Co-operators.jpg",
+    "image": "/Pictures/Timeline/Co-operators.webp",
     "screenshots": [],
     "github": "",
     "favourites": true
@@ -143,7 +143,7 @@
     "title": "Intramural Refereeing",
     "description": "Maintained play standards, enforced rules, resolved infractions, and coordinated with players, officials, and facility managers.",
     "category": "experience",
-    "image": "/Pictures/Timeline/mustangsPitch.jpeg",
+    "image": "/Pictures/Timeline/mustangsPitch.webp",
     "screenshots": [],
     "github": "",
     "favourites": false
@@ -154,7 +154,7 @@
     "title": "Pokedex",
     "description": "An interactive and user-friendly web application to explore Pokémon details, including images, rarity, and region. Built with HTML, CSS, and JavaScript.",
     "category": "project",
-    "image": "/Pictures/Timeline/pokemon.jpg",
+    "image": "/Pictures/Timeline/pokemon.webp",
     "screenshots": [
       "/screenshots/Pokedex/Pokedex_UI.png",
       "/screenshots/Pokedex/Pokedex_Name.png",
@@ -171,7 +171,7 @@
     "title": "Database Project",
     "description": "COMING SOON",
     "category": "project",
-    "image": "/Pictures/Timeline/database.jpg",
+    "image": "/Pictures/Timeline/database.webp",
     "screenshots": [],
     "github": "",
     "favourites": false
@@ -182,7 +182,7 @@
     "title": "Music Enthusiast",
     "description": "A feature-rich web application for music lovers to explore, create, and share playlists. It enables users to manage accounts, search for music, interact with playlists, and engage with reviews — all through a sleek and responsive interface.",
     "category": "project",
-    "image": "/Pictures/Timeline/music.jpg",
+    "image": "/Pictures/Timeline/music.webp",
     "screenshots": [
       "/screenshots/Music-Enthusiast/HomePage.png",
       "/screenshots/Music-Enthusiast/LoginPage.png",
@@ -206,7 +206,7 @@
     "title": "Tic-Tac-Toe",
     "description": "This is a modern and visually striking implementation of the classic Tic Tac Toe game. It features a sleek neon-glow aesthetic, fluid animations, and interactive gameplay. The game is fully responsive, includes a dynamic winning highlight, and supports restart functionality. Perfect for a fun and immersive gaming experience!",
     "category": "project",
-    "image": "/Pictures/Timeline/ticTacToe.jpg",
+    "image": "/Pictures/Timeline/ticTacToe.webp",
     "screenshots": [
       "/screenshots/Tic-Tac-Toe/UI.png",
       "/screenshots/Tic-Tac-Toe/UI_2.png",
@@ -223,7 +223,7 @@
     "title": "CourseCanvas",
     "description": "A web-based application to automate the creation, editing, approval, and tracking of course outlines in the ECE department at Western University. It provides role-based functionalities for instructors and administrators to streamline the process while ensuring compliance with departmental templates and guidelines.",
     "category": "project",
-    "image": "/Pictures/Timeline/corporate.jpg",
+    "image": "/Pictures/Timeline/corporate.webp",
     "screenshots": [
       "/screenshots/CourseCanvas/LoginPage.png",
       "/screenshots/CourseCanvas/Instructor_View.png",
@@ -264,7 +264,7 @@
     "title": "J.D Power",
     "description": "Engineered Java-based automation utilities, led migration to Playwright, architected containerized frameworks, developed integration test suites, and accelerated project delivery, earning multiple awards and recognition as a top intern.",
     "category": "experience",
-    "image": "/Pictures/Timeline/JDPower.jpg",
+    "image": "/Pictures/Timeline/JDPower.webp",
     "screenshots": [
       "/screenshots/J.D-Power/Day1.JPEG",
       "/screenshots/J.D-Power/FirstDayGroup.JPEG",
@@ -316,7 +316,7 @@
     "title": "Expected Graduation",
     "description": "COMING SOON",
     "category": "education",
-    "image": "/Pictures/Timeline/WesternUniversityEng.jpg",
+    "image": "/Pictures/Timeline/WesternUniversityEng.webp",
     "screenshots": [],
     "github": "",
     "favourites": true
