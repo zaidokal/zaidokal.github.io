@@ -1,0 +1,324 @@
+[
+  {
+    "id": "1",
+    "year": "Sep 2020",
+    "title": "Started University",
+    "description": "Started my engineering journey at Western University, diving into the fundamentals and exploring the field.",
+    "category": "education",
+    "image": "/Pictures/Timeline/WesternUniversity.webp",
+    "screenshots": [],
+    "github": "",
+    "favourites": true
+  },
+  {
+    "id": "2",
+    "year": "Oct 2021 - Apr 2022",
+    "title": "Research Assistant",
+    "description": "Worked as a Research Assistant in Advancement Services, handling data entry, managing projects for data accuracy, and supporting scheduling and software tools.",
+    "category": "experience",
+    "image": "/Pictures/Timeline/WesternUniversity2.webp",
+    "screenshots": [],
+    "github": "",
+    "favourites": false
+  },
+  {
+    "id": "3",
+    "year": "Nov 2021",
+    "title": "The Glacier (HW8)",
+    "description": "Glacier is a beginner-friendly web app that helps you stay hydrated by tracking your water consumption and guiding you to drink the recommended 2 liters of water daily. This project was created during Hack Western 8.",
+    "category": "project",
+    "image": "/Pictures/Timeline/purpleBlocks.webp",
+    "screenshots": [
+      "/screenshots/Glacier/UI.webp",
+      "/screenshots/Glacier/UI_2.webp",
+      "/screenshots/Glacier/UI_3.webp",
+      "/screenshots/Glacier/UI_4.webp",
+      "/screenshots/Glacier/UI_5.webp"
+    ],
+    "github": "https://github.com/zaidokal/Glacier",
+    "favourites": false
+  },
+  {
+    "id": "4",
+    "year": "Jan 2022 - Apr 2022",
+    "title": "Projection",
+    "description": "An open-world RPG in Unity with AI-driven boss battles, procedurally generated terrains, and a dynamic mission tracking system.",
+    "category": "project",
+    "image": "/Pictures/Timeline/projection.webp",
+    "screenshots": [
+      "/screenshots/Projection/Level1Design.gif",
+      "/screenshots/Projection/EnemyAI.gif"
+    ],
+    "github": "https://github.com/zaidokal/Projection",
+    "favourites": false
+  },
+  {
+    "id": "5",
+    "year": "Jan 2022",
+    "title": "Beautiful Flowers",
+    "description": "Beautiful Flowers is a simple JavaFX application designed to showcase the beauty and unique characteristics of various flowers. Users can explore detailed descriptions and images of flowers through an interactive tabbed interface, with options to navigate between tabs.",
+    "category": "project",
+    "image": "/Pictures/Timeline/flowers.webp",
+    "screenshots": [
+      "/screenshots/Beautiful-Flowers/UI_Page1.webp",
+      "/screenshots/Beautiful-Flowers/UI_Page2.webp",
+      "/screenshots/Beautiful-Flowers/UI_Page3.webp",
+      "/screenshots/Beautiful-Flowers/UI_Page4.webp",
+      "/screenshots/Beautiful-Flowers/UI_Page5.webp"
+    ],
+    "github": "https://github.com/zaidokal/Beautiful-Flowers",
+    "favourites": false
+  },
+  {
+    "id": "6",
+    "year": "Feb 2022 - Apr 2022",
+    "title": "iFashionStore",
+    "description": "An online storefront with JavaFX and Java, hosted on AWS, using SQL Server for database management. Designed with use case modeling and an analysis object model.",
+    "category": "project",
+    "image": "/Pictures/Timeline/store.webp",
+    "screenshots": [],
+    "github": "",
+    "favourites": false
+  },
+  {
+    "id": "7",
+    "year": "Feb 2022",
+    "title": "Hydra Game",
+    "description": "A fun and interactive JavaFX-based game where players test their reflexes by cutting down Hydra heads. Each time you cut a head, two or more smaller heads grow in its place. Can you cut all the heads before time runs out?",
+    "category": "project",
+    "image": "/Pictures/Timeline/hydra.webp",
+    "screenshots": [
+      "/screenshots/Hydra-Game/Gameplay.webp",
+      "/screenshots/Hydra-Game/UI.webp",
+      "/screenshots/Hydra-Game/GameWin.webp",
+      "/screenshots/Hydra-Game/GameOver.webp"
+    ],
+    "github": "https://github.com/zaidokal/Hydra-Game",
+    "favourites": false
+  },
+  {
+    "id": "8",
+    "year": "Feb 2022",
+    "title": "Role A Ball",
+    "description": "A 3D Unity game where the player rolls a ball around an arena to collect pickup objects and score points. The game leverages Unity's physics engine to create a fun, interactive experience that encourages precise control and strategy.",
+    "category": "project",
+    "image": "/Pictures/Timeline/roleABall.webp",
+    "screenshots": [
+      "/screenshots/Roll-A-Ball/RoleABall_Gameplay.webp",
+      "/screenshots/Roll-A-Ball/RoleABall_Gameplay2.webp",
+      "/screenshots/Roll-A-Ball/RoleABall_Winner.webp"
+    ],
+    "github": "https://github.com/zaidokal/Roll-A-Ball",
+    "favourites": false
+  },
+  {
+    "id": "9",
+    "year": "Mar 2022",
+    "title": "Space-SHUMP-Game",
+    "description": "A 2D space shooter built with Unity. In this fast-paced arcade-style game, players control a hero spaceship to defeat waves of enemies by shooting bullets while avoiding collisions. The game provides an endless challenge as enemies continuously spawn, and the player restarts upon being destroyed.",
+    "category": "project",
+    "image": "/Pictures/Timeline/spaceShumpGame.webp",
+    "screenshots": [
+      "/screenshots/Space-SHUMP-Game/GamePlay.webp",
+      "/screenshots/Space-SHUMP-Game/GamePlay_Shooting.webp",
+      "/screenshots/Space-SHUMP-Game/GamePlay_Shooting2.webp"
+    ],
+    "github": "https://github.com/zaidokal/Space-SHUMP-Game",
+    "favourites": false
+  },
+  {
+    "id": "10",
+    "year": "May 2022 - Aug 2022",
+    "title": "Co-Operators",
+    "description": "Diagnosed complex database issues and optimized client registration processes, boosting client satisfaction by 15% and registrations by 26%.",
+    "category": "experience",
+    "image": "/Pictures/Timeline/Co-operators.webp",
+    "screenshots": [],
+    "github": "",
+    "favourites": true
+  },
+  {
+    "id": "11",
+    "year": "May 2022 - Present",
+    "title": "Intramural Refereeing",
+    "description": "Maintained play standards, enforced rules, resolved infractions, and coordinated with players, officials, and facility managers.",
+    "category": "experience",
+    "image": "/Pictures/Timeline/mustangsPitch.webp",
+    "screenshots": [],
+    "github": "",
+    "favourites": false
+  },
+  {
+    "id": "12",
+    "year": "Oct 2022",
+    "title": "Pokedex",
+    "description": "An interactive and user-friendly web application to explore Pokémon details, including images, rarity, and region. Built with HTML, CSS, and JavaScript.",
+    "category": "project",
+    "image": "/Pictures/Timeline/pokemon.webp",
+    "screenshots": [
+      "/screenshots/Pokedex/Pokedex_UI.webp",
+      "/screenshots/Pokedex/Pokedex_Name.webp",
+      "/screenshots/Pokedex/Pokedex_Name2.webp",
+      "/screenshots/Pokedex/Pokedex_Num.webp",
+      "/screenshots/Pokedex/Pokedex_Error.webp"
+    ],
+    "github": "https://github.com/zaidokal/Pokedex",
+    "favourites": false
+  },
+  {
+    "id": "13",
+    "year": "Nov 2022",
+    "title": "Database Project",
+    "description": "COMING SOON",
+    "category": "project",
+    "image": "/Pictures/Timeline/database.webp",
+    "screenshots": [],
+    "github": "",
+    "favourites": false
+  },
+  {
+    "id": "14",
+    "year": "Nov 2022",
+    "title": "Music Enthusiast",
+    "description": "A feature-rich web application for music lovers to explore, create, and share playlists. It enables users to manage accounts, search for music, interact with playlists, and engage with reviews — all through a sleek and responsive interface.",
+    "category": "project",
+    "image": "/Pictures/Timeline/music.webp",
+    "screenshots": [
+      "/screenshots/Music-Enthusiast/HomePage.webp",
+      "/screenshots/Music-Enthusiast/LoginPage.webp",
+      "/screenshots/Music-Enthusiast/RegisterPage.webp",
+      "/screenshots/Music-Enthusiast/ChangePasswordPage.webp",
+      "/screenshots/Music-Enthusiast/SearchPage.webp",
+      "/screenshots/Music-Enthusiast/SearchPage2.webp",
+      "/screenshots/Music-Enthusiast/ResultsPage.webp",
+      "/screenshots/Music-Enthusiast/TrackPage.webp",
+      "/screenshots/Music-Enthusiast/PlaylistPage.webp",
+      "/screenshots/Music-Enthusiast/CreatePlaylistPage.webp",
+      "/screenshots/Music-Enthusiast/CreateReviewPage.webp",
+      "/screenshots/Music-Enthusiast/HomePage2.webp"
+    ],
+    "github": "https://github.com/zaidokal/Music-Enthusiast",
+    "favourites": true
+  },
+  {
+    "id": "15",
+    "year": "Apr 2023",
+    "title": "Tic-Tac-Toe",
+    "description": "This is a modern and visually striking implementation of the classic Tic Tac Toe game. It features a sleek neon-glow aesthetic, fluid animations, and interactive gameplay. The game is fully responsive, includes a dynamic winning highlight, and supports restart functionality. Perfect for a fun and immersive gaming experience!",
+    "category": "project",
+    "image": "/Pictures/Timeline/ticTacToe.webp",
+    "screenshots": [
+      "/screenshots/Tic-Tac-Toe/UI.webp",
+      "/screenshots/Tic-Tac-Toe/UI_2.webp",
+      "/screenshots/Tic-Tac-Toe/X_Win.webp",
+      "/screenshots/Tic-Tac-Toe/O_Win.webp",
+      "/screenshots/Tic-Tac-Toe/Draw.webp"
+    ],
+    "github": "https://github.com/zaidokal/Tic-Tac-Toe",
+    "favourites": false
+  },
+  {
+    "id": "16",
+    "year": "Jan 2023 - Apr 2023",
+    "title": "CourseCanvas",
+    "description": "A web-based application to automate the creation, editing, approval, and tracking of course outlines in the ECE department at Western University. It provides role-based functionalities for instructors and administrators to streamline the process while ensuring compliance with departmental templates and guidelines.",
+    "category": "project",
+    "image": "/Pictures/Timeline/corporate.webp",
+    "screenshots": [
+      "/screenshots/CourseCanvas/LoginPage.webp",
+      "/screenshots/CourseCanvas/Instructor_View.webp",
+      "/screenshots/CourseCanvas/Instructor_CourseView.webp",
+      "/screenshots/CourseCanvas/Admin_View.webp",
+      "/screenshots/CourseCanvas/Admin_CourseView.webp",
+      "/screenshots/CourseCanvas/Admin_InstructorAssignment.webp",
+      "/screenshots/CourseCanvas/Admin_ApprovalScreen.webp",
+      "/screenshots/CourseCanvas/ProgramDirector_View.webp",
+      "/screenshots/CourseCanvas/ProgramDirector_View2.webp",
+      "/screenshots/CourseCanvas/ProgramDirector_CourseView.webp",
+      "/screenshots/CourseCanvas/ProgramDirector_ApprovalScreen.webp"
+    ],
+    "github": "https://github.com/zaidokal/CourseCanvas",
+    "favourites": true
+  },
+  {
+    "id": "17",
+    "year": "Jan 2023 - Apr 2023",
+    "title": "Connect-4-Multiplayer-Game",
+    "description": "Connect 4 is a classic two-player strategy game implemented in C++ with a client-server architecture. The server handles player connections, board updates, and game logic, while clients interact by sending their moves to the server.",
+    "category": "project",
+    "image": "",
+    "screenshots": [
+      "/screenshots/Connect-4-Multiplayer-Game/Start.webp",
+      "/screenshots/Connect-4-Multiplayer-Game/Server.webp",
+      "/screenshots/Connect-4-Multiplayer-Game/Client_Start.webp",
+      "/screenshots/Connect-4-Multiplayer-Game/Step_2.webp",
+      "/screenshots/Connect-4-Multiplayer-Game/Step_3.webp",
+      "/screenshots/Connect-4-Multiplayer-Game/Winner.webp"
+    ],
+    "github": "https://github.com/zaidokal/Connect-4-Multiplayer-Game",
+    "favourites": false
+  },
+  {
+    "id": "18",
+    "year": "May 2023 - Present",
+    "title": "J.D Power",
+    "description": "Engineered Java-based automation utilities, led migration to Playwright, architected containerized frameworks, developed integration test suites, and accelerated project delivery, earning multiple awards and recognition as a top intern.",
+    "category": "experience",
+    "image": "/Pictures/Timeline/JDPower.webp",
+    "screenshots": [
+      "/screenshots/J.D-Power/Day1.webp",
+      "/screenshots/J.D-Power/FirstDayGroup.webp",
+      "/screenshots/J.D-Power/InnovationAward.webp",
+      "/screenshots/J.D-Power/InnovationAwardSlide.webp",
+      "/screenshots/J.D-Power/TeamLunch.webp",
+      "/screenshots/J.D-Power/LastDay.webp"
+    ],
+    "github": "",
+    "favourites": true
+  },
+  {
+    "id": "19",
+    "year": "Sept 2024",
+    "title": "John-Lemons-Haunted-Jaunt",
+    "description": "John Lemon's Haunted Jaunt is a 3D adventure game where players navigate a haunted mansion as John Lemon. The goal is to collect all five keys scattered throughout the mansion before finding and exiting through the final door. Explore spooky corridors, solve challenges, and manage your time wisely in this fun and eerie experience.",
+    "category": "project",
+    "image": "",
+    "screenshots": [
+      "/screenshots/John-Lemons-Haunted-Jaunt/GamePlay.webp",
+      "/screenshots/John-Lemons-Haunted-Jaunt/GamePlay2.webp",
+      "/screenshots/John-Lemons-Haunted-Jaunt/GamePlay3.webp",
+      "/screenshots/John-Lemons-Haunted-Jaunt/Collected_Key.webp",
+      "/screenshots/John-Lemons-Haunted-Jaunt/Winner.webp",
+      "/screenshots/John-Lemons-Haunted-Jaunt/Loser.webp"
+    ],
+    "github": "https://github.com/zaidokal/John-Lemons-Haunted-Jaunt",
+    "favourites": false
+  },
+  {
+    "id": "20",
+    "year": "Oct 2024",
+    "title": "The-Maze-Runner",
+    "description": "The Maze Runner is a 3D maze game where players navigate a labyrinth, collect keys to unlock doors, and race against the clock to reach the exit. Compete for the fastest time and save your score on the leaderboard!",
+    "category": "project",
+    "image": "",
+    "screenshots": [
+      "/screenshots/The-Maze-Runner/UI.webp",
+      "/screenshots/The-Maze-Runner/GamePlay.webp",
+      "/screenshots/The-Maze-Runner/GamePlay2.webp",
+      "/screenshots/The-Maze-Runner/Winner.webp"
+    ],
+    "github": "https://github.com/zaidokal/The-Maze-Runner",
+    "favourites": false
+  },
+  {
+    "id": "21",
+    "year": "Apr 2025",
+    "title": "Expected Graduation",
+    "description": "COMING SOON",
+    "category": "education",
+    "image": "/Pictures/Timeline/WesternUniversityEng.webp",
+    "screenshots": [],
+    "github": "",
+    "favourites": true
+  }
+]

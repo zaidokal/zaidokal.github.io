@@ -13,7 +13,7 @@ export default function DesktopHomePage() {
       <div className="flex flex-1 items-center justify-center gap-20 overflow-auto">
         <div className="">
           <Image
-            src="/Pictures/ProfilePic.jpeg"
+            src="/Pictures/ProfilePic.webp"
             alt="Profile Picture of Zaid"
             width={700}
             height={700}
