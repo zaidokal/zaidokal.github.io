@@ -29,11 +29,11 @@
     "category": "project",
     "image": "/Pictures/Timeline/purpleBlocks.webp",
     "screenshots": [
-      "/screenshots/Glacier/UI.png",
-      "/screenshots/Glacier/UI_2.png",
-      "/screenshots/Glacier/UI_3.png",
-      "/screenshots/Glacier/UI_4.png",
-      "/screenshots/Glacier/UI_5.png"
+      "/screenshots/Glacier/UI.webp",
+      "/screenshots/Glacier/UI_2.webp",
+      "/screenshots/Glacier/UI_3.webp",
+      "/screenshots/Glacier/UI_4.webp",
+      "/screenshots/Glacier/UI_5.webp"
     ],
     "github": "https://github.com/zaidokal/Glacier",
     "favourites": false
@@ -60,11 +60,11 @@
     "category": "project",
     "image": "/Pictures/Timeline/flowers.webp",
     "screenshots": [
-      "/screenshots/Beautiful-Flowers/UI_Page1.png",
-      "/screenshots/Beautiful-Flowers/UI_Page2.png",
-      "/screenshots/Beautiful-Flowers/UI_Page3.png",
-      "/screenshots/Beautiful-Flowers/UI_Page4.png",
-      "/screenshots/Beautiful-Flowers/UI_Page5.png"
+      "/screenshots/Beautiful-Flowers/UI_Page1.webp",
+      "/screenshots/Beautiful-Flowers/UI_Page2.webp",
+      "/screenshots/Beautiful-Flowers/UI_Page3.webp",
+      "/screenshots/Beautiful-Flowers/UI_Page4.webp",
+      "/screenshots/Beautiful-Flowers/UI_Page5.webp"
     ],
     "github": "https://github.com/zaidokal/Beautiful-Flowers",
     "favourites": false
@@ -88,10 +88,10 @@
     "category": "project",
     "image": "/Pictures/Timeline/hydra.webp",
     "screenshots": [
-      "/screenshots/Hydra-Game/Gameplay.png",
-      "/screenshots/Hydra-Game/UI.png",
-      "/screenshots/Hydra-Game/GameWin.png",
-      "/screenshots/Hydra-Game/GameOver.png"
+      "/screenshots/Hydra-Game/Gameplay.webp",
+      "/screenshots/Hydra-Game/UI.webp",
+      "/screenshots/Hydra-Game/GameWin.webp",
+      "/screenshots/Hydra-Game/GameOver.webp"
     ],
     "github": "https://github.com/zaidokal/Hydra-Game",
     "favourites": false
@@ -104,9 +104,9 @@
     "category": "project",
     "image": "/Pictures/Timeline/roleABall.webp",
     "screenshots": [
-      "/screenshots/Roll-A-Ball/RoleABall_Gameplay.png",
-      "/screenshots/Roll-A-Ball/RoleABall_Gameplay2.png",
-      "/screenshots/Roll-A-Ball/RoleABall_Winner.png"
+      "/screenshots/Roll-A-Ball/RoleABall_Gameplay.webp",
+      "/screenshots/Roll-A-Ball/RoleABall_Gameplay2.webp",
+      "/screenshots/Roll-A-Ball/RoleABall_Winner.webp"
     ],
     "github": "https://github.com/zaidokal/Roll-A-Ball",
     "favourites": false
@@ -119,9 +119,9 @@
     "category": "project",
     "image": "/Pictures/Timeline/spaceShumpGame.webp",
     "screenshots": [
-      "/screenshots/Space-SHUMP-Game/GamePlay.png",
-      "/screenshots/Space-SHUMP-Game/GamePlay_Shooting.png",
-      "/screenshots/Space-SHUMP-Game/GamePlay_Shooting2.png"
+      "/screenshots/Space-SHUMP-Game/GamePlay.webp",
+      "/screenshots/Space-SHUMP-Game/GamePlay_Shooting.webp",
+      "/screenshots/Space-SHUMP-Game/GamePlay_Shooting2.webp"
     ],
     "github": "https://github.com/zaidokal/Space-SHUMP-Game",
     "favourites": false
@@ -156,11 +156,11 @@
     "category": "project",
     "image": "/Pictures/Timeline/pokemon.webp",
     "screenshots": [
-      "/screenshots/Pokedex/Pokedex_UI.png",
-      "/screenshots/Pokedex/Pokedex_Name.png",
-      "/screenshots/Pokedex/Pokedex_Name2.png",
-      "/screenshots/Pokedex/Pokedex_Num.png",
-      "/screenshots/Pokedex/Pokedex_Error.png"
+      "/screenshots/Pokedex/Pokedex_UI.webp",
+      "/screenshots/Pokedex/Pokedex_Name.webp",
+      "/screenshots/Pokedex/Pokedex_Name2.webp",
+      "/screenshots/Pokedex/Pokedex_Num.webp",
+      "/screenshots/Pokedex/Pokedex_Error.webp"
     ],
     "github": "https://github.com/zaidokal/Pokedex",
     "favourites": false
@@ -184,18 +184,18 @@
     "category": "project",
     "image": "/Pictures/Timeline/music.webp",
     "screenshots": [
-      "/screenshots/Music-Enthusiast/HomePage.png",
-      "/screenshots/Music-Enthusiast/LoginPage.png",
-      "/screenshots/Music-Enthusiast/RegisterPage.png",
-      "/screenshots/Music-Enthusiast/ChangePasswordPage.png",
-      "/screenshots/Music-Enthusiast/SearchPage.png",
-      "/screenshots/Music-Enthusiast/SearchPage2.png",
-      "/screenshots/Music-Enthusiast/ResultsPage.png",
-      "/screenshots/Music-Enthusiast/TrackPage.png",
-      "/screenshots/Music-Enthusiast/PlaylistPage.png",
-      "/screenshots/Music-Enthusiast/CreatePlaylistPage.png",
-      "/screenshots/Music-Enthusiast/CreateReviewPage.png",
-      "/screenshots/Music-Enthusiast/HomePage2.png"
+      "/screenshots/Music-Enthusiast/HomePage.webp",
+      "/screenshots/Music-Enthusiast/LoginPage.webp",
+      "/screenshots/Music-Enthusiast/RegisterPage.webp",
+      "/screenshots/Music-Enthusiast/ChangePasswordPage.webp",
+      "/screenshots/Music-Enthusiast/SearchPage.webp",
+      "/screenshots/Music-Enthusiast/SearchPage2.webp",
+      "/screenshots/Music-Enthusiast/ResultsPage.webp",
+      "/screenshots/Music-Enthusiast/TrackPage.webp",
+      "/screenshots/Music-Enthusiast/PlaylistPage.webp",
+      "/screenshots/Music-Enthusiast/CreatePlaylistPage.webp",
+      "/screenshots/Music-Enthusiast/CreateReviewPage.webp",
+      "/screenshots/Music-Enthusiast/HomePage2.webp"
     ],
     "github": "https://github.com/zaidokal/Music-Enthusiast",
     "favourites": true
@@ -208,11 +208,11 @@
     "category": "project",
     "image": "/Pictures/Timeline/ticTacToe.webp",
     "screenshots": [
-      "/screenshots/Tic-Tac-Toe/UI.png",
-      "/screenshots/Tic-Tac-Toe/UI_2.png",
-      "/screenshots/Tic-Tac-Toe/X_Win.png",
-      "/screenshots/Tic-Tac-Toe/O_Win.png",
-      "/screenshots/Tic-Tac-Toe/Draw.png"
+      "/screenshots/Tic-Tac-Toe/UI.webp",
+      "/screenshots/Tic-Tac-Toe/UI_2.webp",
+      "/screenshots/Tic-Tac-Toe/X_Win.webp",
+      "/screenshots/Tic-Tac-Toe/O_Win.webp",
+      "/screenshots/Tic-Tac-Toe/Draw.webp"
     ],
     "github": "https://github.com/zaidokal/Tic-Tac-Toe",
     "favourites": false
@@ -225,17 +225,17 @@
     "category": "project",
     "image": "/Pictures/Timeline/corporate.webp",
     "screenshots": [
-      "/screenshots/CourseCanvas/LoginPage.png",
-      "/screenshots/CourseCanvas/Instructor_View.png",
-      "/screenshots/CourseCanvas/Instructor_CourseView.png",
-      "/screenshots/CourseCanvas/Admin_View.png",
-      "/screenshots/CourseCanvas/Admin_CourseView.png",
-      "/screenshots/CourseCanvas/Admin_InstructorAssignment.png",
-      "/screenshots/CourseCanvas/Admin_ApprovalScreen.png",
-      "/screenshots/CourseCanvas/ProgramDirector_View.png",
-      "/screenshots/CourseCanvas/ProgramDirector_View2.png",
-      "/screenshots/CourseCanvas/ProgramDirector_CourseView.png",
-      "/screenshots/CourseCanvas/ProgramDirector_ApprovalScreen.png"
+      "/screenshots/CourseCanvas/LoginPage.webp",
+      "/screenshots/CourseCanvas/Instructor_View.webp",
+      "/screenshots/CourseCanvas/Instructor_CourseView.webp",
+      "/screenshots/CourseCanvas/Admin_View.webp",
+      "/screenshots/CourseCanvas/Admin_CourseView.webp",
+      "/screenshots/CourseCanvas/Admin_InstructorAssignment.webp",
+      "/screenshots/CourseCanvas/Admin_ApprovalScreen.webp",
+      "/screenshots/CourseCanvas/ProgramDirector_View.webp",
+      "/screenshots/CourseCanvas/ProgramDirector_View2.webp",
+      "/screenshots/CourseCanvas/ProgramDirector_CourseView.webp",
+      "/screenshots/CourseCanvas/ProgramDirector_ApprovalScreen.webp"
     ],
     "github": "https://github.com/zaidokal/CourseCanvas",
     "favourites": true
@@ -248,12 +248,12 @@
     "category": "project",
     "image": "",
     "screenshots": [
-      "/screenshots/Connect-4-Multiplayer-Game/Start.png",
-      "/screenshots/Connect-4-Multiplayer-Game/Server.png",
-      "/screenshots/Connect-4-Multiplayer-Game/Client_Start.png",
-      "/screenshots/Connect-4-Multiplayer-Game/Step_2.png",
-      "/screenshots/Connect-4-Multiplayer-Game/Step_3.png",
-      "/screenshots/Connect-4-Multiplayer-Game/Winner.png"
+      "/screenshots/Connect-4-Multiplayer-Game/Start.webp",
+      "/screenshots/Connect-4-Multiplayer-Game/Server.webp",
+      "/screenshots/Connect-4-Multiplayer-Game/Client_Start.webp",
+      "/screenshots/Connect-4-Multiplayer-Game/Step_2.webp",
+      "/screenshots/Connect-4-Multiplayer-Game/Step_3.webp",
+      "/screenshots/Connect-4-Multiplayer-Game/Winner.webp"
     ],
     "github": "https://github.com/zaidokal/Connect-4-Multiplayer-Game",
     "favourites": false
@@ -266,12 +266,12 @@
     "category": "experience",
     "image": "/Pictures/Timeline/JDPower.webp",
     "screenshots": [
-      "/screenshots/J.D-Power/Day1.JPEG",
-      "/screenshots/J.D-Power/FirstDayGroup.JPEG",
-      "/screenshots/J.D-Power/InnovationAward.JPEG",
-      "/screenshots/J.D-Power/InnovationAwardSlide.PNG",
-      "/screenshots/J.D-Power/TeamLunch.JPEG",
-      "/screenshots/J.D-Power/LastDay.JPEG"
+      "/screenshots/J.D-Power/Day1.webp",
+      "/screenshots/J.D-Power/FirstDayGroup.webp",
+      "/screenshots/J.D-Power/InnovationAward.webp",
+      "/screenshots/J.D-Power/InnovationAwardSlide.webp",
+      "/screenshots/J.D-Power/TeamLunch.webp",
+      "/screenshots/J.D-Power/LastDay.webp"
     ],
     "github": "",
     "favourites": true
@@ -284,12 +284,12 @@
     "category": "project",
     "image": "",
     "screenshots": [
-      "/screenshots/John-Lemons-Haunted-Jaunt/GamePlay.png",
-      "/screenshots/John-Lemons-Haunted-Jaunt/GamePlay2.png",
-      "/screenshots/John-Lemons-Haunted-Jaunt/GamePlay3.png",
-      "/screenshots/John-Lemons-Haunted-Jaunt/Collected_Key.png",
-      "/screenshots/John-Lemons-Haunted-Jaunt/Winner.png",
-      "/screenshots/John-Lemons-Haunted-Jaunt/Loser.png"
+      "/screenshots/John-Lemons-Haunted-Jaunt/GamePlay.webp",
+      "/screenshots/John-Lemons-Haunted-Jaunt/GamePlay2.webp",
+      "/screenshots/John-Lemons-Haunted-Jaunt/GamePlay3.webp",
+      "/screenshots/John-Lemons-Haunted-Jaunt/Collected_Key.webp",
+      "/screenshots/John-Lemons-Haunted-Jaunt/Winner.webp",
+      "/screenshots/John-Lemons-Haunted-Jaunt/Loser.webp"
     ],
     "github": "https://github.com/zaidokal/John-Lemons-Haunted-Jaunt",
     "favourites": false
@@ -302,10 +302,10 @@
     "category": "project",
     "image": "",
     "screenshots": [
-      "/screenshots/The-Maze-Runner/UI.png",
-      "/screenshots/The-Maze-Runner/GamePlay.png",
-      "/screenshots/The-Maze-Runner/GamePlay2.png",
-      "/screenshots/The-Maze-Runner/Winner.png"
+      "/screenshots/The-Maze-Runner/UI.webp",
+      "/screenshots/The-Maze-Runner/GamePlay.webp",
+      "/screenshots/The-Maze-Runner/GamePlay2.webp",
+      "/screenshots/The-Maze-Runner/Winner.webp"
     ],
     "github": "https://github.com/zaidokal/The-Maze-Runner",
     "favourites": false

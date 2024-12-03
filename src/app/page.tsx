@@ -31,7 +31,7 @@ export default function ClientHomePage() {
       );
     setIsMobile(isMobileDevice);
 
-    const criticalImages = ["/Pictures/ProfilePic.jpeg"];
+    const criticalImages = ["/Pictures/ProfilePic.webp"];
 
     preloadImages(criticalImages).then(() => {
       setIsLoading(false);

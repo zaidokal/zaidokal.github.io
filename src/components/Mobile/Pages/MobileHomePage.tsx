@@ -12,7 +12,7 @@ export default function MobileHomePage() {
 
       <div className="mt-4 flex justify-center">
         <Image
-          src="/Pictures/ProfilePic.jpeg"
+          src="/Pictures/ProfilePic.webp"
           alt="Profile Picture of Zaid"
           width={330}
           height={330}
